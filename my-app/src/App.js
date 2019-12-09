@@ -1,0 +1,29 @@
+import React from 'react';
+
+import loading from './image/loading5.gif';
+import go from './image/ga-logomark-200.png';
+import './App.css';
+import { thisExpression } from '@babel/types';
+
+function App() {
+  return (
+    <div className="App">
+      <header className="App-header">
+        <div class="cardBox">
+          <img src={go}>
+          </img>
+          <p class="heading">
+            Mission - C
+          </p>
+          <div class= "user">
+          <button class="login">Login</button> 
+          <span class="or">or</span>
+          <button class="guest">Guest</button>
+          </div>
+        </div>
+      </header>
+    </div>
+  );
+}
+
+export default App;

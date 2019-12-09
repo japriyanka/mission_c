@@ -1,0 +1,221 @@
+.hello-format {
+    font-size:20px;
+    border: 0px solid red;
+    background-color:#F8F8F8;
+
+
+}
+.main-toolbar {
+    width:100%;
+    margin-bottom: 5%;
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+    background-color:blue;
+    height:100px;
+}
+
+.image-to-show {
+    margin-top: 2%;
+    margin-left: 2%;
+    margin-right: 1%;
+    width:35px;
+    height: 35px;
+}
+
+.logo-text {
+    vertical-align: center;
+    margin-bottom: 5%;
+    font-size: 40px;
+    color:white;
+}
+
+.login {
+    width:50%;
+    margin-left: 5%;
+    border: 0px solid white;
+    position: absolute;
+    float:left;
+}   
+
+.signup {
+    width:50%;
+    border: 0px solid white;
+    position: relative;
+    float:right;
+}
+
+.text-already {
+    margin-top: 5%;
+    margin-left:2%;
+    margin-bottom: 3%;
+    font-weight: bold;
+    font-size:30px;
+    color: blue;
+    border: 0px solid white;
+}
+
+.text-box-name {
+    border: 1px solid gray;
+    margin-left:2%;
+    width:60%;
+    height:40px;
+    font-size:20px;
+    border-radius: 5px;
+    text-align: center;
+}
+.text-box-email {
+    border: 1px solid gray;
+    margin-top: 2%;
+    margin-left: 2%;
+    width:60%;
+    height:40px;
+    font-size:20px;
+    border-radius: 5px;
+    text-align:center;
+}
+
+.btn-primary-login {
+    margin-top: 3%;
+    margin-left: 20%;
+    background-color: blue;
+    border: transparent;
+    color:white;
+    height: 45px;
+    width:20%;
+    font-size: 20px;
+    border-radius: 5px;
+    border:0px solid red;
+}
+
+.btn-primary-signup {
+    margin-top: 3%;
+    margin-left: 22%;
+    background-color: blue;
+    border: transparent;
+    color:white;
+    height: 45px;
+    width:20%;
+    font-size: 20px;
+    border-radius: 5px;
+    border:0px solid red;
+}
+
+.btn-primary-login:hover {
+    color:white;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+.btn-primary-signup:hover {
+    color:white;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+.btn-primary-cancel {
+    margin-top: 3%;
+    margin-left: 2%;
+    background-color: white;
+    border: transparent;
+    color:blue;
+    height: 45px;
+    width:20%;
+    font-size: 20px;
+    border-radius: 5px;
+    border: 1px solid blue;
+}
+
+.btn-primary-home{
+    margin-left:57%;
+    margin-bottom: 5%;
+    height: 40px;
+    width:10%;
+    border: 1px solid white;
+    border-radius: 5px;
+    font-size: 23px;
+    color: white;
+    background-color: blue;
+}
+
+.btn-primary-home:hover {
+    color: blue;
+    background-color: white;
+
+}
+
+.split-box {
+    border:0px solid black;
+    color:white;
+
+}
+
+/* Sign up css styling */
+.name {
+    width: 100%;
+    height: 50px;
+}
+
+.text-box-first-name {
+    border: 1px solid gray;
+    margin-left:2%;
+    width:30%;
+    height:40px;
+    font-size:20px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.text-box-last-name {
+    border: 1px solid gray;
+    margin-left:2%;
+    width:30%;
+    height:40px;
+    font-size:20px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.text-box-signup-email {
+    border: 1px solid gray;
+    margin-left:2%;
+    margin-top:2%;
+    width:62%;
+    height:40px;
+    font-size:20px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.text-box-signup-dob {
+    border: 1px solid gray;
+    margin-left:2%;
+    margin-top:2%;
+    width:62%;
+    height:40px;
+    font-size:20px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.text-box-signup-pass {
+    border: 1px solid gray;
+    margin-left:2%;
+    margin-top:2%;
+    width:62%;
+    height:40px;
+    font-size:20px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.text-box-signup-pass-confirm {
+    border: 1px solid gray;
+    margin-left:2%;
+    margin-top:2%;
+    width:62%;
+    height:40px;
+    font-size:20px;
+    border-radius: 5px;
+    text-align: center;
+}

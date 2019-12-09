@@ -1,0 +1,75 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  border: 1px solid red;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.login {
+  height: 100%;
+  font-size: 100%;
+  margin-left: 2%;
+  width: 100px;
+  background-color: transparent;
+  color: white;
+  border-color: white;
+}
+
+.user {
+  margin-top: 10%;
+  height: 50%;
+  width: 100%;
+  margin-bottom: 5%;
+}
+
+.or {
+  padding: 5%;
+}
+.guest{
+  margin-left: 2%;
+  height: 100%;
+  font-size: 100%;
+  width: 100px;
+  background-color: transparent;
+  color: white;
+  border-color: white;
+}
+.login:hover {
+  border-color: 2px solid purple;
+}
+.App-menu {
+  background-color: #282c34;
+}
+.heading {
+  font-size: 100%;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.loadingImage {
+  width: 30%;
+  margin-top: -20px;
+  border-color: transparent;
+  height: 10%;
+}
+.cardBox {
+  margin: 10px;
+  height: 50%;
+  width: 20%;
+}
+
+.App-link {
+  color: #09d3ac;
+}
