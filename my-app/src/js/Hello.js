@@ -5,7 +5,7 @@ import go from './../image/blue-logo-flame.svg';
 
 class Hello extends React.Component {
     validate() {
-        alert('hai');
+        alert('hELLO');
     }
     render()  {
         return <div class="hello-format">
