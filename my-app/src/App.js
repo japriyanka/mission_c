@@ -1,6 +1,4 @@
 import React from 'react';
-
-import loading from './image/loading5.gif';
 import go from './image/ga-logomark-200.png';
 import './App.css';
 import { thisExpression } from '@babel/types';
