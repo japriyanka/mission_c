@@ -1,4 +1,13 @@
-{
-    "image": "./image/favicon.ico",
-    "name": "Favicon"
-}
+[{
+    "id": 11,
+    "image": "http://localhost/image/image.jpg",
+    "name": ""
+}, {
+    "id": 12,
+    "image": "http://localhost/image/image3.png",
+    "name": ""
+}, {
+    "id": 13,
+    "image": "http://localhost/image/image2.jpeg",
+    "name": ""
+}]
