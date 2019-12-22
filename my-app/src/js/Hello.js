@@ -2,6 +2,7 @@ import React from 'react';
 import './../css/Hello.css';
 import Login from './Login';
 import Signup from './signUp';
+import TopDeals from './TopDeals';
 import go from './../image/blue-logo-flame.svg';
 
 
@@ -20,18 +21,19 @@ class Hello extends React.Component {
             <img src={go} className="image-to-show"></img>
             <span className="logo-text">Mission-C</span>
             <button className="btn-primary-home">Home</button>
-            <button className="btn-primary-contact">Offers</button>
             <button className="btn-primary-contact">Contact</button>
+            <button className="btn-primary-contact">Login</button>
         </div>
 
         <div className="app">
           <div className="login">
-            <Login />
-          </div>
+            <TopDeals />
+          </div> 
           <div className="signUp">
             <Signup />
           </div>
         </div>
+
        </div>;
         /*
         return <div className="hello-format">

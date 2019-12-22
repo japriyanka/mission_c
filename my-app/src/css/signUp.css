@@ -8,7 +8,7 @@
     margin-left:2%;
     font-weight: bold;
     font-size:30px;
-    color: blue;
+    color: #008ECC;
     border: 0px solid white;
 }
 
@@ -19,8 +19,9 @@
 
 .text-box-first-name {
     border: 1px solid gray;
-    margin-left:2%;
+    margin-left:0%;
     width:30%;
+    margin-left: 2%;
     height:40px;
     font-size:20px;
     border-radius: 5px;
@@ -84,16 +85,18 @@
 .btn-primary-signup {
     margin-top: 3%;
     margin-left: 25%;
-    background-color: blue;
+    background-color: #008ECC;
     color:white;
     height: 45px;
     flex-basis: calc(20% - 10px);
     width:20%;
     font-size: 20px;
     border-radius: 5px;
-    border:0px solid red;
 }
 
+.btn-primary-signup:hover {
+    border: 2px solid white;
+}
 .btn-primary-cancel {
     margin-top: 3%;
     margin-left: 2%;
