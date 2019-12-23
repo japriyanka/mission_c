@@ -1,7 +1,6 @@
 import React from 'react';
 import go from './image/ga-logomark-200.png';
 import './App.css';
-import { thisExpression } from '@babel/types';
 
 function App() {
   return (

@@ -1,0 +1,100 @@
+.main-tool-bar {
+    display: flex;
+    flex-wrap: wrap; 
+    height: 80px;
+    background-color: #008ECC;
+}
+
+.logo {
+    margin-top: 5px;
+    flex-basis: 5%;
+    display: flex;
+    flex-direction: column;
+    height: 50px;
+    width: 50px;
+}
+
+.mission-text {
+    margin-top: 1%;
+    vertical-align: center;
+    font-size: 30px;
+    color:white;
+    flex-basis: 15%;
+    display: flex;
+    font-weight: bold;
+    flex-direction: column;   
+}
+
+.search-text {
+    float: left;
+    margin-top: 1%;
+    display: flex;
+    flex-basis: 30%;
+    flex-direction: column;
+    height: 40px;
+    width: 280px;
+    border: transparent;
+    border-radius: 5px;
+    text-align: left;
+    font-size: 15px;
+    color: black;
+    font-weight: lighter;
+    text-align: center;
+}
+
+
+.search-logo {
+    margin-right: -10px;
+    position: right;
+    margin-top: 1%;
+    display: flex;
+    flex-basis: 4%;
+    flex-direction: column;  
+    height: 40px;
+    width: 40px;
+}
+
+.post-button {
+    margin-top: 1.5%;
+    margin-left: 2%;
+    height: 40px;
+    border-radius: 3px;
+    font-size: 20px;
+    color: white;
+    background-color: transparent;
+    border: transparent;
+    text-align: -webkit-center;
+    flex-basis: 10%;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact {
+    margin-top: 1.5%;
+    margin-left: 1%;
+    height: 40px;
+    border-radius: 3px;
+    font-size: 20px;
+    color: white;
+    background-color: transparent;
+    border: transparent;
+    text-align: -webkit-center;
+    flex-basis: 5%;
+    display: flex;
+    flex-direction: column;
+}
+
+.logged-in {
+    display: flex;
+    flex-basis: 20%;
+    flex-direction: column;
+    color:white;
+    margin-left: 2%;
+    margin-top: 1%;
+
+}
+
+.text-user {
+    margin-top: 2%;
+    font-weight: bold;
+}

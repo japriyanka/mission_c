@@ -2,9 +2,15 @@ import React from 'react';
 import './../css/Hello.css';
 import Login from './Login';
 import Signup from './signUp';
+import Home from './Home';
 import TopDeals from './TopDeals';
 import go from './../image/blue-logo-flame.svg';
-
+import {
+  BrowserRouter,
+  Link,
+  Route,
+  Switch,
+} from 'react-router-dom';
 
 class Hello extends React.Component {
     validate() {
@@ -19,7 +25,7 @@ class Hello extends React.Component {
       return <div className="hello-format">
         <div className="main-toolbar">
             <img src={go} className="image-to-show"></img>
-            <span className="logo-text">Mission-C</span>
+              <span className="logo-text">Mission-C</span>
             <button className="btn-primary-home">Home</button>
             <button className="btn-primary-contact">Contact</button>
             <button className="btn-primary-contact">Login</button>

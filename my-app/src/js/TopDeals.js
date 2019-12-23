@@ -1,8 +1,15 @@
 import React from 'react';
+import ReactDOM from 'react-dom';
+
 import Top3 from './top3Deals';
+import Home from './Home';
 import './../css/TopDeals.css';
-import go from './../image/favicon.ico';
-import top3Deals from './top3Deals';
+import {
+    BrowserRouter,
+    Link,
+    Route,
+    Switch,
+  } from 'react-router-dom';
 class TopDeals extends React.Component {
 
     constructor (props) {
@@ -23,6 +30,19 @@ class TopDeals extends React.Component {
         });
     }
 
+    handleClick() {
+        const json_data = {
+            'name': 'Taj Agra',
+            'address': {
+                'street': '119 Brigalow Street',
+                'suburb': 'Lyneham',
+                'state': 'ACT',
+                'country': 'Australia',
+                'postcode': '2602'
+            },
+        };
+        ReactDOM.render(<Home jsonData={json_data} />, document.getElementById('root'));
+    }
 
     render() {
         return  (
@@ -33,10 +53,24 @@ class TopDeals extends React.Component {
                 return <Top3 key={top_3.id} top3={top_3} />;
                 })};
             </div>
-            <button className="get-started"> Get Started </button>
+            <button className="get-started" onClick={this.handleClick}>
+                Get Started
+            </button>
         </div>);
     }
 
 }
+
+const Home_1 = () => (
+    <BrowserRouter>
+    <div>
+      <Route path="/" component={Home} />
+    </div>
+  </BrowserRouter>
+);
+
+ReactDOM.render(Home_1, document.getElementById('root'));
+
+
 
 export default TopDeals;
