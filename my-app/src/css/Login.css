@@ -36,7 +36,7 @@
 .btn-primary-login {
     margin-top: 3%;
     margin-left: 50%;
-    background-color: blue;
+    background-color: 008ECC;
     color:white;
     flex-basis: calc(60% - 10px);
     height: 45px;
@@ -56,7 +56,7 @@
     width:20%;
     font-size: 20px;
     border-radius: 5px;
-    border: 1px solid blue;
+    border: 1px solid 008ECC;
 }
 
 .split-box {

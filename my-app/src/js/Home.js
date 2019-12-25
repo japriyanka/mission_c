@@ -18,6 +18,7 @@ import ToolBar from './ToolBar';
 import Hello from './Hello';
 import DealsBar from './DealsBar';
 import { DropdownButton, MenuItem } from 'react-bootstrap';
+import HomeDD from './HomeDD';
 
 
 class Home extends React.Component {
@@ -37,10 +38,11 @@ class Home extends React.Component {
                     <ToolBar name="Guest" />
                 </div>
                 <div className="deals-bar">
+                    <br></br>
                     <DealsBar data={this.props.dataPassing} />
                 </div>
                 <div className="options-bar">
-
+                    <HomeDD />
                 </div>
                 <div className="restuarant">
 

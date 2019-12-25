@@ -57,7 +57,7 @@ class TopDeals extends React.Component {
                 })};
             </div>
             <button className="get-started" onClick={this.handleClick}>
-                Get Started
+                Know more
             </button>
         </div>);
     }

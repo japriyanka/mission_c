@@ -1,10 +1,13 @@
 import React from 'react';
 import go from './../image/blue-logo-flame.svg';
+
+/* If mail or phone is needed
 import mail from './../image/mail_.jpg';
 import phone from './../image/phone.png';
+*/
+
 import search from './../image/search.webp';
 import './../css/ToolBar.css';
-import { throwStatement } from '@babel/types';
 
 
 class ToolBar extends React.Component {
