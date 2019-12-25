@@ -1,0 +1,10 @@
+.deals {
+    display: flex;
+    background-position: top;
+    background-position: cover;
+    height: 350px;
+    width: 100px;
+    align-content: center;
+    flex-wrap: wrap;
+
+}

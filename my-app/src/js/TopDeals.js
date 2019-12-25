@@ -10,24 +10,26 @@ import {
     Route,
     Switch,
   } from 'react-router-dom';
+
 class TopDeals extends React.Component {
 
     constructor (props) {
         super(props);
         this.state = {
-            top3D: []
+            top3D: [],
         };
+        // Binding is required to pass the state variables to the other components
+        this.handleClick = this.handleClick.bind(this);
     }
 
     componentDidMount() {
         fetch("http://localhost/details.json")
         .then ((response) => response.json())
         .then ((data) => { 
-            console.log(data);
             this.setState({
-                top3D: data
+                top3D: data,
             });
-        });
+        });        
     }
 
     handleClick() {
@@ -41,7 +43,8 @@ class TopDeals extends React.Component {
                 'postcode': '2602'
             },
         };
-        ReactDOM.render(<Home jsonData={json_data} />, document.getElementById('root'));
+        /* Details passing from the  Top deals page to the Home page */
+        ReactDOM.render(<Home dataPassing={this.state.top3D} />, document.getElementById('root'));
     }
 
     render() {

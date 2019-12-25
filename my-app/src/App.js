@@ -7,7 +7,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <div class="cardBox">
-          <img src={go}>
+          <img src={go} alt="go">
           </img>
           <p class="heading">
             Mission - C
