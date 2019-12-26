@@ -1,0 +1,104 @@
+.resturant-section {
+    margin-top: 2%;
+    margin-left: 1%;
+    margin-right: 2%;
+    height: 400px;
+    width: 98%;
+    z-index: 10;
+    border: 1px solid #008ECC;
+    border-radius: 10px;
+}
+
+
+.resturant-heading {
+    display: flex;
+    flex-wrap: wrap;
+    height: 60px;
+    background-color:#008ECC;
+    border-bottom: 1px solid #008ECC;
+    border-radius: 10px;
+}
+
+.resturant-name {
+    margin-top: 0.5%;
+    margin-left: 1%;
+    margin-right: 1%;
+    display:flex;
+    flex-basis: 30%;
+    color:white;
+    font-weight: bold;
+    font-size: 25px;
+    flex-direction: column;
+}
+
+.search-restuarant {
+    display:flex;
+    margin-top: 0.5%;
+    flex-basis: 40%;
+    height: 40px;
+    font-size: 25px;
+    flex-wrap: wrap;
+    border-radius: 5px;
+    background-color:white;
+    flex-direction: column;
+
+}
+
+.categories {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 5%;
+    height: 100%;
+    margin-top: 0.5%;
+    width: 10%;
+    border-radius: 10px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.dropdown-toggle {
+    height: 40px;
+    border-radius: 0px;
+    font-size: 20px;
+}
+
+
+.search-text_ {
+    float: left;
+    color:white;
+    display: flex;
+    flex-direction: column;
+    border: none;
+    width: 92%;
+    text-align: left;
+    font-size: 20px;
+    color: black;
+    font-weight: light;
+    text-align: center;
+    height: 40px;
+}
+
+
+.search-item {
+    margin-right: 2%;
+    display: flex;
+    flex-direction: column;  
+    height: 40px;
+    width: 70px;
+}
+
+.view-all {
+    margin-top: 0.5%;
+    display:flex;
+    vertical-align: -webkit-center;
+    font-size: 22px;
+    flex-basis: 7%;
+    height: 40px;
+    margin-left: 20px;
+    flex-direction: column;
+    background-color: #008ECC;
+    color: white;
+    border: 2px solid white;
+    border-radius: 5px;
+    text-align: -webkit-center;
+}

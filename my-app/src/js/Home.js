@@ -19,6 +19,7 @@ import Hello from './Hello';
 import DealsBar from './DealsBar';
 import { DropdownButton, MenuItem } from 'react-bootstrap';
 import HomeDD from './HomeDD';
+import Restuarants from './Restuarants';
 
 
 class Home extends React.Component {
@@ -45,7 +46,7 @@ class Home extends React.Component {
                     <HomeDD />
                 </div>
                 <div className="restuarant">
-
+                    <Restuarants />
                 </div>
                 <div className="groceries">
 
