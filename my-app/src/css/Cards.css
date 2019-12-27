@@ -1,0 +1,62 @@
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    margin-left: 2%;
+    height: 300px;
+    width: 300px;
+    border: none;
+    z-index: 10;
+}
+.flex-layout {
+    display: flex;
+    flex-wrap: wrap;
+}
+.card-image {
+    height: 150px;
+    width: 300px;
+}
+
+.front-image {
+    height: 150px;
+    width: 300px;
+}
+
+.card-information {
+    display: flex;
+    flex-wrap: wrap;
+    height: 150px;
+    width: 300px;
+    font-size: 15px;
+}
+
+.card-go-button {
+    width: 30%;
+
+}
+.card-first {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 70%;
+}
+
+.card-address {
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+.card-name {
+    font-size: 25px;
+}
+
+.card-open {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+.card-description {
+    margin-top: 1%;
+    font-size: 15px;
+    width:100%;
+
+}

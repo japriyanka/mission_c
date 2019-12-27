@@ -1,53 +1,30 @@
 import React from 'react';
-import './../css/Restuarants.css';
+import './../css/Groceries.css';
 import search from './../image/search.webp';
 import Dropdown from 'react-bootstrap/Dropdown';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Cards from './Cards';
 
 
-import left from './../image/left.png';
-import right from './../image/right.png';
-
-
-class Restuarants extends React.Component {
-
-    constructor(props) {
-        super(props);
-        this.state = {
-            restuarants: []
-        };
-    }
-
-    componentDidMount() {
-        fetch("http://localhost/restuarants.json")
-        .then ((response) => response.json())
-        .then ((data) => { 
-            console.log(data);
-            this.setState({
-                restuarants: data,
-            });
-        });        
-    }
-
+class Groceries extends React.Component {
     render() {
         return (
         <div className="resturant-section">
             <div className="resturant-heading">
                <span className="resturant-name">
-                   Restuarants
+                   Groceries
                 </span> 
                 <div class="categories">
                     <Dropdown className="dropdown-categories">
                         <Dropdown.Toggle variant="success">
-                            Cuisine
+                            Country
                         </Dropdown.Toggle>
                         
                         <Dropdown.Menu>
                             <Dropdown.Item href="/Home">Indian</Dropdown.Item>
                             <hr></hr>
-                            <Dropdown.Item href="/Home">Thai</Dropdown.Item><hr></hr>
-                            <Dropdown.Item href="/Home">Korean</Dropdown.Item>
+                            <Dropdown.Item href="/Home">Chinese</Dropdown.Item><hr></hr>
+                            <Dropdown.Item href="/Home">UK</Dropdown.Item>
                         </Dropdown.Menu>
                     </Dropdown>
                 </div> 
@@ -57,27 +34,20 @@ class Restuarants extends React.Component {
                     
                     <img src={search} className="search-item" />
                 </div>
+                <div class="empty">
+                    
+                </div>
                 <button className="view-all">
                     View all
                 </button>
             </div>
 
-           <div className="restuarant-cardspace">
-               <div className="left-indicator">
-                   <img src={left} className="image-navigation-left">
-                   </img>
-               </div>
-               <div className="center-cards">
-                   <Cards cardInfo={this.state.restuarants} />
-               </div>
-               <div className="right-indicator">
-                   <img src={right} className="image-navigation-right">
-                   </img>
-               </div>
+           <div class="groceries-cardspace">
+              
            </div>
         </div>
         );
     }
 }
 
-export default Restuarants;
+export default Groceries;

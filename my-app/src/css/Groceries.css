@@ -2,7 +2,7 @@
     margin-top: 2%;
     margin-left: 1%;
     margin-right: 2%;
-    height: 600px;
+    height: 400px;
     width: 98%;
     z-index: 10;
     border: 1px solid #008ECC;
@@ -101,48 +101,4 @@
     border: 2px solid white;
     border-radius: 5px;
     text-align: -webkit-center;
-}
-
-.restuarant-cardspace {
-    display: flex;
-    flex-wrap: wrap;
-    height: 300px;
-
-}
-
-.image-navigation-left {
-    margin-top: 100px;
-    margin-left: 2%;
-    background-color: transparent;
-    height: 50px;
-    width: 40px;
-}
-
-.image-navigation-right {
-    margin-top: 100px;
-    margin-left: 2%;
-    background-color: transparent;
-    height: 50px;
-    width: 40px;
-}
-
-.left-indicator {
-    margin-top: 1%;
-    display: flex;
-    flex-basis: 3%;
-}
-
-
-.center-cards {
-    margin-top: 1%;
-    display: flex;
-    flex-basis: 94%;
-    flex-direction: column;
-}
-
-.right-indicator {
-    margin-top: 1%;
-    display: flex;
-    flex-grow:1;
-
 }

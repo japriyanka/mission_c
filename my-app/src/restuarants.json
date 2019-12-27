@@ -1,0 +1,115 @@
+[{
+	"Id": "111",
+	"Priority": "0",
+        "Name": {
+                "Actual": "Taj agra",
+                "Short": "Taj Agra",
+                "Preferred": "Taj Agra"
+        },
+       "Address": {
+               "Number": "119",
+               "Street": "Brigalow Street",
+               "Suburb": "Dickson",
+               "State": "ACT",
+               "Country": "Australia",
+               "Postcode": "2602"
+       },
+       "Coordinates": {
+               "Latitude": "48.2",
+               "Longitude": "19.12"
+       },
+       "Description": {
+               "Short": "It is a good resturarant",
+               "Long": "It is the worlds biggest restuarant and is soo goood .."
+       },
+       "Currency": "AUD",
+       "Cost-per-person": "10",
+       "Cuisine":"Indian",
+       "Rating": {
+               "RatingCount": "10",
+               "AverageRating": "4.2 / 5",
+               "Result": "Excellent"
+       },
+       "Discount": [{
+               "Description": "Buy 2 for 15% Off!"
+       }],
+       "Pictures": {
+               "Front": ["http://localhost/image/Restuarants/Tajagra/front/1.jpg", "http://localhost/image/Restuarants/Tajagra/front/2.jpeg"],
+               "Menu": ["http://localhost/image/Restuarants/Tajagra/menu/1.jpg", "http://localhost/image/Restuarants/Tajagra/menu/2.jpg"],
+               "Inside": ["http://localhost/image/Restuarants/Tajagra/inside/1.jpg", "http://localhost/image/Restuarants/Tajagra/inside/2.jpeg"],
+               "MenuCard": "https://www.tajagra.com.au/assets/uploads/table%20menu.pdf" 
+       },
+       "OpeningHours": ["11-22", "11-22", "11-22", "11-22", "11-22", "11-00.50", "11-22"],
+       "Parking": {
+               "Car": {
+                 "Available": "Yes",
+                 "FreeForFirst": "2-hr",
+                 "ParkingCostPerHour": "4",
+                 "FreeParking": ["18-06", "18-06", "18-06", "18-06", "18-06", "18-06", "18-06"]
+                },
+               "Bike": {
+                 "Available": "Yes",
+                 "FreeForFirst": "4-hr",
+                 "ParkingCostPerHour": "2",
+                 "FreeParking": ["18-06", "18-06", "18-06", "18-06", "18-06", "18-06", "18-06"]
+                }
+       }
+}, 
+{
+	"Id": "112",
+	"Priority": "0",
+        "Name": {
+                "Actual": "Darbar",
+                "Short": "Darbar",
+                "Preferred": "Darbar"
+        },
+       "Address": {
+               "Number": "119",
+               "Street": "Brigalow Street",
+               "Suburb": "Dickson",
+               "State": "ACT",
+               "Country": "Australia",
+               "Postcode": "2602"
+       },
+       "Coordinates": {
+               "Latitude": "48.2",
+               "Longitude": "19.12"
+       },
+       "Description": {
+               "Short": "It is a good resturarant",
+               "Long": "It is the worlds biggest restuarant and is soo goood .."
+       },
+       "Currency": "AUD",
+       "Cost-per-person": "10",
+       "Cuisine":"Indian",
+       "Rating": {
+               "RatingCount": "10",
+               "AverageRating": "4.2 / 5",
+               "Result": "Excellent"
+       },
+       "Discount": [{
+               "Description": "Buy 2 for 15% Off!"
+       }],
+       "Pictures": {
+               "Front": ["http://localhost/image/Restuarants/Tajagra/front/1.jpg", "http://localhost/image/Restuarants/Tajagra/front/2.jpeg"],
+               "Menu": ["http://localhost/image/Restuarants/Tajagra/menu/1.jpg", "http://localhost/image/Restuarants/Tajagra/menu/2.jpg"],
+               "Inside": ["http://localhost/image/Restuarants/Tajagra/inside/1.jpg", "http://localhost/image/Restuarants/Tajagra/inside/2.jpeg"],
+               "MenuCard": "https://www.tajagra.com.au/assets/uploads/table%20menu.pdf" 
+       },
+       "OpeningHours": ["11-22", "11-22", "11-22", "11-22", "11-21", "11-17.30", "11-00.59"],
+       "Parking": {
+               "Car": {
+                 "Available": "Yes",
+                 "FreeForFirst": "2-hr",
+                 "ParkingCostPerHour": "4",
+                 "FreeParking": ["18-06", "18-06", "18-06", "18-06", "18-06", "18-06", "18-06"]
+                },
+               "Bike": {
+                 "Available": "Yes",
+                 "FreeForFirst": "4-hr",
+                 "ParkingCostPerHour": "2",
+                 "FreeParking": ["18-06", "18-06", "18-06", "18-06", "18-06", "18-06", "18-06"]
+                }
+       }
+}
+]
