@@ -1,4 +1,5 @@
 import React from 'react';
+import Modal from 'react-awesome-modal';
 import './../css/Cards.css';
 
 class SubCards extends React.Component {
@@ -6,7 +7,7 @@ class SubCards extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            restuarants: {}
+            cardShow: false
         };
     }
 
@@ -53,6 +54,25 @@ class SubCards extends React.Component {
 
     }
 
+    showCardPopup() {
+        this.setState({
+            cardShow: true,
+        });
+    }
+
+    hideCardPopup() {
+        this.setState({
+            cardShow: false,
+        });
+        console.log('coming');
+    }
+
+
+    viewCard(card) {
+        // Reference taken from :
+        // https://www.npmjs.com/package/react-awesome-modal
+    }
+
 
     render() {
 
@@ -75,9 +95,18 @@ class SubCards extends React.Component {
                     this.props.info.Pictures.Front.length))]} 
                     className="front-image"/>
                     <div className="card-button">
-                        <button type="button" className="btn card-go-button">
+                        <button type="button" className="btn card-go-button"
+                        onClick={this.showCardPopup.bind(this)}>
                             View
                         </button>
+                        <Modal visible={this.state.cardShow} width="400" height="300" effect="fadeInUp" onClickAway={() => this.hideCardPopup.bind(this)}>
+                            <div>
+                                <h1>Title</h1>
+                                <p>Some Contents</p>
+                                <button type="button" onClick={this.hideCardPopup.bind(this)}>Close</button>
+                            </div>
+                        </Modal>
+                        
                     </div>
             </div>
             <div className="card-information">
@@ -114,3 +143,9 @@ class SubCards extends React.Component {
 }
 
 export default SubCards;
+
+
+
+/**
+ * 
+ */
