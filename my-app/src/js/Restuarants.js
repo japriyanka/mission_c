@@ -57,12 +57,12 @@ class Restuarants extends React.Component {
                     
                     <img src={search} className="search-item" />
                 </div>
-                <button className="view-all">
+                <button type="button" className="view-all">
                     View all
                 </button>
             </div>
 
-           <div className="restuarant-cardspace">
+           <div className="restuarant-cardspace" id="restuarant-cardspace">
                <div className="left-indicator">
                    <img src={left} className="image-navigation-left">
                    </img>

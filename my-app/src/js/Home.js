@@ -35,7 +35,7 @@ class Home extends React.Component {
 
     render() {
         return (
-            <div className="main-home">
+            <div className="main-home" id="main-home">
                 <div className="tool-bar">
                     <ToolBar name="Guest" />
                 </div>

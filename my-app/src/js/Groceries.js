@@ -42,7 +42,7 @@ class Groceries extends React.Component {
                 </button>
             </div>
 
-           <div class="groceries-cardspace">
+           <div class="groceries-cardspace" id="groceries-cardspace">
               
            </div>
         </div>
