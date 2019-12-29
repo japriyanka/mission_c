@@ -10,6 +10,7 @@ class SubCards extends React.Component {
         };
     }
 
+
     findClosed(dates) {
         /*  
         * Represented in the form of <start time>-<end time>
@@ -33,57 +34,51 @@ class SubCards extends React.Component {
 
             // value ranges from 0 to 23
             let currentTime = todayDate.getHours();
-
             console.log(startTime, endTime);
-            /* 
-            // Need to fix the logic here
-            if (Number(endTime) > currentTime) {
-                return {
-                    "Available": true,
-                    "time": Number(endTime)
-                };
-            } else if (Number(endTime) === currentTime ) {
-                // Decimal point for considering the minutes
-                if (endTime.toString().split('.').length == 2) {
-                    if (Number(endTime.toString().split('.')[1]) < todayDate.getMinutes()) {
-                        return {
-                            "Available": true,
-                            "time": Number(endTime)
-                        };
-                    } else {
-                        return {
-                            "Available": false,
-                            "time": ""
-                        };
-                    }
-                } else {
-                    return {
-                        "Available": false,
-                        "time": ""
-                    };    
-                }
-            } else {
-                return {
-                    "Available": false,
-                    "time": ""
-                };
-            }
-            */
-           return {
+
+            // Fix the logic here
+    
+            return {
                "Available": true,
                "time": Number(endTime)
            };
         }
     }
 
+
+    ratingChoose(rating) {
+        // rating is in the form of 4.2 / 5 
+        // print 4 starts 
+        return "* * * *";
+
+    }
+
+
     render() {
+
+        const findOpeningTime = this.findClosed(this.props.info.OpeningHours);
+        console.log(findOpeningTime);
         return (
         <div className="cards">
+            <div className="top-space">
+                <div className="rating-space">
+                    {this.ratingChoose(this.props.info.Rating.AverageRating)}
+                </div>
+                <div className="cuisine-name">
+                    {this.props.info.Cuisine}
+                </div>
+            </div>
+
             <div className="card-image">
                 <img src={this.props.info.Pictures.Front
                     [Math.floor((Math.random() * 
                     this.props.info.Pictures.Front.length))]} 
                     className="front-image"/>
+                    <div className="card-button">
+                        <button type="button" className="btn card-go-button">
+                            View
+                        </button>
+                    </div>
             </div>
             <div className="card-information">
                 <div className="card-first">
@@ -94,17 +89,15 @@ class SubCards extends React.Component {
                             {this.props.info.Address.Street}<br></br>
                             {this.props.info.Address.Suburb}
                     </div>
-                    <div className="card-button">
-                        <button type="button" className="btn btn-success card-go-button">
-                            Go
-                        </button>
-                    </div>
                 </div>
                 <div className="card-open">
+                    
+                    <button type="button" className="status-button">
                     { 
-                        this.findClosed(this.props.info.OpeningHours)['Available'] === true ? 
-                        "Open" : "Closed"
-                    }
+                         findOpeningTime['Available'] === true ? 
+                        `${findOpeningTime['time']}:00`: "Closed"
+                    } 
+                    </button>
 
                 </div>
                 
