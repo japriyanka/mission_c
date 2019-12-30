@@ -1,0 +1,156 @@
+.card-enlarged {
+    height: 100%;
+    width: 100%;
+}
+
+.image-section {
+    height: 300px;
+}
+
+.image-display {
+    border: 1px solid #008ECC;
+    height: 300px;
+    width: 300px;
+}
+
+.restuarant-information {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 2%;
+}
+
+.restuarant-section {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 55%;
+    text-align: -webkit-center;
+}
+
+.offer-button-div {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 25%;
+}
+
+.offer-button {
+    margin-top: 10%;
+    margin-left: 10%;
+    position: float;
+    width: 100%;
+    font-size: 20px;
+}
+
+.trading-hours {
+    margin-top: 4%;
+    font-size: 18px;
+}
+.time-button-div {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 20%;
+}
+
+.time-button {
+    width: 70%;
+    font-size: 20px;
+    border: 1px solid #008ECC;
+    color: #008ECC;
+    background-color: white;
+    border-radius: 5px;
+
+}
+
+.name-info {
+    font-size:30px;
+    margin-top: 1%;
+}
+
+.address-info {
+    font-size:15px;
+}
+
+.rating-system {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 2%;
+    margin-left: 35%;
+}
+
+.text-but {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 1%;
+    margin-left: 31%;
+    font-weight: bold;
+}
+
+
+.not-satisfied-rating {
+    font-size: 12px;
+}
+
+.satisfied-rating {
+    margin-left: 2%;
+    font-size: 12px;
+}
+
+.neutral-rating {
+    margin-left: 2%;
+    font-size: 12px;
+}
+
+.section {
+    height: 270px;
+}
+
+.good-rating {
+    margin-left: 2%;
+    font-size: 12px;
+}
+
+.excellent-rating {
+    margin-left: 2%;
+    font-size: 12px;
+}
+
+.cuisine-name-card {
+    display: flex;
+    flex-wrap: wrap;
+    height:50px;
+    background-color: #008ECC;
+}
+
+.star-cuisine {
+    margin-top: 1%;
+    display: flex;
+    flex-direction: column;
+    flex-basis: 5%;
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    margin-left: 2%;
+}
+
+.star-image-rating {
+    margin-top: 2%;
+    display: flex;
+    flex-direction: column;
+    flex-basis: 5%;
+}
+
+.introduce-cuisine {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    color: white;
+    margin-top: 1%;
+    font-size: 25px;
+    font-weight: bold;
+    margin-left: 75%;
+}
+
+.star-image {
+    height: 20px;
+    width: 20px;
+    background-color: transparent;
+}

@@ -40,7 +40,7 @@
 }
 
 .status-button {
-    background-color: blue;
+    background-color: #008ECC;
     color: white;
     border-radius: 5px;
     height: 40px;
@@ -69,13 +69,14 @@
 
 .card-go-button:hover {
     color:white;
+    border-radius: 5px;
     display: inline-block;  
 }
 
 
-.card-go-button:hover > .front-image {
+.card-go-button:hover  .front-image {
     border: 1px solid white;
-    opacity: 0.7;
+    opacity: 0.3;
     transition: opacity .55s ease-in-out;
     -moz-transition: opacity .55s ease-in-out;
     -webkit-transition: opacity .55s ease-in-out;
@@ -97,10 +98,11 @@
     margin-top: -100px;
     margin-left: 80px;
     font-weight: bolder;
-    font-size: 15px;
+    font-size: 18px;
     filter: opacity(1.0);
     color:white;
-    border: 1px solid white;
+    border: 2px solid white;
+    border-radius: 5px;
     display: none;
 
 }
@@ -128,4 +130,9 @@
     margin-top: 1%;
     font-size: 15px;
     width:100%;
+}
+
+.card-enlarged-full_ {
+    display: flex;
+    flex-wrap: wrap;
 }

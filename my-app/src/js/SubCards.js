@@ -1,6 +1,7 @@
 import React from 'react';
 import Modal from 'react-awesome-modal';
 import './../css/Cards.css';
+import CardEnlarged from './CardEnlarged';
 
 class SubCards extends React.Component {
 
@@ -99,12 +100,15 @@ class SubCards extends React.Component {
                         onClick={this.showCardPopup.bind(this)}>
                             View
                         </button>
-                        <Modal visible={this.state.cardShow} width="400" height="300" effect="fadeInUp" onClickAway={() => this.hideCardPopup.bind(this)}>
-                            <div>
-                                <h1>Title</h1>
-                                <p>Some Contents</p>
-                                <button type="button" onClick={this.hideCardPopup.bind(this)}>Close</button>
+                        <Modal visible={this.state.cardShow} border="1px solid blue" height="800px" width="800px"  
+                        effect="fadeInUp" onClickAway={() => this.hideCardPopup.bind(this)}>
+                            <div className="card-enlarged-full_">
+                                <CardEnlarged cardInfo={this.props.info} />
                             </div>
+                            <button type="button" className="close-button"
+                            onClick={this.hideCardPopup.bind(this)}>
+                                Close
+                            </button>
                         </Modal>
                         
                     </div>
