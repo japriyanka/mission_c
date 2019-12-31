@@ -32,7 +32,7 @@ class Restuarants extends React.Component {
 
     render() {
         return (
-        <div className="resturant-section">
+        <div className="resturant-section_">
             <div className="resturant-heading">
                <span className="resturant-name">
                    Restuarants

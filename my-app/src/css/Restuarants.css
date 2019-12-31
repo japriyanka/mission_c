@@ -1,8 +1,8 @@
-.resturant-section {
+.resturant-section_ {
     margin-top: 2%;
     margin-left: 1%;
     margin-right: 2%;
-    height: 600px;
+    height: 500px;
     width: 98%;
     z-index: 10;
     border: 1px solid #008ECC;
@@ -106,7 +106,7 @@
 .restuarant-cardspace {
     display: flex;
     flex-wrap: wrap;
-    height: 300px;
+    height: 400px;
 
 }
 

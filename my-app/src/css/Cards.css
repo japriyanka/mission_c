@@ -3,9 +3,11 @@
     display: flex;
     flex-direction: column;
     margin-left: 2%;
-    height: 300px;
+    height: 400px;
     width: 300px;
     border: none;
+    border-radius: 5px;
+    margin-top: 1%;
 }
 .flex-layout {
     display: flex;
@@ -39,6 +41,10 @@
     font-size: 18px;
 }
 
+.modal-class {
+    position: absolute;
+
+}
 .status-button {
     background-color: #008ECC;
     color: white;
@@ -129,10 +135,17 @@
 .card-description {
     margin-top: 1%;
     font-size: 15px;
-    width:100%;
+    width:60%;
 }
 
 .card-enlarged-full_ {
     display: flex;
     flex-wrap: wrap;
+}
+
+.card-close-button {
+    border: transparent;
+    margin-top: 5%;
+    margin-left: 45%;
+
 }

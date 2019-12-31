@@ -100,16 +100,18 @@ class SubCards extends React.Component {
                         onClick={this.showCardPopup.bind(this)}>
                             View
                         </button>
-                        <Modal visible={this.state.cardShow} border="1px solid blue" height="800px" width="800px"  
-                        effect="fadeInUp" onClickAway={() => this.hideCardPopup.bind(this)}>
-                            <div className="card-enlarged-full_">
-                                <CardEnlarged cardInfo={this.props.info} />
-                            </div>
-                            <button type="button" className="close-button"
-                            onClick={this.hideCardPopup.bind(this)}>
-                                Close
-                            </button>
-                        </Modal>
+                        <div class="modal-class">
+                            <Modal visible={this.state.cardShow} border="1px solid blue" height="100%" width="800px"  
+                            effect="fadeInUp" onClickAway={() => this.hideCardPopup.bind(this)}>
+                                <div className="card-enlarged-full_">
+                                    <CardEnlarged cardInfo={this.props.info} />
+                                </div>
+                                <button type="button" className="btn btn-danger card-close-button"
+                                onClick={this.hideCardPopup.bind(this)}>
+                                    CLOSE
+                                </button>
+                            </Modal>
+                        </div>
                         
                     </div>
             </div>
@@ -131,15 +133,20 @@ class SubCards extends React.Component {
                         `${findOpeningTime['time']}:00`: "Closed"
                     } 
                     </button>
-
                 </div>
                 
                 <div className="card-description">
-                <b>Description</b> <br></br>
-                    {this.props.info.Description.Short}
+                    <b>Description</b> <br></br>
+                        {this.props.info.Description.Short}
                 </div>
                 
             </div>
+            <button type="button" className="btn btn-success"
+            onClick={this.showCardPopup.bind(this)}>
+                    {this.props.info.Discount.length} 
+                    {' '} Offer {this.props.info.Discount.length > 1 ? 's': ''} 
+                    Available
+            </button>
         </div>
     
         );
