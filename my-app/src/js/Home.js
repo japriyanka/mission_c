@@ -21,6 +21,7 @@ import { DropdownButton, MenuItem } from 'react-bootstrap';
 import HomeDD from './HomeDD';
 import Restuarants from './Restuarants';
 import Groceries from './Groceries';
+import Jaa from './Jaa';
 
 
 class Home extends React.Component {
@@ -51,6 +52,9 @@ class Home extends React.Component {
                 </div>
                 <div className="groceries">
                     <Groceries />
+                </div>
+                <div>
+                    <Jaa />
                 </div>
             </div>
         );

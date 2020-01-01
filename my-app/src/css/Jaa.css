@@ -1,0 +1,30 @@
+.outer-box {
+    height: 200px;
+    width: 100%;
+    border: 1px solid black;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.text-box {
+    margin-top: 20px;
+    font-size: 25px;
+    font-weight: bold;
+    
+    display: flex;
+    flex-direction: column;
+    flex-basis: 30%;
+
+
+}
+
+.text-box1 {
+    margin-top: 20px;
+    font-size: 25px;
+    width: 45%;
+    font-weight: bold;
+
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}

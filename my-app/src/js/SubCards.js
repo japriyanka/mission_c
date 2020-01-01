@@ -47,9 +47,28 @@ class SubCards extends React.Component {
 
 
     ratingChoose(rating) {
+        var floatRating = parseFloat(rating)
+        console.log(rating, "comes here")
+        if (floatRating == 5){
+             return "* * * * *"
+        }
+        else if (floatRating >= 4){
+            return "* * * *"
+        }
+        else if (floatRating >= 3){
+            return "* * *"
+        }
+
+        else if (floatRating >= 2){
+            return "* *"
+        }
+
+        else if (floatRating >= 1){
+            return "*"
+        }
         // rating is in the form of 4.2 / 5 
         // print 4 starts 
-        return "* * * *";
+        return "";
 
     }
 
