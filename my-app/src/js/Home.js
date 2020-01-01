@@ -47,7 +47,7 @@ class Home extends React.Component {
                     <HomeDD />
                 </div>
                 <div className="restuarant">
-                    <Restuarants />
+                    <Restuarants dealsInfo={this.props.dataPassing} />
                 </div>
                 <div className="groceries">
                     <Groceries />

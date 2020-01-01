@@ -4,22 +4,28 @@ import search from './../image/search.webp';
 import Dropdown from 'react-bootstrap/Dropdown';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Cards from './Cards';
+import ReactDOM from 'react-dom';
 
 
 import left from './../image/left.png';
 import right from './../image/right.png';
+import SectionalPageHome from './SectionalPageHome';
+import Hello from './Hello';
 
 
 class Restuarants extends React.Component {
 
+    component_mount = false;
     constructor(props) {
         super(props);
         this.state = {
             restuarants: []
         };
+        this.passToSectionalPage = this.passToSectionalPage.bind(this);
     }
 
     componentDidMount() {
+        this.component_mount = true;
         fetch("http://localhost/restuarants.json")
         .then ((response) => response.json())
         .then ((data) => { 
@@ -30,6 +36,15 @@ class Restuarants extends React.Component {
         });        
     }
 
+    passToSectionalPage() {
+        console.log('coming here');
+        if (this.component_mount) {
+          ReactDOM.render(<SectionalPageHome dealsInfo={this.props.dealsInfo} 
+            restuarantInfo={this.state.restuarants} type="r"  />, 
+            document.getElementById('root'));
+        }
+    }
+
     render() {
         return (
         <div className="resturant-section_">
@@ -37,7 +52,7 @@ class Restuarants extends React.Component {
                <span className="resturant-name">
                    Restuarants
                 </span> 
-                <div class="categories">
+                <div className="categories">
                     <Dropdown className="dropdown-categories">
                         <Dropdown.Toggle variant="success">
                             Cuisine
@@ -57,7 +72,8 @@ class Restuarants extends React.Component {
                     
                     <img src={search} className="search-item" />
                 </div>
-                <button type="button" className="view-all">
+                <button type="button" className="view-all"
+                onClick={this.passToSectionalPage}>
                     View all
                 </button>
             </div>

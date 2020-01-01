@@ -82,7 +82,6 @@
 
 .card-go-button:hover  .front-image {
     border: 1px solid white;
-    opacity: 0.3;
     transition: opacity .55s ease-in-out;
     -moz-transition: opacity .55s ease-in-out;
     -webkit-transition: opacity .55s ease-in-out;
@@ -97,6 +96,10 @@
     font-size: 15px;
 }
 
+.card-button {
+    color:white;
+}
+
 .card-go-button {
     width: 40%;
     opacity: 1;
@@ -105,11 +108,10 @@
     margin-left: 80px;
     font-weight: bolder;
     font-size: 18px;
-    filter: opacity(1.0);
     color:white;
     border: 2px solid white;
     border-radius: 5px;
-    display: none;
+    display:none;
 
 }
 .card-first {

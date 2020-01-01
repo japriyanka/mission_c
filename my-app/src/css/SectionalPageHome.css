@@ -1,0 +1,65 @@
+.main-sectional-page-home {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+}
+
+.scrollable-bar {
+    display: flex;
+    flex-wrap: wrap;
+   
+}
+
+.top-deals-name {
+    margin-top: 1%;
+    margin-left: 2%;
+    font-size: 30px;
+    display: flex;
+    flex-basis: 100%;
+    flex-direction: row;
+}
+
+.top-deals-bar {
+    
+    border-radius: 5px;
+    display: flex;
+    height: 300px;
+    width: 100%;
+}
+
+.left-bar {
+    display: flex;
+    flex-basis: 2%;
+}
+.left-image {
+    margin-top: 120px;
+    opacity: 0.4;
+    height: 40px;
+    width: 40px;
+}
+
+.main-top-deals {
+    display: flex;
+    flex-basis: 98%;
+}
+
+.right-bar {
+    display: flex;
+    flex-basis: 2%;
+}
+.right-image {
+    margin-top: 120px;
+    opacity: 0.4;
+    height: 40px;
+    width: 40px;
+}
+
+.left-bar:hover {
+    opacity: 1.0;
+    background-color: rgb(223, 231, 235);
+}
+
+.right-bar:hover {
+    opacity: 1.0;
+    background-color: rgb(223, 231, 235);
+}

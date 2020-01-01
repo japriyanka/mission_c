@@ -1,0 +1,45 @@
+.cards-deals {
+    display: flex;
+    flex-direction: column;
+    margin-left: 2%;
+    height: 250px;
+    width: 400px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 1%;
+}
+
+.card-image-deals {
+    height: 250px;
+    width: 100%;
+}
+
+
+.front-image-deals {
+    margin-top: 5%;
+    margin-left: 2%;
+    height: 200px;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.card-information-deals {
+    display: flex;
+    margin-left: 2%;
+    flex-wrap: wrap;
+    height: 80px;
+    width: 100%;
+}
+
+.card-first-deals {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+}
+
+.card-name-deals {
+    margin-top: 1%;
+    color: black;
+    font-size: 20px;
+    margin-left: 5%;
+}

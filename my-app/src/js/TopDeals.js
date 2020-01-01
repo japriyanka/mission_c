@@ -64,6 +64,7 @@ class TopDeals extends React.Component {
 
 }
 
+/* Dummy code */
 const Home_1 = () => (
     <BrowserRouter>
     <div>

@@ -9,7 +9,6 @@ class top3Deals extends React.Component {
 
         return (<div>
             <div className="image-top" style={style}></div>
-            <div className="name-top">{this.props.top3.name}</div>
         </div>); 
     }
 

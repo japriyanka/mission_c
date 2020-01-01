@@ -38,8 +38,8 @@ class CardEnlarged extends React.Component {
                 <div className="image-section">
                     <Carousel showThumbs={false} showNumbers={false} infiniteLoop={true}>
                         {
-                            this.props.cardInfo.Pictures.Front.map((image) => {
-                                return(<img src={image} className="image-display" />);
+                            this.props.cardInfo.Pictures.Front.map((image, index) => {
+                                return(<img key={index} src={image} className="image-display" />);
                             })
                         }
                     </Carousel>
