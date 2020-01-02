@@ -11,11 +11,7 @@ class SectionalPageHomeDD extends React.Component {
                         Top Deals
                     </button>
                 </div>
-                <div className="second-bar-DD">
-                    <button type="button" className="option-button" >
-                        { this.props.type === "r" ? 'Restuarants' : 'Groceries' } Available
-                    </button> 
-                </div>
+               
                 <div className="second-bar-DD">
                     <button type="button" className="option-button" >
                         Switch to { this.props.type === "r" ? 'Groceries' : 'Restuarant' }

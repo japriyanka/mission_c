@@ -1,11 +1,16 @@
 .signup-box {
     display: flex;
     flex-wrap: wrap;
-    align-content: flex-start;
+    height: 100%;
+    width: 100%;
+}
+
+.splittextbox {
+    margin-left: 4%;
+
 }
 
 .text-already {
-    margin-left:2%;
     font-weight: bold;
     font-size:30px;
     color: #008ECC;
@@ -13,17 +18,17 @@
 }
 
 .name {
+    margin-top: 3%;
     width: 100%;
     height: 50px;
 }
 
 .text-box-first-name {
     border: 1px solid gray;
-    margin-left:0%;
-    width:30%;
+    width:45%;
     margin-left: 2%;
-    height:40px;
-    font-size:20px;
+    height:100%;
+    font-size:18px;
     border-radius: 5px;
     text-align: center;
 }
@@ -31,9 +36,9 @@
 .text-box-last-name {
     border: 1px solid gray;
     margin-left:2%;
-    width:30%;
-    height:40px;
-    font-size:20px;
+    width:45%;
+    height:100%;
+    font-size:18px;
     border-radius: 5px;
     text-align: center;
 }
@@ -41,10 +46,10 @@
 .text-box-signup-email {
     border: 1px solid gray;
     margin-left:2%;
-    margin-top:2%;
-    width:62%;
-    height:40px;
-    font-size:20px;
+    margin-top:3%;
+    width:92%;
+    height:9%;
+    font-size:18px;
     border-radius: 5px;
     text-align: center;
 }
@@ -52,10 +57,10 @@
 .text-box-signup-dob {
     border: 1px solid gray;
     margin-left:2%;
-    margin-top:2%;
-    width:62%;
-    height:40px;
-    font-size:20px;
+    margin-top:3%;
+    width:92%;
+    height:9%;
+    font-size:18px;
     border-radius: 5px;
     text-align: center;
 }
@@ -63,10 +68,10 @@
 .text-box-signup-pass {
     border: 1px solid gray;
     margin-left:2%;
-    margin-top:2%;
-    width:62%;
-    height:40px;
-    font-size:20px;
+    margin-top:3%;
+    width:92%;
+    height:9%;
+    font-size:18px;
     border-radius: 5px;
     text-align: center;
 }
@@ -74,39 +79,50 @@
 .text-box-signup-pass-confirm {
     border: 1px solid gray;
     margin-left:2%;
-    margin-top:2%;
-    width:62%;
-    height:40px;
-    font-size:20px;
+    margin-top:3%;
+    width:92%;
+    height:9%;
+    font-size:18px;
     border-radius: 5px;
     text-align: center;
 }
 
 .btn-primary-signup {
-    margin-top: 3%;
-    margin-left: 25%;
-    background-color: #008ECC;
-    color:white;
-    height: 45px;
-    flex-basis: calc(20% - 10px);
-    width:20%;
-    font-size: 20px;
-    border-radius: 5px;
-}
-
-.btn-primary-signup:hover {
-    border: 2px solid white;
-}
-.btn-primary-cancel {
-    margin-top: 3%;
-    margin-left: 2%;
+    margin-top: 5%;
+    margin-left: 3%;
     background-color: white;
-    flex-basis: calc(20% - 10px);
-    color:blue;
-    height: 45px;
-    width:20%;
-    font-size: 20px;
-    border-radius: 5px;
-    border: 1px solid 008ECC;
+    color: #008ECC;;
+    height: 8%;
+    width:30%;
+    font-size: 18px;
+    border-radius: 10px;
 }
 
+.btn-primary-cancel {
+    margin-top: 5%;
+    margin-left: 30%;
+    background-color: white;
+    color:#008ECC;
+    height: 8%;
+    width:30%;
+    font-size: 18px;
+    border-radius: 10px;
+}
+
+.button-flex {
+   margin: 0px;
+}
+
+.result-show {
+    margin-top: 5%;
+    margin-left: 5%;
+    width:80%;
+    border-radius: 10px;
+    background-color: green;
+    color:white;
+}
+
+.display-result {
+    margin-top: 10%;
+    margin-left: 30%;
+}

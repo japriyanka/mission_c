@@ -6,18 +6,18 @@
 .text-already {
     margin-top: 5%;
     margin-left:2%;
-    margin-bottom: 3%;
     font-weight: bold;
-    font-size:30px;
-    color: blue;
+    font-size:20px;
+    color: #008ECC;;
     border: 0px solid white;
 }
 
 .text-box-name {
+    margin-top: 4%;
     border: 1px solid gray;
     margin-left:2%;
     width:90%;
-    height:40px;
+    height:25%;
     font-size:20px;
     border-radius: 5px;
     text-align: center;
@@ -27,16 +27,16 @@
     margin-top: 2%;
     margin-left: 2%;
     width:90%;
-    height:40px;
+    height:25%;
     font-size:20px;
     border-radius: 5px;
     text-align:center;
 }
 
 .btn-primary-login {
-    margin-top: 3%;
+    margin-top: 5%;
     margin-left: 50%;
-    background-color: 008ECC;
+    background-color: #008ECC;
     color:white;
     flex-basis: calc(60% - 10px);
     height: 45px;
@@ -47,11 +47,11 @@
 }
 
 .btn-primary-cancel-login {
-    margin-top: 3%;
+    margin-top: 5%;
     margin-left: 2%;
     background-color: white;
     flex-basis: calc(10% - 10px);
-    color:blue;
+    color:#008ECC;
     height: 45px;
     width:20%;
     font-size: 20px;

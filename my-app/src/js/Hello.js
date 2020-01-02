@@ -5,6 +5,8 @@ import Signup from './signUp';
 import Home from './Home';
 import TopDeals from './TopDeals';
 import go from './../image/blue-logo-flame.svg';
+import Modal from 'react-awesome-modal';
+
 import {
   BrowserRouter,
   Link,
@@ -13,34 +15,72 @@ import {
 } from 'react-router-dom';
 
 class Hello extends React.Component {
-    validate() {
-        alert('hELLO');
+    
+
+    constructor (props) {
+      super(props);
+      this.state = {
+        signUpShow: false
+      };
+      this.showSignUp = this.showSignUp.bind(this);
+      this.hideSignUp = this.hideSignUp.bind(this);
     }
+
+    showSignUp() {
+      this.setState({
+        signUpShow: true
+      });
+    }
+
+    hideSignUp() {
+      this.setState({
+        signUpShow: false
+      });
+    }
+
     render()  {
       const login = {
         'name': '',
         'email': '',
       };
 
-      return <div className="hello-format">
-        <div className="main-toolbar">
-            <img src={go} className="image-to-show"></img>
-              <span className="logo-text">Mission-C</span>
-            <button className="btn-primary-home">Home</button>
-            <button className="btn-primary-contact">Contact</button>
-            <button className="btn-primary-contact">Login</button>
-        </div>
-
-        <div className="app">
-          <div className="login">
-            <TopDeals />
-          </div> 
-          <div className="signUp">
-            <Signup />
+      return (
+        <div className="hello-format">
+          <div className="main-toolbar">
+              <img src={go} className="image-to-show"></img>
+                <span className="logo-text">Mission-C</span>
+              <button className="btn-primary-home">Home</button>
+              <button className="btn-primary-contact">Contact</button>
+              <button className="btn-primary-contact">Login</button>
           </div>
-        </div>
 
-       </div>;
+          <div className="app">
+            <div className="login">
+              <TopDeals />
+            </div> 
+            <div className="signUp">
+              <div className="login-option">
+                <Login />
+              </div>
+              <div className="middle-dash">
+                <div className="middle-hr">
+                  <h2>or</h2>
+                </div>
+              </div>
+              <div className="signup-button">
+                <button className="btn btn-success signup-but-card"
+                onClick={this.showSignUp}>
+                  <h4>Create an account</h4>
+                </button>
+              </div>
+            </div>
+          </div>
+          <Modal  visible={this.state.signUpShow} height="550px" width="500px"
+                  effect="fadeInUp" onClickAway={this.hideSignUp.bind(this)}>
+                    <Signup />           
+          </Modal>
+
+      </div>);
         /*
         return <div className="hello-format">
         <div className="main-toolbar">

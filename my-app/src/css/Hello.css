@@ -97,17 +97,44 @@
 }
 
 .login {
-    flex-basis: 60%;
+    flex-basis: 50%;
     display: flex;
     flex-direction: column;
 }
 
 .signUp {
-    margin-left: 20%;
-    margin-top: -15px;
+    margin-left: 10%;
     flex-grow: 1;
-    height: 50vh;
-    top: 0;
-    display: flex;
-    position: initial;
+}
+
+.login-option {
+    margin: 0px;
+}
+
+.middle-dash {
+}
+
+
+.middle-hr {
+    margin-top: 10%;
+    margin-left: 32%;
+    font-weight: bold;
+    color:#008ECC;
+
+}
+
+.signup-button {
+    margin-top: 8%;
+}
+
+
+.signup-but-card {
+    margin-left: 20%;
+    background-color: #008ECC;
+    color:white;
+    height: 55px;
+    width:30%;
+    overflow:none;
+    font-size: 15px;
+    border-radius: 10px;
 }
