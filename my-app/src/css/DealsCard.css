@@ -7,11 +7,13 @@
     border: none;
     border-radius: 5px;
     margin-top: 1%;
+
 }
 
 .card-image-deals {
     height: 250px;
     width: 100%;
+
 }
 
 
@@ -43,3 +45,4 @@
     font-size: 20px;
     margin-left: 5%;
 }
+

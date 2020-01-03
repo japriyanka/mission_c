@@ -1,7 +1,7 @@
 .main-sectional-page-home {
     height: 100%;
     width: 100%;
-    position: fixed;
+    position: relative;
 }
 
 .scrollable-bar {
@@ -16,11 +16,12 @@
     font-size: 30px;
     display: flex;
     flex-basis: 100%;
+    color: #008EEC;
     flex-direction: row;
 }
 
-.top-deals-bar {
-    
+.top-deals-bar {    
+    margin-top: 1%;
     border-radius: 5px;
     display: flex;
     height: 300px;
@@ -41,6 +42,10 @@
 .main-top-deals {
     display: flex;
     flex-basis: 98%;
+    background-color: white;
+    border-radius: 10px;
+
+
 }
 
 .right-bar {
@@ -62,4 +67,93 @@
 .right-bar:hover {
     opacity: 1.0;
     background-color: rgb(223, 231, 235);
+}
+
+.restaurant-section-name {
+    margin-top: 2%;
+    display:flex;
+    flex-wrap: wrap;   
+
+}
+
+.section-name_r {
+    font-size: 30px;
+    margin-left: 3%;
+    display: flex;
+    color: #008EEC;
+    flex-basis: 7%;
+}
+
+.empty-section {
+    display: flex;
+    flex-basis: 28%;
+}
+.add-button-section {
+    display: flex;
+    flex-basis: 5%;
+    margin-left: 1%;
+    margin-top: 5px;
+    height: 40px;
+    font-size: 18px;
+    text-align: -webkit-center;
+}
+
+.filter-by-text {
+    display: flex;
+    flex-basis: 4.5%;
+    margin-top: 0.5%;
+    font-size: 20px;
+}
+
+.filter-by {
+    margin-top: 0.3%;
+    display: flex;
+    flex-basis: 15%;
+    height: 40px;
+    width: 5%;
+    margin-left: 1%;
+    margin-right: 2%;
+    border-radius: 10px;
+    text-align: -webkit-center;
+}
+
+.restaurant-ad-section {
+    display:flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 1%;
+}
+.add-ads-button {
+    display: flex;
+    flex-grow:1;
+    height: 10px;
+    background-color: red;
+
+}
+
+.ads-zone-name {
+    display: flex;
+    margin-left: 2%;
+    flex-basis: 9%;
+    color: #008EEC;
+    font-size: 30px;
+    text-align: -webkit-center;
+}
+
+.restaurant-block {
+    margin-top:1%;
+    display: flex;
+    margin-left: 3%;
+    flex-basis: 65%;
+    border-radius: 10px;
+    position: relative;
+    box-shadow: 2px -2px 2px 3px rgba(0, 0, 0, 0.4);
+}
+
+
+
+.ad-section {
+    display: flex;
+    flex-grow: 1;
+
 }

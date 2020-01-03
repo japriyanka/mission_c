@@ -50,12 +50,12 @@ class signUp extends React.Component {
               </div>
               <input type="text" className="text-box-signup-email" 
               placeholder=" Enter your email address" 
-              id="email"></input>
+              id="email-signup"></input>
               <input type="text" className="text-box-signup-dob" 
               placeholder=" Enter your date of birth (DD-MM-YYYY)" 
               id="dob"></input>
               <input type="password" className="text-box-signup-pass"
-               placeholder=" Enter the password" id="pass"></input>
+               placeholder=" Enter the password" id="pass-signup"></input>
               <input type="password" className="text-box-signup-pass-confirm"
                placeholder=" Confirm the password" id="pass-confirm"></input> 
               <button type="submit" className="btn-primary-signup"

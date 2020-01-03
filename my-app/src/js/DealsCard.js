@@ -9,7 +9,7 @@ class DealsCard extends React.Component {
                     return (
                         <div className="cards-deals" id="card-deals-id">
                             <div className="card-image-deals">
-                                <img src={deals.image} className="front-image-deals"/>
+                                <img key={index} src={deals.image} className="front-image-deals"/>
                             </div>
                             <div className="card-information-deals">
                                 <div className="card-first-deals">

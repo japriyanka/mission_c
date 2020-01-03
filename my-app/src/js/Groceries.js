@@ -14,7 +14,7 @@ class Groceries extends React.Component {
                <span className="resturant-name">
                    Groceries
                 </span> 
-                <div class="categories">
+                <div className="categories">
                     <Dropdown className="dropdown-categories">
                         <Dropdown.Toggle variant="success">
                             Country
@@ -34,15 +34,14 @@ class Groceries extends React.Component {
                     
                     <img src={search} className="search-item" />
                 </div>
-                <div class="empty">
-                    
+                <div className="empty">
                 </div>
                 <button className="view-all">
                     View all
                 </button>
             </div>
 
-           <div class="groceries-cardspace" id="groceries-cardspace">
+           <div className="groceries-cardspace" id="groceries-cardspace">
               
            </div>
         </div>

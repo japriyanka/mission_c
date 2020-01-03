@@ -2,16 +2,15 @@
 .cards {
     display: flex;
     flex-direction: column;
-    margin-left: 2%;
+    margin-left: 5%;
     height: 400px;
     width: 300px;
     border: none;
     border-radius: 5px;
-    margin-top: 1%;
+    margin-top: 1.5%;
 }
 .flex-layout {
-    display: flex;
-    flex-wrap: wrap;
+   display: flex;
 }
 
 .top-space {

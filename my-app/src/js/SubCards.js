@@ -100,7 +100,7 @@ class SubCards extends React.Component {
                         onClick={this.showCardPopup.bind(this)}>
                             View
                         </button>
-                        <div class="modal-class">
+                        <div className="modal-class">
                             <Modal visible={this.state.cardShow} border="1px solid blue" height="100%" width="800px"  
                             effect="fadeInUp" onClickAway={this.hideCardPopup.bind(this)}>
                                 <div className="card-enlarged-full_">
