@@ -56,11 +56,11 @@ class FilterByModal extends React.Component {
                     </button>
                     <button type="button" id="low-to-high-id" className={lowToHigh}
                     onClick={this.chooseOptionLowToHigh}>
-                        Sort by Offers from Low to High
+                        Sort Offer prices from Low to High
                     </button>
                     <button type="button" id="high-to-low-id" className={highToLow}
                     onClick={this.chooseOptionHighToLow}>
-                        Sort by Offers from High to Low
+                        Sort Offer prices from High to Low
                     </button>
                </div>
             </div>    

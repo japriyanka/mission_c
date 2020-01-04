@@ -51,7 +51,7 @@ class Hello extends React.Component {
                 <span className="logo-text">Mission-C</span>
               <button className="btn-primary-home">Home</button>
               <button className="btn-primary-contact">Contact</button>
-              <button className="btn-primary-contact">Login</button>
+              <button className="btn-primary-contact">Blog</button>
           </div>
 
           <div className="app">

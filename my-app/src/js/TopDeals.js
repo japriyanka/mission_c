@@ -56,7 +56,7 @@ class TopDeals extends React.Component {
                 return <Top3 key={top_3.id} top3={top_3} />;
                 })};
             </div>
-            <button className="get-started" onClick={this.handleClick}>
+            <button className="btn btn-success get-started" onClick={this.handleClick}>
                 Know more
             </button>
         </div>);
