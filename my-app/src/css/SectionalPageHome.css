@@ -86,8 +86,39 @@
 
 .empty-section {
     display: flex;
-    flex-basis: 28%;
+    flex-basis: 26%;
+    margin-left: 2%;
 }
+
+.options-list {
+    display:flex;
+    background-color: #008ECC;
+    color: white;
+    border-radius: 10px;
+    margin-left: 1%;
+
+}
+
+.l_name {
+    margin-left: 5px;
+    margin-top: 10%;
+}
+
+.options-name {
+    display: flex;
+    background-color: transparent;
+    border: transparent;
+}
+
+.close-button {
+    display: flex;
+    background-color: transparent;
+    border: transparent;
+    color: white;
+    font-size: 90%;
+}
+
+
 .add-button-section {
     display: flex;
     flex-basis: 5%;
@@ -156,4 +187,24 @@
     display: flex;
     flex-grow: 1;
 
+}
+
+.apply-filter-but {
+    margin-left: 10%;
+    background-color: #008ECC;
+    color:white;
+    height: 14%;
+    width:30%;
+    font-size: 18px;
+    border-radius: 10px;
+}
+
+.close-filter-but {
+    margin-left: 20%;
+    background-color: white;
+    color:#008ECC;
+    height: 14%;
+    width:30%;
+    font-size: 18px;
+    border-radius: 10px;
 }

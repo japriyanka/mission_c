@@ -1,0 +1,45 @@
+.main-filter-by {
+    margin: 0px;
+    border-radius: 10px;
+}
+
+.filter-by-heading {
+    height: 40px;
+    background-color: #008CEE;
+    text-align: -webkit-center;
+}
+
+.filter-by-span {
+    font-size: 25px;
+    color: white;
+}
+
+.filter-by-body {
+    color: black;
+}
+
+.options-filter {
+    margin-top: 2%;
+    margin-left: 5%;
+    border-radius: 10px;
+    background-color: white;
+    color: #008CEE;
+    font-size: 20px;
+    width: 90%;
+}
+
+.btn-body-filter {
+    margin-top: 5%;
+    margin-bottom: 7%;
+
+}
+
+.blue-filter {
+    margin-top: 2%;
+    margin-left: 5%;
+    border-radius: 10px;
+    background-color:#008CEE;
+    color: white;
+    font-size: 20px;
+    width: 90%;
+}

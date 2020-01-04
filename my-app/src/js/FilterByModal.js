@@ -1,0 +1,73 @@
+import React from 'react';
+import './../css/FilterByModal.css';
+import { tsConstructorType, thisExpression } from '@babel/types';
+
+
+class FilterByModal extends React.Component {
+
+    constructor(props) {
+        super(props);
+        this.state = {
+            popularShow: true,
+            lowToHigh: true,
+            highToLow: true
+        };
+        this.chooseOptionPopular = this.chooseOptionPopular.bind(this);
+        this.chooseOptionLowToHigh = this.chooseOptionLowToHigh.bind(this);
+        this.chooseOptionHighToLow = this.chooseOptionHighToLow.bind(this);
+    }
+
+    chooseOptionPopular() {
+        this.setState({
+            popularShow: !this.state.popularShow
+        });
+    }
+
+    chooseOptionLowToHigh() {
+        this.setState({
+            lowToHigh: !this.state.lowToHigh
+        });
+    }
+
+    chooseOptionHighToLow() {
+        this.setState({
+            highToLow: !this.state.highToLow
+        });
+    }
+
+    render() {
+        const popular = this.state.popularShow ? "options-filter" : "blue-filter";
+        const lowToHigh = this.state.lowToHigh ? "options-filter" : "blue-filter";
+        const highToLow = this.state.highToLow ? "options-filter" : "blue-filter";
+
+        return (
+        <div className="main-filter-by">
+            <div className="filter-by-heading">
+                <div className="filter-by-span">  
+                    Choose Filter By options 
+                </div>
+               
+            </div>
+            <div className="filter-by-body">
+                <div className="btn-body-filter">
+                    <button type="button" id="popular-id" className={popular} 
+                    onClick={this.chooseOptionPopular}>
+                        Sort by Popularity
+                    </button>
+                    <button type="button" id="low-to-high-id" className={lowToHigh}
+                    onClick={this.chooseOptionLowToHigh}>
+                        Sort by Offers from Low to High
+                    </button>
+                    <button type="button" id="high-to-low-id" className={highToLow}
+                    onClick={this.chooseOptionHighToLow}>
+                        Sort by Offers from High to Low
+                    </button>
+               </div>
+            </div>    
+        </div>
+        ); 
+    }
+
+}
+
+export default FilterByModal;
