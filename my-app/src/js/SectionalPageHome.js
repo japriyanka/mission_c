@@ -66,7 +66,7 @@ class SectionalPageHome extends React.Component {
                 <div className="options-bar">
                     <SectionalPageHomeDD type={this.props.type} />
                 </div>
-                <div className="scrollable-bar">
+                <div className="scrollable-bar" id="scrollable-bar">
                     <span className="top-deals-name">
                         Top {this.props.type === 'r' ? 'Restaurants' : 'Groceries'}
                         {' '} Deals
@@ -133,7 +133,7 @@ class SectionalPageHome extends React.Component {
                     </button>
                     
                 </div>
-                <div className="restaurant-ad-section">
+                <div className="restaurant-ad-section" id="restaurant-ad-section">
                     <div className="restaurant-block">
                         <Cards cardInfo={this.state.restaurants} />
                     </div>
