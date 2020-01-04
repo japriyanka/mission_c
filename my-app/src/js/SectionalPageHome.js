@@ -12,18 +12,21 @@ import FilterByModal from './FilterByModal';
 
 class SectionalPageHome extends React.Component {
 
-    popularShow = true;
-    lowToHighShow = true;
-    highToLowShow = true;
-
     constructor(props) {
         super(props);
         this.state = {
             restaurants: [],
-            filterShow: false
+            filterShow: false,
+            popularShow: true,
+            lowToHighShow: true,
+            highToLowShow: true
         };
         this.showFilterBy = this.showFilterBy.bind(this);
         this.hideFilterBy = this.hideFilterBy.bind(this);
+        this.closeButtonPopular = this.closeButtonPopular.bind(this);
+        this.closeButtonHigh = this.closeButtonHigh.bind(this);
+        this.closeButtonLow = this.closeButtonLow.bind(this);
+        this.applyFilterBy = this.applyFilterBy.bind(this);
     }
 
     componentDidMount() {
@@ -41,19 +44,58 @@ class SectionalPageHome extends React.Component {
         this.setState({
             filterShow: true
         });
-        
     }
+
+    applyFilterBy() {
+        this.setState({
+            filterShow: false,
+            popularShow:  document.getElementById('popular-id').className === 'options-filter' 
+            ? true : false,
+            lowToHighShow:  document.getElementById('low-to-high-id').className === 'options-filter'
+            ? true : false,
+            highToLowShow: document.getElementById('high-to-low-id').className === 'options-filter'
+            ? true : false
+        });
+    } 
 
     hideFilterBy() {
         this.setState({
-            filterShow: false
+            filterShow: false,
         });
-        this.popularShow = document.getElementById('popular-id').className === 'options-filter' 
-        ? true : false;
-        this.lowToHighShow = document.getElementById('low-to-high-id').className === 'options-filter'
-        ? true : false; 
-        this.highToLowShow = document.getElementById('high-to-low-id').className === 'options-filter'
-        ? true : false;
+        this.closeButtonHigh();
+        this.closeButtonLow();
+        this.closeButtonPopular();
+    }
+
+    closeButtonPopular() {
+        this.setState({
+            popularShow: true
+        });
+        const popular = document.getElementById('popular-id');
+        if (popular) {
+            popular.className = 'options-filter';
+        }
+    }
+
+
+    closeButtonLow() {
+        const low = document.getElementById('low-to-high-id');
+        if (low) {
+            low.className = 'options-filter';
+        }
+        this.setState({
+            lowToHighShow: true
+        });
+    }
+
+    closeButtonHigh() {
+        const high = document.getElementById('high-to-low-id');
+        if (high) {
+            high.className = 'options-filter';
+        }
+        this.setState({
+            highToLowShow: true
+        });
     }
 
     render() { 
@@ -92,30 +134,30 @@ class SectionalPageHome extends React.Component {
                         + Add 
                     </button>
                     <div className="empty-section">
-                        <div className="options-list" hidden={this.popularShow}
-                        onClick={this.showFilterBy}>
+                        <div className="options-list" hidden={this.state.popularShow}>
                             <div className="option-name">
                                 <div className="l_name">Popularity</div>
                             </div>
-                            <button type="button" className="close-button">
+                            <button type="button" className="close-button"
+                            onClick={this.closeButtonPopular}>
                                 X
                             </button>
                         </div>
-                        <div className="options-list" hidden={this.lowToHighShow}
-                        onClick={this.showFilterBy}>
+                        <div className="options-list" hidden={this.state.lowToHighShow}>
                             <div className="option-name" >
                                 <div className="l_name">Low -> High</div> 
                             </div>
-                            <button type="button" className="close-button">
+                            <button type="button" className="close-button"
+                            onClick={this.closeButtonLow}>
                                 X
                             </button>
                         </div>
-                        <div className="options-list" hidden={this.highToLowShow}
-                        onClick={this.showFilterBy}>
+                        <div className="options-list" hidden={this.state.highToLowShow}>
                             <div className="option-name" >
                                 <div className="l_name">High -> Low</div>
                             </div>
-                            <button type="button" className="close-button">
+                            <button type="button" className="close-button"
+                            onClick={this.closeButtonHigh}>
                                 X
                             </button>
                         </div>
@@ -141,16 +183,16 @@ class SectionalPageHome extends React.Component {
                         <Ads  />
                     </div>
                 </div>
-                <Modal visible={this.state.filterShow} height="300px" width="500px"  
+                <Modal name={this.state.filterShow} visible={this.state.filterShow} height="300px" width="500px"  
                         effect="fadeInUp" onClickAway={this.hideFilterBy.bind(this)}>
                     <FilterByModal />
                     <button type="button" className="apply-filter-but"
-                    onClick={this.hideFilterBy}>
+                    onClick={this.applyFilterBy}>
                         Apply Filter
                     </button>
                     <button type="button" className="close-filter-but"
                     onClick={this.hideFilterBy}>
-                        Close
+                        Clear & Close
                     </button>
                 </Modal>
             </div>

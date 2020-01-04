@@ -1,6 +1,7 @@
 import React from 'react';
 import './../css/FilterByModal.css';
 import { tsConstructorType, thisExpression } from '@babel/types';
+import SectionalPageHome from './SectionalPageHome';
 
 
 class FilterByModal extends React.Component {
@@ -15,6 +16,30 @@ class FilterByModal extends React.Component {
         this.chooseOptionPopular = this.chooseOptionPopular.bind(this);
         this.chooseOptionLowToHigh = this.chooseOptionLowToHigh.bind(this);
         this.chooseOptionHighToLow = this.chooseOptionHighToLow.bind(this);
+    }
+
+    componentDidMount() {
+
+        const popular = document.getElementById('popular-id');
+        if (popular && popular.className === 'options-filter' ) {
+            this.setState({
+                popularShow: true
+            });
+        }
+
+        const low = document.getElementById('low-to-high-id');
+        if (low && low.className === 'options-filter') {
+            this.setState({
+                lowToHigh: true
+            });
+        }
+
+        const high = document.getElementById('high-to-low-id');
+        if (high && high.className === 'options-filter') {
+            this.setState({
+                highToLow: true
+            });
+        }
     }
 
     chooseOptionPopular() {
