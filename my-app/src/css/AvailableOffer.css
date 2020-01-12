@@ -2,7 +2,6 @@
     margin-top: 2%;
     height: 100%;
     border: 1px solid white;
-    background-color: white;
     box-shadow: 10px 15px 8px #888888;
 }
 
@@ -14,4 +13,16 @@
     padding-left: 2%;
     padding-bottom: 0.02%;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+.available-content-head-name {
+    display: flex;
+    flex-basis: 80%;
+}
+
+.map-go {
+    display: flex;
+    flex-basis: 20%;
+    justify-content: center;
 }

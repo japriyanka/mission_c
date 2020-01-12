@@ -9,9 +9,10 @@ class AvailableOffer extends React.Component {
                     <span className="available-content-head-name">
                         Todays Deals
                     </span>
-                    <div className="image-embedded">
-                    </div>
-                    <div className="show-length">
+                    <div className="map-go">
+                        <button type="button" className="btn btn-success">
+                            Map
+                        </button>
                     </div>
                 </div>
                 <hr  className="line-show-but"/>
