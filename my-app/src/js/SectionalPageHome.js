@@ -168,7 +168,7 @@ class SectionalPageHome extends React.Component {
                     onClick={this.showFilterBy}>
                     </input>
                     <span className="ads-zone-name">
-                        Ads Zone
+                       Latest Offers 
                     </span>
                     <button type="button" className="btn btn-success add-ads-section">
                         + Post

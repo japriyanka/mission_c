@@ -1,5 +1,4 @@
 import React from 'react';
-import Top3 from './top3Deals';
 import './../css/CardRating.css';
 import message from './../image/message.png';
 import profile from './../image/profile.jpg';
