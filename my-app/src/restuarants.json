@@ -23,7 +23,7 @@
                "Long": "It is the worlds biggest restuarant and is soo goood .."
        },
        "Currency": "AUD",
-       "Cost-per-person": "10",
+       "CostPerPerson": "10",
        "Cuisine":"Indian",
        "Rating": {
                "RatingCount": "10",
@@ -53,8 +53,22 @@
                  "ParkingCostPerHour": "2",
                  "FreeParking": ["18-06", "18-06", "18-06", "18-06", "18-06", "18-06", "18-06"]
                 }
-       }
-}, 
+       },
+       "RatingComments": [
+        {"Name": "Sarveshwaran",
+         "RatingProvided": "4.2",
+        "Comments": "Wow it was so delicious"},
+        {"Name": "Ja Priyanka",
+         "RatingProvided": "3.9",
+        "Comments": "Food was tasty. Ambience was also good. Customer service could have been betterr!!"},
+        {"Name": "Naren",
+         "RatingProvided": "2.2",
+        "Comments": "Food arrived very late. Customer service was bad. Food was good"},
+        {"Name": "Saranya",
+         "RatingProvided": "3.6",
+        "Comments": "food arrived very late. Please bring it on time next time.! food was ok"}
+        ]
+},
 {
 	"Id": "112",
 	"Priority": "0",
@@ -80,7 +94,7 @@
                "Long": "It is the worlds biggest restuarant and is soo goood .."
        },
        "Currency": "AUD",
-       "Cost-per-person": "10",
+       "CostPerPerson": "10",
        "Cuisine":"Thai",
        "Rating": {
                "RatingCount": "10",
@@ -110,6 +124,17 @@
                  "ParkingCostPerHour": "2",
                  "FreeParking": ["18-06", "18-06", "18-06", "18-06", "18-06", "18-06", "18-06"]
                 }
-       }
+       },
+       "RatingComments": [
+        {"Name": "Sarveshwaran",
+         "RatingProvided": "4.2",
+        "Comments": "Wow it was so delicious"},
+        {"Name": "Ja Priyanka",
+         "RatingProvided": "3.9",
+        "Comments": "Food was tasty. Ambience was also good. Customer service could have been betterr!!"},
+        {"Name": "Naren",
+         "RatingProvided": "2.2",
+        "Comments": "Food arrived very late. Customer service was bad. Food was good"}
+       ]
 }
 ]

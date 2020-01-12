@@ -9,7 +9,10 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 /* Rating star */
 import BeautyStars from 'beauty-stars';
 
-
+/*
+ * query command to search map
+ * https://www.google.com/maps/search/?api=1&query=Hunter+%26+Barrel+-+Raine+Square+300+Murray+Street+6000+Perth 
+ */
 class CardEnlarged extends React.Component {
 
     constructor(props) {

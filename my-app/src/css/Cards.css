@@ -66,6 +66,7 @@
 
 .front-image:hover {
     border: 1px solid white;
+
 }
 
 .card-image:hover .card-go-button {
@@ -74,16 +75,17 @@
 
 .card-go-button:hover {
     color:white;
+    background-color: transparent;
     border-radius: 5px;
-    display: inline-block;  
 }
 
 
 .card-go-button:hover  .front-image {
-    border: 1px solid white;
+    border: 2px solid white;
     transition: opacity .55s ease-in-out;
     -moz-transition: opacity .55s ease-in-out;
     -webkit-transition: opacity .55s ease-in-out;
+
 }
 
 
@@ -99,20 +101,23 @@
     margin: 0px;
 }
 
-.card-go-button {
+.btn-success {
+   
+    display: none;
+}
+
+
+.card-go-button_ {
     width: 40%;
     opacity: 1;
-    z-index: 20;
     margin-top: -100px;
     margin-left: 80px;
     font-weight: bolder;
     font-size: 18px;
-    color:white;
-    border: 2px solid white;
-    border-radius: 5px;
-    display:none;
-
+    z-index: 20;
+    display: none;
 }
+
 .card-first {
     display: flex;
     flex-direction: column;

@@ -2,6 +2,9 @@ import React from 'react';
 import Modal from 'react-awesome-modal';
 import './../css/Cards.css';
 import CardEnlarged from './CardEnlarged';
+import ReactDOM from 'react-dom';
+import CardDetail from './CardDetail';
+
 
 class SubCards extends React.Component {
 
@@ -56,15 +59,18 @@ class SubCards extends React.Component {
     }
 
     showCardPopup() {
-        this.setState({
+        /* this.setState({
             cardShow: true,
-        });
+        }); */
+
+        ReactDOM.render(<CardDetail cardInfo={this.props.info} />, document.getElementById('root'));
+
     }
 
     hideCardPopup() {
-        this.setState({
+        /* this.setState({
             cardShow: false,
-        });
+        }); */
         console.log('coming');
     }
 
@@ -94,12 +100,8 @@ class SubCards extends React.Component {
                 <img src={this.props.info.Pictures.Front
                     [Math.floor((Math.random() * 
                     this.props.info.Pictures.Front.length))]} 
-                    className="front-image"/>
+                    className="front-image" onClick={this.showCardPopup.bind(this)}/>
                     <div className="card-button">
-                        <button type="button" className="btn card-go-button"
-                        onClick={this.showCardPopup.bind(this)}>
-                            View
-                        </button>
                         <div className="modal-class">
                             <Modal visible={this.state.cardShow} border="1px solid blue" height="100%" width="800px"  
                             effect="fadeInUp" onClickAway={this.hideCardPopup.bind(this)}>

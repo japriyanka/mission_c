@@ -131,7 +131,7 @@ class SectionalPageHome extends React.Component {
                     </span>
                     <button type="button" className="btn btn-success 
                     add-button-section">
-                        + Add 
+                        + New 
                     </button>
                     <div className="empty-section">
                         <div className="options-list" hidden={this.state.popularShow}>
