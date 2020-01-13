@@ -1,0 +1,157 @@
+.star-rating-div {
+    margin-top: 2%;
+    height: 100%;
+    border: 1px solid white;
+    box-shadow: 10px 15px 8px #888888;
+    background-color: white;
+}
+
+.show-star-rating-head {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 25px;
+    padding-top: 2%;
+    padding-left: 2%;
+    padding-bottom: 0.02%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.show-star-rating-body {
+    margin: 0px;
+}
+
+.span-rating-name {
+    display: flex;
+    flex-basis: 85%;
+    flex-direction: column;
+    color: rgb(2, 48, 83);
+}
+
+.star-image-rating_ {
+    display: flex;
+    flex-grow: 1;
+    margin-left: 1%;
+    margin-top: 1%;
+
+}
+
+.star-image-average {
+    display: flex;
+    flex-direction: column;
+    flex-basis:5%;
+    text-align: -webkit-right;
+
+}
+
+.star-image_ {
+    height: 20px;
+    width: 20px;
+    background-color: transparent;
+}
+
+.rating-system_ {
+    display: flex;
+    padding: 2%;
+    justify-content: center;
+}
+
+.text-but_ {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1%;
+    font-weight: bold;
+    justify-content: center;
+}
+
+
+.not-satisfied-rating {
+    font-size: 12px;
+}
+
+.satisfied-rating {
+    margin-left: 1%;
+    font-size: 12px;
+}
+
+.neutral-rating {
+    margin-left: 1%;
+    font-size: 12px;
+}
+
+
+.good-rating {
+    margin-left: 1%;
+    font-size: 12px;
+}
+
+.excellent-rating {
+    margin-left: 1%;
+    font-size: 12px;
+}
+
+.submit-button-star {
+    margin: 0px;
+    display: flex;
+    padding: 2%;
+    justify-content: center;
+}
+
+.user-rating-card {
+    padding: 0.5%;
+}
+.comment-section {
+    padding: 1%;
+    margin-left: 1%;
+}
+
+.value-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 1%;
+}
+
+.rating-number {
+    display: flex;
+    flex-basis: 10%;
+    flex-direction: column;
+}
+
+.rating-bar {
+    display: flex;
+    flex-basis: 60%;
+    background-color: #e2dddd;
+}
+
+
+
+.rating-scale-5 {
+    background-color: green;
+    width: 80%;
+}
+
+.rating-scale-4 {
+    background-color: blue;
+    width: 70%;
+}
+
+.rating-scale-3 {
+    background-color: yellow;
+    width: 50%;
+}
+
+.rating-scale-2 {
+    background-color: grey;
+    width: 20%;
+}
+
+.rating-scale-1 {
+    background-color: rgb(206, 95, 44);
+    width: 40%;
+}
+
+.rating-member-count {
+    display: flex;
+    flex-basis: 20%;
+    justify-content: center;
+}

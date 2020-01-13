@@ -15,6 +15,7 @@ import BeautyStars from 'beauty-stars';
 import message from './../image/message.png';
 import CardRating from './CardRating';
 import AvailableOffer from './AvailableOffer';
+import CardStarRating from './CardStarRating';
 /*
  * query command to search map
  * https://www.google.com/maps/search/?api=1&query=Hunter+%26+Barrel+-+Raine+Square+300+Murray+Street+6000+Perth 
@@ -241,13 +242,18 @@ class CardDetail extends React.Component {
                             </button>);
                         })}  
                     </div>
-                    
+
+                   
 
                     <div className="available-offer-show">
                         <AvailableOffer offerShow={this.props.cardInfo.Discount} />
                     </div>
+                    
+                    <div className="rating-system-card">
+                        <CardStarRating ratingShow={this.props.cardInfo.Rating} />
+                    </div>
 
-                    <div className="rating-system-show">
+                    <div className="review-system-show">
                         <CardRating showInfo={this.props.cardInfo.RatingComments}/>
                     </div>
 

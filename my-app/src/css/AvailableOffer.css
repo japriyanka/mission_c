@@ -17,6 +17,11 @@
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
+.celeb-image {
+    margin-left: 2%;
+    height: 30px;
+    width:30px;
+}
 
 .available-content-head-name {
     display: flex;

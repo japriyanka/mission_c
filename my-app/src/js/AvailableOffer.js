@@ -1,5 +1,6 @@
 import React from 'react';
 import './../css/AvailableOffer.css';
+import celebration from './../image/celebration.jpg';
 
 class AvailableOffer extends React.Component {
     render() {
@@ -8,6 +9,8 @@ class AvailableOffer extends React.Component {
                 <div className="available-content-head">
                     <span className="available-content-head-name">
                         Today's Deals
+                        <img src={celebration} className="celeb-image">
+                        </img>
                     </span>
                     <div className="map-go">
                         <button type="button" className="btn btn-success">
@@ -31,7 +34,6 @@ class AvailableOffer extends React.Component {
                                      Redeem
                                  </button>
                             </div>
-                            <hr  className="line-show-but"/>                              
                         </div>)
                     })}
 
