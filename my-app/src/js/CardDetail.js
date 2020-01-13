@@ -241,6 +241,7 @@ class CardDetail extends React.Component {
                             </button>);
                         })}  
                     </div>
+                    
 
                     <div className="available-offer-show">
                         <AvailableOffer offerShow={this.props.cardInfo.Discount} />
