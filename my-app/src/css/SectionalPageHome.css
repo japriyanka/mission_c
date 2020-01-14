@@ -44,8 +44,11 @@
     flex-basis: 98%;
     background-color: white;
     border-radius: 10px;
+}
 
-
+.line {
+    width: 80%;
+    padding: 1%;
 }
 
 .right-bar {

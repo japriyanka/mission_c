@@ -205,7 +205,5 @@
     flex-direction: column;
     flex-basis: 10%;
     padding: 1%;
-}
-
-.dropdown-toggle {
+    border-radius: 25%;
 }
