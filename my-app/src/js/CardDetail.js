@@ -16,6 +16,7 @@ import message from './../image/message.png';
 import CardRating from './CardRating';
 import AvailableOffer from './AvailableOffer';
 import CardStarRating from './CardStarRating';
+import OpeningHours from './OpeningHours';
 /*
  * query command to search map
  * https://www.google.com/maps/search/?api=1&query=Hunter+%26+Barrel+-+Raine+Square+300+Murray+Street+6000+Perth 
@@ -244,9 +245,12 @@ class CardDetail extends React.Component {
                     </div>
 
                    
-
                     <div className="available-offer-show">
                         <AvailableOffer offerShow={this.props.cardInfo.Discount} />
+                    </div>
+
+                    <div className="opening-hours-show">
+                        <OpeningHours hourShow={this.props.cardInfo.OpeningHours} />
                     </div>
                     
                     <div className="rating-system-card">

@@ -1,0 +1,70 @@
+.opening-hour-main-content {
+    margin-top: 2%;
+    height: 100%;
+    border: 1px solid white;
+    box-shadow: 10px 15px 8px #888888;
+    background-color: white;
+}
+
+.opening-hour-main-content-head {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 25px;
+    padding-top: 2%;
+    padding-left: 2%;
+    padding-bottom: 0.02%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.span-opening-name {
+    display: flex;
+    flex-basis: 80%;
+    flex-direction: column;
+    color: rgb(2, 48, 83);
+}
+
+.status-opening-hours {
+    display: flex;
+    flex-grow: 1;
+    font-size: 12px;
+}
+
+.but-opening-hours {
+    padding: 5%;
+    width: 70%;
+    text-align: -webkit-center;
+    color: black;
+    background-color: yellow;
+    border-radius: 5px;
+}
+.opening-hour-main-content-body-1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 2%;
+}
+
+.opening-hour-main-content-body {
+    display: flex;
+    padding: 2%;
+    flex-basis: 13%;
+    flex-direction: column;
+}
+
+.time-show-body {
+    padding: 2%;
+    text-align: -webkit-center;
+}
+
+.active {
+    background-color: rgb(226, 238, 246);
+    color: black;
+    height: 80%;
+}
+.show-body-span {
+    font-size: 15px;
+}
+
+.show-time-div {
+
+}

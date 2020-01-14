@@ -146,8 +146,8 @@ class SubCards extends React.Component {
             <button type="button" className="btn btn-success"
             onClick={this.showCardPopup.bind(this)}>
                     {this.props.info.Discount.length} 
-                    {' '} Offer {this.props.info.Discount.length > 1 ? 's': ''} 
-                    Available
+                    {' '} Offer{this.props.info.Discount.length > 1 ? 's': ''} 
+                    {' '}Available
             </button>
         </div>
     

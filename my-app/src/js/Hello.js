@@ -6,6 +6,8 @@ import TopDeals from './TopDeals';
 import go from './../image/blue-logo-flame.svg';
 import Modal from 'react-awesome-modal';
 import home from './../image/home.png';
+import Dropdown from 'react-bootstrap/Dropdown';
+
 import {
   BrowserRouter,
   Link,
@@ -51,6 +53,52 @@ class Hello extends React.Component {
               <button className="btn-primary-home">Home</button>
               <button className="btn-primary-contact">Contact</button>
               <button className="btn-primary-contact">Blog</button>
+          </div>
+
+          <div className="show-top-search-bar">
+            <div className="top-content-bar">
+              <div className="top-content-bar-head">
+              Discover the top deals for restaurants & groceries near your place
+            </div>
+            </div>
+            <div className="top-content-search-bar">
+              <div className="search-bar">
+                <div className="dropdown-categories_">
+                  <Dropdown>
+                      <Dropdown.Toggle variant="success">
+                          Location
+                      </Dropdown.Toggle>
+                      
+                      <Dropdown.Menu>
+                        <Dropdown.Item href="/Home">Canberra</Dropdown.Item>
+                        <hr></hr>
+                        <Dropdown.Item href="/Home">Sydney</Dropdown.Item><hr></hr>
+                        <Dropdown.Item href="/Home">Brisbane</Dropdown.Item>
+                      </Dropdown.Menu>
+                  </Dropdown>
+                </div>
+                <div className="dropdown-categories_">
+                  <Dropdown>
+                      <Dropdown.Toggle variant="success">
+                          Cuisine
+                      </Dropdown.Toggle>
+                      
+                      <Dropdown.Menu>
+                        <Dropdown.Item href="/Home">Indian</Dropdown.Item>
+                        <hr></hr>
+                        <Dropdown.Item href="/Home">Thai</Dropdown.Item><hr></hr>
+                        <Dropdown.Item href="/Home">Korean</Dropdown.Item>
+                      </Dropdown.Menu>
+                  </Dropdown>
+                </div>
+                <input type="text" className="search-bar-1"></input>
+                <button type="button" className="btn btn-primary search-button_">
+                  Grab deals!!
+                </button>
+              </div>
+             
+              
+            </div>
           </div>
 
           <div className="app">
