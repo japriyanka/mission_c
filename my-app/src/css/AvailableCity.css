@@ -1,0 +1,43 @@
+.available-city-full-body {
+    margin-top: 4%;
+    height: 100%;
+    border: 1px solid white;
+    background-color: white;
+    color: black;
+    width: 70%;
+    margin-left: 15%;
+    box-shadow: 10px 15px 8px #888888;
+}
+
+.available-city-head {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.available-city-names {
+    color: #008CEE;
+    font-family: Raleway;
+    font-size: 30px;
+    flex-basis: 70%;
+}
+
+.see-all-text {
+    margin-top: 1.5%;
+    flex-basis: 7%;
+    color: #008CEE;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+
+.see-all {
+    margin-top: 1%;
+    flex-basis: 5%;
+}
+.see-all-but {
+    background-color: white;
+    border: 1px solid #008CEE;
+    color: #008CEE;
+    font-size: 20px;
+    width: 50px;
+    border-radius: 5px;
+}
