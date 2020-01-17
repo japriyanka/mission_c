@@ -33,6 +33,8 @@
     font-size: 30px;
     flex-basis: 90%;
     padding-left: 50%;
+    text-shadow: 0.5px 0.5px 0.5px #888888;
+
 }
 
 .line-show-dis {
@@ -44,6 +46,7 @@
 
 .discover-entire-body-bottom {
     padding: 2%;
+
 }
 
 .discover-entire-body-bottom-search {

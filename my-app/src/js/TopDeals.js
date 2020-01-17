@@ -33,33 +33,43 @@ class TopDeals extends React.Component {
     }
 
     handleClick() {
-        const json_data = {
-            'name': 'Taj Agra',
-            'address': {
-                'street': '119 Brigalow Street',
-                'suburb': 'Lyneham',
-                'state': 'ACT',
-                'country': 'Australia',
-                'postcode': '2602'
-            },
-        };
         /* Details passing from the  Top deals page to the Home page */
         ReactDOM.render(<Home dataPassing={this.state.top3D} />, document.getElementById('root'));
     }
 
     render() {
         return  (
-        <div>
-            <div className="topic"> Top Deals </div>
-            <div className="three_restuarants">
-                {this.state.top3D.map((top_3) => {
-                return <Top3 key={top_3.id} top3={top_3} />;
-                })};
+        <div className="top-deals-whole-body">
+            <div className="top-deals-head">
+                <div className="topic"> 
+                   {this.props.name}
+                </div>
+                <div className="see-all-text">
+                       NAVIGATE
+                    </div>
+                    <div className="see-all">
+                        <button type="button" className="see-all-but">
+                            <i className="fa fa-caret-left"></i>
+                        </button>
+                    </div>
+                    <div className="see-all">
+                        <button type="button" className="see-all-but">
+                            <i className="fa fa-caret-right"></i>
+                        </button>
+                    </div>
             </div>
-            <button className="btn btn-success get-started" onClick={this.handleClick}>
-                Know more
-            </button>
-        </div>);
+            <hr className="line-show"></hr>
+            <div className="three_restuarants_">
+                {this.state.top3D.map((top_3) => {
+                return (<Top3 key={top_3.id} top3={top_3} />)
+                })}
+            </div>
+            <div className="get-started">
+                <button className="but-started" onClick={this.handleClick}>
+                    Know more
+                </button>
+            </div>
+        </div>)
     }
 
 }

@@ -3,11 +3,10 @@ import './../css/Introduction.css';
 import go from './../image/symb.jpeg';
 import search from './../image/search.webp';
 import Discover from './Discover';
-import AvailableCity from './AvailableCity';
+import TopDeals  from './TopDeals';
 
 
-
-class Introduction extends React.Component {
+class IntroductionCity extends React.Component {
 
     constructor(props) {
         super(props);
@@ -65,15 +64,25 @@ class Introduction extends React.Component {
                     <div className="discover-intro-body">
                         <Discover />
                     </div>
-                    <div className="available-city-body">
-                        <AvailableCity />
-                    </div>
                     <div className="top-deals-body">
+                        <TopDeals name="Top Deals" />
 
                     </div>
+                    <div className="top-deals-body">
+                        <TopDeals name="Latest Offers" />
+
+                    </div>
+                    <div className="top-deals-body">
+                        <TopDeals name="Daily Offers" />
+
+                    </div>
+                    <div className="top-deals-body">
+                        <TopDeals name="Weekend exclusive offers" />
+                    </div>
+
                     
                 </div>
-                <div className="footer-body">
+                <div className="footer-body-city">
                     Mission C &copy; 2019
                 </div>
 
@@ -83,4 +92,4 @@ class Introduction extends React.Component {
 
 }
 
-export default Introduction;
+export default IntroductionCity;

@@ -7,9 +7,9 @@ class top3Deals extends React.Component {
             backgroundImage: `url('${this.props.top3.image}')`
         };
 
-        return (<div>
-            <div className="image-top" style={style}></div>
-        </div>); 
+        return (
+            <div className="image-top_" style={style}>
+            </div>); 
     }
 
 }

@@ -1,24 +1,26 @@
 .available-city-full-body {
     margin-top: 4%;
     height: 100%;
-    border: 1px solid white;
     background-color: white;
     color: black;
     width: 70%;
     margin-left: 15%;
-    box-shadow: 10px 15px 8px #888888;
+    box-shadow: 1px 1px 16px #888888;
 }
+
 
 .available-city-head {
     display: flex;
     flex-wrap: wrap;
+    padding: 0.5%;
 }
 
 .available-city-names {
     color: #008CEE;
     font-family: Raleway;
     font-size: 30px;
-    flex-basis: 70%;
+    flex-basis: 80%;
+    padding-left: 2%;
 }
 
 .see-all-text {
@@ -26,7 +28,13 @@
     flex-basis: 7%;
     color: #008CEE;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
 
+.line-show {
+    margin-top: 2%;
+    border: 1px solid black;
+    width: 90%;
+    opacity: 0.05;
 }
 
 .see-all {
@@ -40,4 +48,29 @@
     font-size: 20px;
     width: 50px;
     border-radius: 5px;
+}
+
+.available-body {
+    margin: 0px; 
+}
+
+.show-options-body {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1%;
+}
+
+.div-class-city-name {
+    height: 150px;
+    background-image: url('./../image/perth.jpeg');
+    background-position: top;
+    background-size: cover;
+    width: 20%;
+    margin:3%;
+    text-align: -webkit-center;
+    padding: 4%;
+    font-weight: bolder;
+    font-size: 35px;
+    border-radius: 10px;
+    color: white;
 }
