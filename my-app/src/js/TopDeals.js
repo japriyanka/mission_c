@@ -44,6 +44,21 @@ class TopDeals extends React.Component {
                 <div className="topic"> 
                    {this.props.name}
                 </div>
+                
+                <div className="topic-option">
+                    <button className="city-text-topic">
+                        Restaurant
+                        <i className="fa fa-caret-down"></i>
+                    </button>
+
+                    <div className="show-type-option">
+                        <a href="#" >Restaurant</a>
+                        <a href="#">Groceries</a>
+                    </div>
+                </div>
+                <div className="empty-topic">
+
+                </div>
                 <div className="see-all-text">
                        NAVIGATE
                     </div>
@@ -59,11 +74,13 @@ class TopDeals extends React.Component {
                     </div>
             </div>
             <hr className="line-show"></hr>
+
             <div className="three_restuarants_">
                 {this.state.top3D.map((top_3) => {
                 return (<Top3 key={top_3.id} top3={top_3} />)
                 })}
             </div>
+
             <div className="get-started">
                 <button className="but-started" onClick={this.handleClick}>
                     Know more

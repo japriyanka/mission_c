@@ -187,5 +187,81 @@
 
 .top-deals-body {
     margin: 0px; 
+}
 
+.mode-show {
+    display: none;
+    text-align: -webkit-right;
+}
+
+.popup-zone {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    width: 100%;
+}
+
+.blue-zone {
+    flex-basis: 40%;
+    background-color: rgb(74, 140, 184);
+    padding: 2%;
+}
+
+.blue-zone-heading {
+    margin-top: 25%;
+    margin-left: 5%;
+    width: 100%;
+    text-align: -webkit-left;
+    font-family: Raleway;
+    font-size: 35px;
+    color: white;
+    font-weight: bolder;
+}
+
+.blue-zone-description {
+    width: 100%;
+    text-align: -webkit-left;
+    margin-top: 15%;
+    margin-left: 5%;
+    font-size: 17px;
+    color: white;
+    word-wrap: break-word;
+}
+
+.close-but {
+    border: none;
+    color: white;
+    background-color: transparent;
+    width: 20%;
+    height: 40px;
+    font-weight: bold;
+    border-radius: 0px;
+}
+.outer-div {
+    background: transparent;
+}
+
+.close-but:hover {
+    border-bottom: 1px solid white;
+}
+ .login-signup-show {
+    flex-grow: 1;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.login-box {
+    height: 80%;
+}
+
+.create-signup-button {
+    height: auto;
+    padding: 2%;
+    font-weight: bold;
+    color: rgb(74, 140, 184);
+    text-align: -webkit-center;
+
+}
+
+.create-signup-button:hover {
+   color: blue;
 }

@@ -2,24 +2,26 @@ import React from 'react';
 import './../css/Login.css';
 
 class Login extends React.Component {
+
     render() {
         const title = 'Sarvesh';
-        return <div className="login-box">
-            <div className="text-already">
-                Already have an account? Login here
-            </div>
-            <div className="split-textbox">
+        return (
+        <div className="login-box">
+            <div className="text-box-name-box">
                 <input type="text" className="text-box-name" 
-                placeholder=" Enter your email address" id="email"></input>
-                <input type="password" className="text-box-email" 
-                placeholder=" Enter your password" id="pass"></input>
-                <button type="submit" className="btn-primary-cancel-login">
-                    CANCEL
-                </button>
+                placeholder=" Enter your email address" 
+                id="email_id"></input>
+            </div>
+            <div className="text-box-name-box">
+                <input type="password" className="text-box-name" 
+                placeholder=" Enter your password" 
+                id="password_id"></input>
+            </div>
+            <div className="buttons-login">
                 <button type="submit" className="btn-primary-login" 
                 title="Implement login">LOGIN</button>
             </div>
-        </div>;
+        </div>);
     }
 }
 

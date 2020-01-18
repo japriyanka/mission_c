@@ -1,128 +1,47 @@
 .signup-box {
-    display: flex;
     flex-wrap: wrap;
     height: 100%;
     width: 100%;
 }
 
-.splittextbox {
-    margin-left: 4%;
-
-}
-
-.text-already {
-    font-weight: bold;
-    font-size:30px;
-    color: #008ECC;
-    border: 0px solid white;
-}
-
 .name {
-    margin-top: 3%;
     width: 100%;
-    height: 50px;
+    padding: 2%;
+    margin-top: 1%;
 }
 
 .text-box-first-name {
-    border: 1px solid gray;
-    width:45%;
-    margin-left: 2%;
-    height:100%;
-    font-size:18px;
-    border-radius: 5px;
-    text-align: center;
-}
-
-.text-box-last-name {
-    border: 1px solid gray;
-    margin-left:2%;
-    width:45%;
-    height:100%;
-    font-size:18px;
-    border-radius: 5px;
-    text-align: center;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #e8e8e8;
+    height: 40px;
+    text-decoration-style: double;
 }
 
 .text-box-signup-email {
-    border: 1px solid gray;
-    margin-left:2%;
-    margin-top:3%;
-    width:92%;
-    height:9%;
-    font-size:18px;
-    border-radius: 5px;
-    text-align: center;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #e8e8e8;
+    height: 40px;
+    text-decoration-style: double;
 }
 
-.text-box-signup-dob {
-    border: 1px solid gray;
-    margin-left:2%;
-    margin-top:3%;
-    width:92%;
-    height:9%;
-    font-size:18px;
-    border-radius: 5px;
-    text-align: center;
-}
 
 .text-box-signup-pass {
-    border: 1px solid gray;
-    margin-left:2%;
-    margin-top:3%;
-    width:92%;
-    height:9%;
-    font-size:18px;
-    border-radius: 5px;
-    text-align: center;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #e8e8e8;
+    height: 40px;
+    text-decoration-style: double;
 }
 
-.text-box-signup-pass-confirm {
-    border: 1px solid gray;
-    margin-left:2%;
-    margin-top:3%;
-    width:92%;
-    height:9%;
-    font-size:18px;
-    border-radius: 5px;
-    text-align: center;
+.terms-conditions {
+    font-size: 12px;
 }
-
 .btn-primary-signup {
-    margin-top: 5%;
-    margin-left: 3%;
-    background-color: white;
-    color: #008ECC;;
-    height: 8%;
-    width:30%;
-    font-size: 18px;
+    width: 100%;
+    color: white;
+    background-color: rgb(50, 156, 50);
     border-radius: 10px;
-}
-
-.btn-primary-cancel {
-    margin-top: 5%;
-    margin-left: 30%;
-    background-color: white;
-    color:#008ECC;
-    height: 8%;
-    width:30%;
-    font-size: 18px;
-    border-radius: 10px;
-}
-
-.button-flex {
-   margin: 0px;
-}
-
-.result-show {
-    margin-top: 5%;
-    margin-left: 5%;
-    width:80%;
-    border-radius: 10px;
-    background-color: green;
-    color:white;
-}
-
-.display-result {
-    margin-top: 10%;
-    margin-left: 30%;
+    height: 35px;
 }

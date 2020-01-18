@@ -60,7 +60,7 @@ class AvailableCity extends React.Component {
                             'color': 'white',
                             'backgroundImage': `url(${image})`,
                         };
-                        return (<div style={sectionStyle} onClick={this.changeBasedOnCity.bind(this)}>
+                        return (<div style={sectionStyle}  key={index} onClick={this.changeBasedOnCity.bind(this)}>
                             {cityName}
                         </div>);
                     })}
