@@ -1,7 +1,6 @@
 import React from 'react';
 import './../css/DealsBar.css';
 import { Carousel } from 'react-responsive-carousel';
-import Cards from './Cards';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 

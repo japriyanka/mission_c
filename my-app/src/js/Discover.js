@@ -34,7 +34,7 @@ class Discover extends React.Component {
                             </div>
                        </div>
                        <div className="dropdown-box-cuisine">
-                            <button className="city-text">Place
+                            <button className="city-text">Suburb
                             <i className="fa fa-caret-down"></i>
                             </button>
 

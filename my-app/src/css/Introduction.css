@@ -10,9 +10,9 @@
     height: 50px;
     background-color: rgb(74, 140, 184);
     bottom: 0;
-    position: fixed;
     left: 0;
-    display: flex-end;
+    position: fixed;
+    overflow: hidden;
     text-align: -webkit-center;
     color: white;
     padding: 1%;
