@@ -59,19 +59,20 @@ class TopDeals extends React.Component {
                 <div className="empty-topic">
 
                 </div>
+                
+                <div className="see-all" title="scroll left">
+                    <button type="button" className="see-all-but">
+                        <i className="fa fa-caret-left"></i>
+                    </button>
+                </div>
                 <div className="see-all-text">
                        NAVIGATE
-                    </div>
-                    <div className="see-all">
-                        <button type="button" className="see-all-but">
-                            <i className="fa fa-caret-left"></i>
-                        </button>
-                    </div>
-                    <div className="see-all">
-                        <button type="button" className="see-all-but">
-                            <i className="fa fa-caret-right"></i>
-                        </button>
-                    </div>
+                </div>
+                <div className="see-all" title="scroll right">
+                    <button type="button" className="see-all-but">
+                        <i className="fa fa-caret-right"></i>
+                    </button>
+                </div>
             </div>
             <hr className="line-show"></hr>
 
@@ -82,8 +83,9 @@ class TopDeals extends React.Component {
             </div>
 
             <div className="get-started">
-                <button className="but-started" onClick={this.handleClick}>
-                    Know more
+                <button className="but-started" title="grab more offers" 
+                onClick={this.handleClick}>
+                    Grab more offers...
                 </button>
             </div>
         </div>)

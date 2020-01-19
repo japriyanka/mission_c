@@ -66,16 +66,17 @@ class AvailableCity extends React.Component {
                     <div className="available-city-names">
                         Available Cities
                     </div>
-                    <div className="see-all-text">
-                       NAVIGATE
-                    </div>
-                    <div className="see-all">
+                   
+                    <div className="see-all" title="scroll left">
                         <button type="button" className="see-all-but"
                         onClick={this.scrollLeft.bind(this)}>
                             <i className="fa fa-caret-left"></i>
                         </button>
                     </div>
-                    <div className="see-all">
+                    <div className="see-all-text">
+                       NAVIGATE
+                    </div>
+                    <div className="see-all" title="scroll right">
                         <button type="button" className="see-all-but"
                         onClick={this.scrollRight.bind(this)}>
                             <i className="fa fa-caret-right" 
@@ -103,7 +104,7 @@ class AvailableCity extends React.Component {
                                 'margin':'1%',
                                 'textAlign': '-webkit-center',
                                 'padding': '4%',
-                                'fontWeight': 'bolder',
+                                'fontWeight': 'bold',
                                 'fontSize': '35px',
                                 'borderRadius': '10px',
                                 'color': 'white',
@@ -111,7 +112,7 @@ class AvailableCity extends React.Component {
                             };
                             return (<div style={sectionStyle} key={index} 
                             title={cityName} onClick={this.changeBasedOnCity.bind(this)}>
-                                {cityName}
+                                <i>{cityName}</i>
                             </div>);
                         })}
 
