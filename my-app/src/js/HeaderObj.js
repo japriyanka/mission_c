@@ -5,6 +5,8 @@ import search from './../image/search.webp';
 import Modal from 'react-awesome-modal';
 import Login from './Login';
 import SignUp from './signUp';
+import ReactDOM from 'react-dom';
+import Introduction from './Introduction';
 
 
 
@@ -61,18 +63,22 @@ class HeaderObj extends React.Component {
         });
     }
 
+    goHome() {
+        ReactDOM.render(<Introduction />, document.getElementById('root'));
+    }
 
     render() {
         return (
                 <div className="introduction-page-head">       
                     <div className="empty-section">
                     </div>
-                    <div className="introduction-head-image_">
+                    <div className="introduction-head-image_" onClick={this.goHome.bind(this)}
+                    title="Return to home page">
                         <img alt="logo image" src={go} className="logo-image">
-
                         </img>
                     </div>
-                    <div className="introduction-head-name">
+                    <div className="introduction-head-name" onClick={this.goHome.bind(this)}
+                    title="Return to home page">
                         Mission C
                         <span className="top">Offers for you!!!</span>
                     </div>
