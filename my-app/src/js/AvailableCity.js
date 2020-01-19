@@ -86,35 +86,34 @@ class AvailableCity extends React.Component {
                 <hr className="line-show"></hr>
                 <div className="available-body" id="available-body">
                     <div className="show-options-body" id="show-options-body_">
-                    
-                   
-                    {listNames.map((cityName, index) => {
-                        let image = '';
-                        if (cityName === 'Canberra') {
-                            image = 'http://localhost/image/canberra.jpeg';
-                        } else if (cityName === 'Perth') {
-                            image = 'http://localhost/image/perth.jpeg';
-                        } else  if (cityName === 'Sydney') {
-                            image = 'http://localhost/image/sydney.jpeg';
-                        }
-                        var sectionStyle = {
-                            'height': '150px',
-                            'backgroundPosition': 'top',
-                            'backgroundSize': 'cover',
-                            'width': '20%',
-                            'margin':'3%',
-                            'textAlign': '-webkit-center',
-                            'padding': '4%',
-                            'fontWeight': 'bolder',
-                            'fontSize': '35px',
-                            'borderRadius': '10px',
-                            'color': 'white',
-                            'backgroundImage': `url(${image})`,
-                        };
-                        return (<div style={sectionStyle}  key={index} onClick={this.changeBasedOnCity.bind(this)}>
-                            {cityName}
-                        </div>);
-                    })}
+                        {listNames.map((cityName, index) => {
+                            let image = '';
+                            if (cityName === 'Canberra') {
+                                image = 'http://localhost/image/canberra.jpeg';
+                            } else if (cityName === 'Perth') {
+                                image = 'http://localhost/image/perth.jpeg';
+                            } else  if (cityName === 'Sydney') {
+                                image = 'http://localhost/image/sydney.jpeg';
+                            }
+                            var sectionStyle = {
+                                'height': '150px',
+                                'backgroundPosition': 'top',
+                                'backgroundSize': 'cover',
+                                'width': '20%',
+                                'margin':'1%',
+                                'textAlign': '-webkit-center',
+                                'padding': '4%',
+                                'fontWeight': 'bolder',
+                                'fontSize': '35px',
+                                'borderRadius': '10px',
+                                'color': 'white',
+                                'backgroundImage': `url(${image})`,
+                            };
+                            return (<div style={sectionStyle} key={index} 
+                            title={cityName} onClick={this.changeBasedOnCity.bind(this)}>
+                                {cityName}
+                            </div>);
+                        })}
 
                     </div>
 

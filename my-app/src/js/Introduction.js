@@ -18,8 +18,22 @@ class Introduction extends React.Component {
                     <div className="available-city-body">
                         <AvailableCity />
                     </div>
-                    <div className="top-deals-body">
+                    <div className="register-business">
+                        <div className="register-business-head">
+                            Own a business ? Register here
+                        </div>
+                        <div className="register-business-body">
+                            <p>
+                                Get access to reach more customers near your business without much efforts and advertisements.
+                                We help you advertise your offers to customers and bring them to you. Want to more know ? 
+                                Connect with us 
+                            </p>
+                            <button type="button" className="business-card">
+                                Add your business
+                            </button>
 
+                        </div>
+                        
                     </div>
                     
                 </div>
