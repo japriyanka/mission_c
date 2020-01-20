@@ -1,64 +1,56 @@
-.resturant-section_ {
-    margin-top: 2%;
-    margin-left: 1%;
-    margin-right: 2%;
-    height: 500px;
+.restaurant-section_ {
     width: 98%;
-    z-index: 10;
-    border: 1px solid #008ECC;
-    border-radius: 10px;
-}
-
-
-.resturant-heading {
-    display: flex;
-    flex-wrap: wrap;
-    height: 60px;
-    background-color:#008ECC;
-    border-bottom: 1px solid #008ECC;
-    border-radius: 10px;
-}
-
-.resturant-name {
-    margin-top: 0.5%;
     margin-left: 1%;
-    margin-right: 1%;
+    height: 100%;
+    margin-top: 3%;
+    box-shadow: 1px 2px 30px grey;
+}
+
+
+.resturant-heading_ {
+    display: flex;
+    height: 100%;
+    padding: 1%;
+    background-color:rgb(74, 140, 184);
+    padding-bottom: 1%;
+
+}
+
+.resturant-name_ {
     display:flex;
     flex-basis: 30%;
     color:white;
-    font-weight: bold;
-    font-size: 25px;
+    font-size: 30px;
+    font-family: Raleway;
+
     flex-direction: column;
 }
 
 .search-restuarant {
     display:flex;
-    margin-top: 0.5%;
     flex-basis: 40%;
     height: 40px;
-    font-size: 25px;
+    font-size: 17px;
     flex-wrap: wrap;
-    border-radius: 5px;
     background-color:white;
     flex-direction: column;
 
 }
 
-.categories {
+.categories_ {
     display: flex;
     flex-direction: column;
     flex-basis: 5%;
     height: 100%;
     margin-top: 0.5%;
-    width: 10%;
-    border-radius: 10px;
+    width: 20%;
+    color: white;
     font-size: 25px;
     font-weight: bold;
 }
 
 .dropdown-toggle {
     height: 40px;
-    border-radius: 0px;
     font-size: 20px;
 }
 
@@ -87,20 +79,27 @@
     width: 70px;
 }
 
-.view-all {
-    margin-top: 0.5%;
+.view-all-but {
     display:flex;
-    vertical-align: -webkit-center;
-    font-size: 22px;
-    flex-basis: 7%;
+    flex-basis: 8%;
     height: 40px;
-    margin-left: 20px;
-    flex-direction: column;
-    background-color: #008ECC;
-    color: white;
-    border: 2px solid white;
-    border-radius: 5px;
+    font-size: 20px;
+    margin-left: 3%;
     text-align: -webkit-center;
+}
+
+.view-all_ {
+    width: 80%;
+    padding: 0%;
+    color: white;
+    background-color: rgb(74, 140, 184);
+    border: none;
+
+}
+
+.view-all_:hover {
+    opacity: 1.0;
+    font-weight: bold;
 }
 
 .restuarant-cardspace {
@@ -127,7 +126,7 @@
 }
 
 .left-indicator {
-    margin-top: 1%;
+    margin-top: 3%;
     display: flex;
     flex-basis: 3%;
 }
@@ -141,8 +140,8 @@
 }
 
 .right-indicator {
-    margin-top: 1%;
+    margin-top: 3%;
     display: flex;
     flex-grow:1;
-
 }
+

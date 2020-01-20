@@ -21,6 +21,7 @@ import { DropdownButton, MenuItem } from 'react-bootstrap';
 import HomeDD from './HomeDD';
 import Restuarants from './Restuarants';
 import Groceries from './Groceries';
+import HeaderObj from './HeaderObj';
 
 
 class Home extends React.Component {
@@ -33,25 +34,24 @@ class Home extends React.Component {
         super(props);
     }
 
+    //                 <DealsBar data={this.props.dataPassing} />
+
     render() {
         return (
             <div className="main-home" id="main-home">
                 <div className="tool-bar">
-                    <ToolBar name="Guest" />
-                </div>
-                <div className="deals-bar">
-                    <br></br>
-                    <DealsBar data={this.props.dataPassing} />
+                    <HeaderObj />
                 </div>
                 <div className="options-bar">
                     <HomeDD />
                 </div>
-                <div className="restuarant">
+                <div className="restaurant">
                     <Restuarants dealsInfo={this.props.dataPassing} />
                 </div>
                 <div className="groceries">
                     <Groceries />
                 </div>
+
             </div>
         );
     }

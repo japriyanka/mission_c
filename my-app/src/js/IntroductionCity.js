@@ -1,7 +1,5 @@
 import React from 'react';
 import './../css/Introduction.css';
-import go from './../image/symb.jpeg';
-import search from './../image/search.webp';
 import Discover from './Discover';
 import TopDeals  from './TopDeals';
 import HeaderObj from './HeaderObj';

@@ -31,11 +31,8 @@ class Introduction extends React.Component {
                             <button type="button" className="business-card">
                                 Add your business
                             </button>
-
                         </div>
-                        
                     </div>
-                    
                 </div>
                 <div className="footer-body">
                     Mission C &copy; 2019

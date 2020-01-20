@@ -29,22 +29,22 @@ class HomeDD extends React.Component {
             <div className="dropdownBox">
                 <div className="dropdownBox1">
                     <div className="enclosing-options">
-                        <button type="button" className="btn btn-primary option" 
+                        <button type="button" className="option" 
                         title="click here to scroll top" 
-                        onClick={this.scrollDownToRestuarant}>  All (10) </button>
-                    </div>                
+                        onClick={this.scrollDownToRestuarant}>  All (10)  </button>
+                    </div>               
                 </div>
                 <div className="dropdownBox2">
                     <div className="enclosing-options">
-                        <button type="button" className="btn btn-primary option" 
+                        <button type="button" className="option" 
                         title="click here to go to Restuarants section"
                         onClick={this.scrollDownToRestuarant}>  
-                        Resturants (8) </button>
+                        Restaurants (8) </button>
                     </div>                
                 </div>
                 <div className="dropdownBox3">
                 <div className="enclosing-options">
-                        <button type="button" className="btn btn-primary option" 
+                        <button type="button" className="option" 
                         title="click here to go to Groceries section"
                         onClick={this.scrollDownToGroceries}>  
                         Groceries (8)  </button>

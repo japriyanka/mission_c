@@ -66,7 +66,7 @@ class TopDeals extends React.Component {
                     </button>
                 </div>
                 <div className="see-all-text">
-                       NAVIGATE
+                       SEE ALL
                 </div>
                 <div className="see-all" title="scroll right">
                     <button type="button" className="see-all-but">

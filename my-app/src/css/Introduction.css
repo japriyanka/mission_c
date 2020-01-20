@@ -2,6 +2,7 @@
     height: 100%;
     width:100%;
     overflow: hidden;
+
 }
 
 .footer-body {
@@ -36,11 +37,14 @@
     background-color: rgb(74, 140, 184);
     display: flex;
     flex-wrap: wrap;
+
+
 }
 
 .introduction-head-image_ {
     display: flex;
     flex-direction: column;
+
 }
 
 .empty-section {
@@ -64,7 +68,7 @@
     margin-left: 1%;
     color: white;
     font-size: 40px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family:Raleway;
     text-align: -webkit-left;
 }
 

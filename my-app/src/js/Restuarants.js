@@ -10,7 +10,6 @@ import ReactDOM from 'react-dom';
 import left from './../image/left.png';
 import right from './../image/right.png';
 import SectionalPageHome from './SectionalPageHome';
-import Hello from './Hello';
 
 
 class Restuarants extends React.Component {
@@ -47,12 +46,12 @@ class Restuarants extends React.Component {
 
     render() {
         return (
-        <div className="resturant-section_">
-            <div className="resturant-heading">
-               <span className="resturant-name">
-                   Restuarants
+        <div className="restaurant-section_">
+            <div className="resturant-heading_">
+               <span className="resturant-name_">
+                   Restaurants
                 </span> 
-                <div className="categories">
+                <div className="categories_">
                     <Dropdown className="dropdown-categories">
                         <Dropdown.Toggle variant="success">
                             Cuisine
@@ -69,13 +68,17 @@ class Restuarants extends React.Component {
                 <div className="search-restuarant">
                     <input type="text" className="search-text_" placeholder="search content here">    
                     </input>
-                    
                     <img src={search} className="search-item" />
                 </div>
-                <button type="button" className="view-all"
-                onClick={this.passToSectionalPage}>
-                    View all
-                </button>
+                <div className="view-all-but">
+                    <button type="button" className="view-all_"
+                    onClick={this.passToSectionalPage}
+                    title="visit all">
+                        <i className="fa fa-caret-top jik"></i>
+                        View all
+                    </button>
+                </div>
+              
             </div>
 
            <div className="restuarant-cardspace" id="restuarant-cardspace">

@@ -1,10 +1,12 @@
 .deals {
-    display: flex;
-    background-position: top;
-    background-position: cover;
-    height: 350px;
-    width: 100px;
-    align-content: center;
-    flex-wrap: wrap;
+    height: 20px;
+}
 
+.deals-full-body {
+    width: 100%;
+    
+}
+
+.sliding-window {
+ 
 }
