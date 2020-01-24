@@ -15,9 +15,26 @@
 }
 
 .options-bar {
+    display: flex;
+    flex-wrap: wrap;
     width: 100%;
 }
 
+
+.column-first {
+    flex-basis: 15%;
+}
+
+.column-second {
+    flex-grow: 1;
+    display: block;
+    flex-direction: column;
+}
+
 .restaurant {
-   width: 100%; 
+   width: 80%; 
+}
+
+.groceries {
+    width: 80%;
 }

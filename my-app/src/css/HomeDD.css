@@ -1,33 +1,30 @@
+/*
 .dropdownBox {
-    justify-content: center;
     width: 100%;
     height: 50px;
     display: flex;
-    background-color: rgb(74, 140, 184);
+    background-color: rgb(221, 234, 243);
 }
 
 .dropdownBox1{
+    margin-left: 15%;
     display: flex;
-    flex-basis: 17%;
     flex-direction: column;
 }
 
 .dropdownBox2 {
     display: flex;
-    flex-basis: 17%;
     flex-direction: column;
 }
 .enclosing-options {
     width: 100%;
     text-align: -webkit-center;
-    background-color: rgb(74, 140, 184);
 }
 
 .option {
     color: white;
     padding: 1%;
     border: none;
-    background-color: rgb(74, 140, 184);
 }
 
 .option:hover {
@@ -37,6 +34,95 @@
 
 .dropdownBox3 {
     display: flex;
-    flex-basis: 16%;
     flex-direction: column;
+}
+
+*/
+
+.home-dd-full {
+    width: 15%;
+    position: fixed;
+    height: 100%;
+
+}
+
+.home-dd-first-box {
+    margin: 0px;
+}
+
+.name-box {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: -webkit-center;
+    padding: 4%;
+}
+
+.image-name-box {
+    flex-basis: 20%;
+    height: 40px;
+    color: white;
+    padding:1%;
+    margin-top: 2%;
+}
+
+.image-src {
+    background-image: url('./../image/profile.jpg');
+    border-radius: 50%;
+    height:50px;
+    width:50px;
+    background-position: top;
+    background-size: cover;
+}
+
+.name-in-name-box {
+    flex-basis: 70%;
+    padding: 1%;
+    margin-top: 2%;
+    font-size: 1.0em;
+    color: rgb(0, 0, 0);
+    word-wrap: break-word;
+}
+
+.login-button-box {
+    width: 100%;
+    padding: 2%;
+}
+
+.but-login {
+    height: 40px;
+    width: 100%;
+    padding: 1%;
+    font-size: 1.1em;
+    color: white;
+    border-color: 1px solid #008CEE;
+    background-color: #00a8ad;
+    margin: none;
+    border-radius: 10px;
+}
+
+.option:hover {
+    background-color: whitesmoke;
+    font-weight: bold;
+    border-left: 5px solid rgb(74, 140, 184);
+}
+
+.dd-options-available {
+    padding: 1%;
+    margin-top: 10%;
+}
+
+.enclosing-options {
+    width: 100%;
+    margin-left: 5%;
+
+}
+
+.option {
+    height: 40px;
+    width: 90%;
+    font-size: 1.0em;
+    color: black;
+    text-align: -webkit-left;
+    background-color: transparent;
+    border: none;
 }
