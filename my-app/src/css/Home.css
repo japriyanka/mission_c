@@ -28,13 +28,12 @@
 .column-second {
     flex-grow: 1;
     display: block;
-    flex-direction: column;
 }
 
 .restaurant {
-   width: 80%; 
+   width: 98%;
 }
 
 .groceries {
-    width: 80%;
+    width: 98%;
 }

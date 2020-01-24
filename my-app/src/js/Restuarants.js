@@ -48,10 +48,36 @@ class Restuarants extends React.Component {
         return (
         <div className="restaurant-section_">
             <div className="resturant-heading_">
-               <span className="resturant-name_">
+               <div className="resturant-name_">
                    Restaurants
-                </span> 
-                <div className="categories_">
+                </div> 
+                <div className="view-all-but">
+                    <button type="button" className="view-all_"
+                    onClick={this.passToSectionalPage}
+                    title="visit all">
+                        View more
+                    </button>
+                </div>
+              
+            </div>
+
+           <div className="restuarant-cardspace" id="restuarant-cardspace">
+              
+               <div className="center-cards">
+                   <Cards cardInfo={this.state.restuarants} />
+               </div>
+              
+           </div>
+        </div>
+        );
+    }
+}
+
+export default Restuarants;
+
+
+/*
+<div className="categories_">
                     <Dropdown className="dropdown-categories">
                         <Dropdown.Toggle variant="success">
                             Cuisine
@@ -64,39 +90,4 @@ class Restuarants extends React.Component {
                             <Dropdown.Item href="/Home">Korean</Dropdown.Item>
                         </Dropdown.Menu>
                     </Dropdown>
-                </div> 
-                <div className="search-restuarant">
-                    <input type="text" className="search-text_" placeholder="search content here">    
-                    </input>
-                    <img src={search} className="search-item" />
-                </div>
-                <div className="view-all-but">
-                    <button type="button" className="view-all_"
-                    onClick={this.passToSectionalPage}
-                    title="visit all">
-                        <i className="fa fa-caret-top jik"></i>
-                        View all
-                    </button>
-                </div>
-              
-            </div>
-
-           <div className="restuarant-cardspace" id="restuarant-cardspace">
-               <div className="left-indicator">
-                   <img src={left} className="image-navigation-left">
-                   </img>
-               </div>
-               <div className="center-cards">
-                   <Cards cardInfo={this.state.restuarants} />
-               </div>
-               <div className="right-indicator">
-                   <img src={right} className="image-navigation-right">
-                   </img>
-               </div>
-           </div>
-        </div>
-        );
-    }
-}
-
-export default Restuarants;
+                </div>  */

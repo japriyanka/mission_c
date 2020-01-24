@@ -1,9 +1,8 @@
 .restaurant-section_ {
-    width: 100%;
     margin-left: 1%;
     height: 100%;
-    margin-top: 3%;
-    box-shadow: 1px 2px 30px grey;
+    width: 100%;
+    margin-top: 1%;
 }
 
 
@@ -11,94 +10,42 @@
     display: flex;
     height: 100%;
     padding: 1%;
-    background-color:rgb(74, 140, 184);
     padding-bottom: 1%;
+    background-color: whitesmoke;
 
 }
 
 .resturant-name_ {
     display:flex;
-    flex-basis: 30%;
-    color:white;
-    font-size: 30px;
+    flex-basis: 90%;
+    color:black;
+    font-size: 2.1em;
     font-family: Raleway;
-
     flex-direction: column;
 }
 
-.search-restuarant {
-    display:flex;
-    flex-basis: 40%;
-    height: 40px;
-    font-size: 17px;
-    flex-wrap: wrap;
-    background-color:white;
-    flex-direction: column;
 
-}
-
-.categories_ {
-    display: flex;
-    flex-direction: column;
-    flex-basis: 5%;
-    height: 100%;
-    margin-top: 0.5%;
-    width: 20%;
-    color: white;
-    font-size: 25px;
-    font-weight: bold;
-}
-
-.dropdown-toggle {
-    height: 40px;
-    font-size: 20px;
-}
-
-
-.search-text_ {
-    float: left;
-    color:white;
-    display: flex;
-    flex-direction: column;
-    border: none;
-    width: 92%;
-    text-align: left;
-    font-size: 20px;
-    color: black;
-    font-weight: light;
-    text-align: center;
-    height: 40px;
-}
-
-
-.search-item {
-    margin-right: 2%;
-    display: flex;
-    flex-direction: column;  
-    height: 40px;
-    width: 70px;
-}
 
 .view-all-but {
     display:flex;
-    flex-basis: 8%;
+    flex-grow: 1;
     height: 40px;
+    margin-top: 0.3%;
     font-size: 20px;
-    margin-left: 3%;
     text-align: -webkit-center;
 }
 
 .view-all_ {
-    width: 80%;
-    padding: 0%;
-    color: white;
-    background-color: rgb(74, 140, 184);
-    border: none;
-
+    width: 70%;
+    font-size: 0.7em;
+    padding: 1%;
+    color: black;
+    background-color: transparent;
+    border: 1px solid black;
+    border-radius: 4px;
 }
 
 .view-all_:hover {
-    opacity: 1.0;
     font-weight: bold;
 }
 
@@ -135,7 +82,7 @@
 .center-cards {
     margin-top: 1%;
     display: flex;
-    flex-basis: 94%;
+    flex-basis: 100%;
     flex-direction: column;
 }
 
