@@ -9,6 +9,7 @@ import right from './../image/right.png';
 import Cards from './Cards';
 import Ads from './Ads';
 import FilterByModal from './FilterByModal';
+import HeaderObj from './HeaderObj';
 
 class SectionalPageHome extends React.Component {
 
@@ -103,28 +104,76 @@ class SectionalPageHome extends React.Component {
         return (
             <div className="main-sectional-page-home">
                 <div className="tool-bar">
-                    <ToolBar name="Guest" />
+                    <HeaderObj />
                 </div>
-                <div className="options-bar">
-                    <SectionalPageHomeDD type={this.props.type} />
+                <div className="second-tool-bar">
+                    <div className="first-half-second-tool-bar">
+                        <div className="options-tool-bar-sub">
+                            <SectionalPageHomeDD />
+                        </div>
+                      
+                        <div className="top-deals-bar">
+                            <div className="deals-bar-title">
+                                Top 3 deals
+                            </div>
+                            <div className="deals-card-display">
+                                <DealsCard dealsInfo={this.props.dealsInfo} />
+                            </div>
+                        </div>
+                        <div className="options-tool-bar-sub">
+                            <SectionalPageHomeDD />
+                        </div>
+                        <div className="top-deals-bar">
+                            <div className="deals-bar-title">
+                               Restaurants
+                            </div>
+                            <div className="sort-by-options">
+                                <span className="font-span">
+                                    Sort by:
+                                </span>
+                                <div className="pop-but_">
+                                    popularity
+                                </div>
+                                <div className="options-but_">
+                                    price high to low
+
+                                </div>
+                                <div className="options-but_">
+                                    price low to high
+                                </div>
+                            </div>
+                            <div className="deals-card-display">
+                                <Cards cardInfo={this.state.restaurants} />
+                            </div>
+                        </div>
+                       
+                       
+                        
+                    </div>
+                    <div className="ads-zone">
+                        <Ads />
+                    </div>
                 </div>
-                <div className="scrollable-bar" id="scrollable-bar">
+            </div>
+              
+            );
+    }
+}
+
+export default SectionalPageHome;
+
+
+/**
+ *                             <DealsCard dealsInfo={this.props.dealsInfo} />
+
+ * <div className="scrollable-bar" id="scrollable-bar">
                     <span className="top-deals-name">
                         Top {this.props.type === 'r' ? 'Restaurants' : 'Groceries'}
                         {' '} Deals
                     </span>
-                    <div className="top-deals-bar">
-                        <div className="left-bar">
-                            <img src={left} className="left-image"/>
-                        </div>
-                        <div className="main-top-deals">
-                            <DealsCard dealsInfo={this.props.dealsInfo} />
-                        </div>
-                        <div className="right-bar">
-                            <img src={right} className="right-image"/>
-                        </div>
-                    </div>
                 </div>
+                <div className="sectional-second-half">
+                
                 <div className="restaurant-section-name">
                     <span className="section-name_r">
                         {this.props.type === 'r' ? 'Restaurants' : 'Groceries'}
@@ -195,10 +244,5 @@ class SectionalPageHome extends React.Component {
                         Clear & Close
                     </button>
                 </Modal>
-            </div>
-              
-            );
-    }
-}
-
-export default SectionalPageHome;
+                </div>
+ */

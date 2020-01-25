@@ -32,17 +32,17 @@
     height: 40px;
     margin-top: 0.3%;
     font-size: 20px;
-    text-align: -webkit-center;
 }
 
 .view-all_ {
-    width: 70%;
+    width: 100%;
     font-size: 0.7em;
     padding: 1%;
     color: black;
     background-color: transparent;
     border: 1px solid black;
     border-radius: 4px;
+
 }
 
 .view-all_:hover {
@@ -73,16 +73,32 @@
 }
 
 .left-indicator {
-    margin-top: 3%;
+    margin-top: 150px;
     display: flex;
-    flex-basis: 3%;
+    height: 40px;
 }
+
+.left {
+    color: black;
+    border-radius: 50%;
+    width:40px;
+    background-color: white;
+    margin: none;
+    border: 1px solid black;
+}
+
+.left:hover {
+    font-size: 1.5em;
+
+}
+
+
 
 
 .center-cards {
     margin-top: 1%;
     display: flex;
-    flex-basis: 100%;
+    flex-basis: 94%;
     flex-direction: column;
 }
 

@@ -16,6 +16,9 @@ class DealsCard extends React.Component {
                                     <div className="card-name-deals">
                                         {deals.name}
                                     </div>
+                                    <div className="offer-name-deals">
+                                        15% off
+                                    </div>
                                 </div>
                             </div>
                         </div>

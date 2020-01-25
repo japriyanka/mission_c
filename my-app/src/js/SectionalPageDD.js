@@ -11,35 +11,40 @@ class SectionalPageHomeDD extends React.Component {
 
     goToTopDeals() {
         const topDeals = document.getElementById('scrollable-bar');
-        topDeals.scrollIntoView({behavior: "smooth"});
+        // topDeals.scrollIntoView({behavior: "smooth"});
     }
 
     goToAll() {
         const restAd = document.getElementById('restaurant-ad-section');
-        restAd.scrollIntoView({behavior: "smooth"});
+        // restAd.scrollIntoView({behavior: "smooth"});
     }
 
     render() {
         return (
             <div className="top-heading-DD">
-                <div className="first-bar-DD">
-                    <button type="button" className="option-button"
+                <div className="bar-DD-heading">
+                    Options
+                </div>
+                <hr></hr>
+                
+                <div className="bar-DD">
+                    <button type="button" className="option-button_"
                     onClick={this.goToTopDeals} >
                         Top Deals
                     </button>
                 </div>
-                <div className="second-bar-DD">
-                    <button type="button" className="option-button" 
+                <div className="bar-DD">
+                    <button type="button" className="option-button_" 
                     onClick={this.goToAll}>
-                       All { this.props.type === "r" ? ' Restaurants' : ' Groceries' }
+                       { this.props.type === "r" ? ' Restaurants' : ' Groceries' }
                     </button> 
                 </div>
-                <div className="second-bar-DD">
-                    <button type="button" className="option-button" 
-                    >
-                        Switch to { this.props.type === "r" ? 'Groceries' : 'Restaurant' }
+                <div className="bar-DD">
+                    <button type="button" className="option-button_">
+                        More sections &#10148;
                     </button> 
                 </div>
+              
             </div>
         );
     }
@@ -47,3 +52,8 @@ class SectionalPageHomeDD extends React.Component {
 
 
 export default SectionalPageHomeDD;
+
+
+/** Design arrows:
+ * https://www.toptal.com/designers/htmlarrows/arrows/
+ */

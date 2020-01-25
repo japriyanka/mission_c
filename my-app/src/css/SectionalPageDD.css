@@ -1,30 +1,35 @@
 .top-heading-DD {
-    display: flex;
-    flex-wrap: wrap;
+    position:fixed;
+    width: 13%;
 }
 
-.first-bar-DD {
-    display: flex;
-    flex-direction: column;
-    flex-basis: 33.3%;
-
-}
-
-.second-bar-DD {
-    display: flex;
-    flex-direction: column;
-    flex-basis: 33.3%;
+.bar-DD-heading {
+    width: 100%;
+    font-size: 1.3em;
+    font-weight: bold;
+    padding: 2%;
 
 }
 
-.option-button {
+
+.bar-DD {
+    width: 100%;
+}
+
+.option-button_ {
     width: 100%;
     height: 50px;
-    font-size: large;
-    border-radius:5px;
-    font-weight: bold;
-    color:white;
-    background-color: #008ECC;
+    font-size: 1.2em;
+    text-align: -webkit-left;
+    border: none;
+    font-family: Raleway;
+    background-color: transparent;
+    color:black;
 
 
+}
+
+.bar-DD:hover {
+    border-left: 5px solid rgb(74, 121, 125);
+    background-color: whitesmoke;
 }

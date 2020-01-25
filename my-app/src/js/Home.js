@@ -34,7 +34,7 @@ class Home extends React.Component {
         super(props);
     }
 
-    //                 <DealsBar data={this.props.dataPassing} />
+    // <DealsBar data={this.props.dataPassing} />
 
     render() {
         return (
@@ -51,6 +51,7 @@ class Home extends React.Component {
                         <div className="restaurant">
                             <Restuarants dealsInfo={this.props.dataPassing} />
                         </div>
+                       
                         <div className="groceries">
                             <Groceries />
                         </div>

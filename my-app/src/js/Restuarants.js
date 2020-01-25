@@ -45,6 +45,8 @@ class Restuarants extends React.Component {
     }
 
     render() {
+        const leftValue = '<';
+        const rightValue = '>';
         return (
         <div className="restaurant-section_">
             <div className="resturant-heading_">
@@ -62,10 +64,21 @@ class Restuarants extends React.Component {
             </div>
 
            <div className="restuarant-cardspace" id="restuarant-cardspace">
-              
-               <div className="center-cards">
-                   <Cards cardInfo={this.state.restuarants} />
-               </div>
+                <div className="left-indicator">
+                    <button type="button" className="left"
+                    title="scroll left">
+                    {leftValue}
+                    </button>
+                </div>
+                <div className="center-cards">
+                    <Cards cardInfo={this.state.restuarants} />
+                </div>
+                <div className="left-indicator">
+                    <button type="button" className="left"
+                    title="scroll right">
+                    {rightValue}
+                    </button>
+                </div>
               
            </div>
         </div>

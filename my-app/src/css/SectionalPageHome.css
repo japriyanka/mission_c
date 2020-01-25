@@ -1,75 +1,100 @@
 .main-sectional-page-home {
     height: 100%;
     width: 100%;
-    position: relative;
 }
 
 .scrollable-bar {
+    width: 70%;
+    margin-left: 15%;
+    text-align: -webkit-center;
+}
+
+.tool-bar {
+   width: 100%;
+}
+
+.second-tool-bar {
+    width: 100%;
+    height: 100%;
     display: flex;
     flex-wrap: wrap;
-   
 }
 
-.top-deals-name {
-    margin-top: 2%;
-    margin-left: 3%;
-    font-size: 30px;
+.first-half-second-tool-bar {
+    width: 80%;
+    height: 100%;
     display: flex;
-    flex-basis: 100%;
-    color: #008EEC;
-    flex-direction: row;
+    flex-wrap: wrap;
 }
 
-.top-deals-bar {    
-    margin-top: 1%;
-    border-radius: 5px;
-    display: flex;
-    height: 300px;
+.options-tool-bar-sub {
+    flex-basis: 15%;
     width: 100%;
+    padding: 1%;
+    margin-top: 1%;
+    flex-direction: column;
 }
 
-.left-bar {
-    display: flex;
-    flex-basis: 2%;
-}
-.left-image {
-    margin-top: 120px;
-    opacity: 0.4;
-    height: 40px;
-    width: 40px;
-}
-
-.main-top-deals {
-    display: flex;
-    flex-basis: 98%;
+.top-deals-bar {
+    margin-left: 3%;
+    margin-top: 2%;
+    flex-basis: 80%;
+    flex-direction: column;
     background-color: white;
-    border-radius: 10px;
+}
+
+.deals-bar-title {
+    padding: 1%;
+    width: 100%;
+    font-family: Roboto;
+    font-size: 1.9em;
+    background-color: whitesmoke;
+}
+
+.name-bar-title {
+    padding: 1%;
+    width: 100%;
+    font-family: Raleway;
+    font-size: 2.3em;
+    text-align: -webkit-center;
+}
+
+.deals-card-display{
+    display: flex;
+}
+
+.ads-zone {
+    flex-grow: 1;
+    height: 100%;
+}
+
+.font-span {
+    font-weight: bold;
+}
+
+.sort-by-options {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1%;
+}
+
+.pop-but_ {
+    flex-basis: 7%;
+    font-size: 1.0em;
+    padding-left: 1%;
+    text-decoration: underline;
+}
+
+.options-but_ {
+    flex-basis: 12%;
+    font-size: 1.0em;
+    padding-left: 1%;
+    text-decoration: underline;
 }
 
 .line {
     width: 80%;
     padding: 1%;
-}
-
-.right-bar {
-    display: flex;
-    flex-basis: 2%;
-}
-.right-image {
-    margin-top: 120px;
-    opacity: 0.4;
-    height: 40px;
-    width: 40px;
-}
-
-.left-bar:hover {
-    opacity: 1.0;
-    background-color: rgb(223, 231, 235);
-}
-
-.right-bar:hover {
-    opacity: 1.0;
-    background-color: rgb(223, 231, 235);
 }
 
 .restaurant-section-name {
@@ -165,14 +190,6 @@
 
 }
 
-.ads-zone-name {
-    display: flex;
-    margin-left: 2%;
-    flex-basis: 9%;
-    color: #008EEC;
-    font-size: 25px;
-    text-align: -webkit-center;
-}
 
 .restaurant-block {
     margin-top:1%;
