@@ -27,7 +27,7 @@
 
 .column-second {
     flex-grow: 1;
-    display: block;
+    width: 80%;
 }
 
 .restaurant {

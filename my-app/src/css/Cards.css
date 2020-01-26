@@ -2,16 +2,27 @@
 .cards {
     display: flex;
     flex-direction: column;
-    margin-left: 5%;
     height: 400px;
     width: 300px;
+    margin-left: 2%;
+    margin-right: 2%;
     border: none;
     border-radius: 5px;
     margin-top: 1.5%;
 }
 .flex-layout {
    display: flex;
+   overflow-x: scroll;
+   overflow:hidden;
+   height: 400px;
 }
+
+.flex-layout_section {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+   
+ }
 
 .top-space {
     display: flex;
@@ -101,10 +112,6 @@
     margin: 0px;
 }
 
-.btn-success {
-   
-    display: none;
-}
 
 
 .card-go-button_ {

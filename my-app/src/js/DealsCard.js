@@ -5,11 +5,13 @@ class DealsCard extends React.Component {
     render() {
         return (
             this.props.dealsInfo.map((deals, index) => {
+                if ( index < 4 ) {
                 if (deals.type === 'r') {
                     return (
-                        <div className="cards-deals" id="card-deals-id">
+                        <div className="cards-deals_" id="card-deals-id">
                             <div className="card-image-deals">
-                                <img key={index} src={deals.image} className="front-image-deals"/>
+                                <img key={index} src={deals.image}
+                                 className="front-image-deals"/>
                             </div>
                             <div className="card-information-deals">
                                 <div className="card-first-deals">
@@ -24,7 +26,7 @@ class DealsCard extends React.Component {
                         </div>
                     );
                 }
-            })
+            }})
         );
     }
 }

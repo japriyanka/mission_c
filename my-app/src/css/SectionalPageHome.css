@@ -39,16 +39,14 @@
     margin-left: 3%;
     margin-top: 2%;
     flex-basis: 80%;
-    flex-direction: column;
     background-color: white;
 }
 
 .deals-bar-title {
     padding: 1%;
     width: 100%;
-    font-family: Roboto;
-    font-size: 1.9em;
-    background-color: whitesmoke;
+    font-family: Raleway;
+    font-size: 2.7em;
 }
 
 .name-bar-title {
@@ -61,6 +59,7 @@
 
 .deals-card-display{
     display: flex;
+    flex-wrap: wrap;
 }
 
 .ads-zone {
@@ -227,4 +226,11 @@
     width:30%;
     font-size: 18px;
     border-radius: 10px;
+}
+
+.third-tool-bar-sectional {
+    height: 500px;
+    width: 65%;
+    margin-left: 15%;
+    bottom: 0;
 }

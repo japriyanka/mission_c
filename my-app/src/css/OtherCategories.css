@@ -1,0 +1,42 @@
+.other-category-full-body {
+    width:65%;
+    height: 100%;
+}
+
+.other-category-heading {
+    font-size: 2.2em;
+    font-family: Raleway;
+    padding: 2%;
+}
+
+.other-category-body {
+    width: 100%;
+    display: flex;
+}
+.show-list-contents {
+    padding: 2%;
+}
+
+.image-show-other {
+
+}
+
+.image-other {
+    height: 200px;
+    width: 300px;
+}
+
+.text-show {
+    font-size: 1.2em;
+    text-align: -webkit-left;
+    padding: 1%;
+}
+
+.offer-button-show-other {
+    background-color: green;
+    padding: 2%;
+    color: white;
+    width: 120px;
+    font-size: 0.8em;
+
+}

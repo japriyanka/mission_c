@@ -49,7 +49,7 @@ class Home extends React.Component {
                     </div>
                     <div className="column-second">
                         <div className="restaurant">
-                            <Restuarants dealsInfo={this.props.dataPassing} />
+                            <Restuarants dealsInfo={this.props.dataPassing} type="r" />
                         </div>
                        
                         <div className="groceries">
@@ -57,6 +57,10 @@ class Home extends React.Component {
                         </div>
                     </div>
                 </div>
+                <div className="footer-body">
+                    Mission C &copy; 2019
+                </div>
+
                 
                 
                 

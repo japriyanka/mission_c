@@ -263,6 +263,10 @@ class CardDetail extends React.Component {
 
                     
                 </div>
+                <div className="footer-body">
+                    Mission C &copy; 2019
+                </div>
+
             </div>
         );
     }

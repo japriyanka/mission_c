@@ -71,7 +71,7 @@ class Restuarants extends React.Component {
                     </button>
                 </div>
                 <div className="center-cards">
-                    <Cards cardInfo={this.state.restuarants} />
+                    <Cards cardInfo={this.state.restuarants} from="home"/>
                 </div>
                 <div className="left-indicator">
                     <button type="button" className="left"

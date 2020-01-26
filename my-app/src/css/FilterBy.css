@@ -1,0 +1,79 @@
+.filter-by-full-body {
+    position:fixed;
+    width: 13%;
+}
+
+.filter-by-heading_ {
+    width: 100%;
+    font-size: 1.3em;
+    font-weight: bold;
+    padding: 2%;
+}
+
+.filter-by-body {
+    width: 100%;
+}
+
+.name-filter-by-option {
+    padding: 4%;
+}
+
+.price-filter-by-option {
+    padding: 4%;
+}
+
+.name-filter-by-option::after {
+    float: right;
+    content: ' \02C7';
+    font-size: 1.8em;
+}
+
+.price-filter-by-option::after {
+    float: right;
+    margin-left: 2%;
+    content: ' \02C7';
+    font-size: 1.8em;
+}
+
+.star-img {
+    width: 15px;
+    height: 15px;
+    margin-top: -4px;
+}
+
+.rating-options-show {
+     width: 100%;
+     padding: 4%;
+     display: none;
+}
+
+.price-options-show {
+    width: 100%;
+    padding: 4%;
+    display: none;
+
+}
+
+
+.option1-show {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 3%;
+}
+
+.option1-name {
+    flex-basis: 10%;
+    flex-direction: column;
+    height: 16px;
+    width: 5px;
+    border: 1px solid black;
+}
+
+.option1-text-show {
+    flex-grow: 1;
+    padding-left: 4%;
+    font-size: 0.9em;
+    margin-top: -2px;
+    flex-direction: column;
+}
+

@@ -10,6 +10,8 @@ import Cards from './Cards';
 import Ads from './Ads';
 import FilterByModal from './FilterByModal';
 import HeaderObj from './HeaderObj';
+import FilterBy from './FilterBy';
+import OtherCategories from './OtherCategories';
 
 class SectionalPageHome extends React.Component {
 
@@ -99,6 +101,10 @@ class SectionalPageHome extends React.Component {
         });
     }
 
+    functionHide() {
+        document.getElementById('options-tool-bar-sub').style.display = 'none';
+    }
+
     render() { 
 
         return (
@@ -109,10 +115,10 @@ class SectionalPageHome extends React.Component {
                 <div className="second-tool-bar">
                     <div className="first-half-second-tool-bar">
                         <div className="options-tool-bar-sub">
-                            <SectionalPageHomeDD />
+                            <SectionalPageHomeDD type={this.props.type === 'r' ? 'r' : 'g'} />
                         </div>
                       
-                        <div className="top-deals-bar">
+                        <div className="top-deals-bar" id="top-deals-bar">
                             <div className="deals-bar-title">
                                 Top 3 deals
                             </div>
@@ -120,10 +126,10 @@ class SectionalPageHome extends React.Component {
                                 <DealsCard dealsInfo={this.props.dealsInfo} />
                             </div>
                         </div>
-                        <div className="options-tool-bar-sub">
-                            <SectionalPageHomeDD />
+                        <div className="options-tool-bar-sub" id="options-tool-bar-sub">
+                            <FilterBy />
                         </div>
-                        <div className="top-deals-bar">
+                        <div className="top-deals-bar" id="sectional-view-id">
                             <div className="deals-bar-title">
                                Restaurants
                             </div>
@@ -132,28 +138,32 @@ class SectionalPageHome extends React.Component {
                                     Sort by:
                                 </span>
                                 <div className="pop-but_">
-                                    popularity
+                                    Popularity
                                 </div>
                                 <div className="options-but_">
-                                    price high to low
+                                    Price High to Low
 
                                 </div>
                                 <div className="options-but_">
-                                    price low to high
+                                    Price Low to High
                                 </div>
                             </div>
                             <div className="deals-card-display">
-                                <Cards cardInfo={this.state.restaurants} />
+                                <Cards cardInfo={this.state.restaurants} from="section" />
                             </div>
                         </div>
-                       
-                       
-                        
                     </div>
                     <div className="ads-zone">
                         <Ads />
                     </div>
                 </div>
+                <div className="third-tool-bar-sectional">
+                    <OtherCategories />
+                </div>
+                <div className="footer-body">
+                    Mission C &copy; 2019
+                </div>
+
             </div>
               
             );

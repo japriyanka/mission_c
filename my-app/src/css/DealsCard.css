@@ -1,11 +1,12 @@
-.cards-deals {
+.cards-deals_ {
     display: flex;
     flex-direction: column;
-    padding: 2%;
+    padding: 1%;
+    padding-left: 5%;
+    width: 30%;
 }
 
 .card-image-deals {
-    width: 100%;
 }
 
 
@@ -13,6 +14,7 @@
     border-radius: 15px;
     height: 200px;
     width: 300px;
+    padding-left: 2%;
     background-position: center;
     background-size: cover;
 }

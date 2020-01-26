@@ -21,6 +21,8 @@ class Restuarants extends React.Component {
             restuarants: []
         };
         this.passToSectionalPage = this.passToSectionalPage.bind(this);
+        this.scrollLeftRestaurant = this.scrollLeftRestaurant.bind(this);
+        this.scrollRightRestaurant = this.scrollRightRestaurant.bind(this);
     }
 
     componentDidMount() {
@@ -42,6 +44,49 @@ class Restuarants extends React.Component {
             restuarantInfo={this.state.restuarants} type="r"  />, 
             document.getElementById('root'));
         }
+    }
+
+    scrollLeftRestaurant() {
+        const direction = 'left';
+        const step = 10;
+        const distance = 200;
+        let scrollAmount = 0;
+        const element = document.getElementById('center-cards');
+        if(element !== null) {
+            var slideTimer = setInterval(function(){
+                if (direction == 'left'){
+                    element.scrollLeft -= step;
+                } else {
+                    element.scrollLeft += step;
+                }
+                scrollAmount += step;
+                if(scrollAmount >= distance){
+                    window.clearInterval(slideTimer);
+                }
+            }, 30);
+        }
+    }
+
+    scrollRightRestaurant() {
+        const direction = 'right';
+        const step = 10;
+        const distance = 200;
+
+        let scrollAmount = 0;
+        const element = document.getElementById('center-cards');
+        if(element !== null) {
+            var slideTimer = setInterval(function(){
+                if (direction == 'left'){
+                    element.scrollLeft -= step;
+                } else {
+                    element.scrollLeft += step;
+                }
+                scrollAmount += step;
+                if(scrollAmount >= distance){
+                    window.clearInterval(slideTimer);
+                }
+            }, 30);
+        }       
     }
 
     render() {
@@ -66,16 +111,16 @@ class Restuarants extends React.Component {
            <div className="restuarant-cardspace" id="restuarant-cardspace">
                 <div className="left-indicator">
                     <button type="button" className="left"
-                    title="scroll left">
+                    title="scroll left" onClick={this.scrollLeftRestaurant}>
                     {leftValue}
                     </button>
                 </div>
                 <div className="center-cards">
-                    <Cards cardInfo={this.state.restuarants} />
+                    <Cards cardInfo={this.state.restuarants} from="home" />
                 </div>
-                <div className="left-indicator">
+                <div className="left-indicator" >
                     <button type="button" className="left"
-                    title="scroll right">
+                    title="scroll right" onClick={this.scrollRightRestaurant}>
                     {rightValue}
                     </button>
                 </div>

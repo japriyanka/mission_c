@@ -11,15 +11,13 @@
     height: 100%;
     padding: 1%;
     padding-bottom: 1%;
-    background-color: whitesmoke;
-
 }
 
 .resturant-name_ {
     display:flex;
     flex-basis: 90%;
     color:black;
-    font-size: 2.1em;
+    font-size: 2.7em;
     font-family: Raleway;
     flex-direction: column;
 }
@@ -52,7 +50,8 @@
 .restuarant-cardspace {
     display: flex;
     flex-wrap: wrap;
-    height: 400px;
+   
+ 
 
 }
 
@@ -92,14 +91,10 @@
 
 }
 
-
-
-
 .center-cards {
     margin-top: 1%;
-    display: flex;
     flex-basis: 94%;
-    flex-direction: column;
+    width: 94%;
 }
 
 .right-indicator {
