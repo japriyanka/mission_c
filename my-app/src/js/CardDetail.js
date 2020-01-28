@@ -17,6 +17,7 @@ import CardRating from './CardRating';
 import AvailableOffer from './AvailableOffer';
 import CardStarRating from './CardStarRating';
 import OpeningHours from './OpeningHours';
+import HeaderObj from './HeaderObj';
 /*
  * query command to search map
  * https://www.google.com/maps/search/?api=1&query=Hunter+%26+Barrel+-+Raine+Square+300+Murray+Street+6000+Perth 
@@ -121,8 +122,8 @@ class CardDetail extends React.Component {
 
         return (
             <div className="parent-card">
-                <div className="tool-bar">
-                    <ToolBar name="Guest" />
+                <div className="tool-bar_">
+                    <HeaderObj />
                 </div>
                 <div className="child-start">
 

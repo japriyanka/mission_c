@@ -2,13 +2,12 @@
 .cards {
     display: flex;
     flex-direction: column;
-    height: 400px;
     width: 300px;
     margin-left: 2%;
     margin-right: 2%;
     border: none;
-    border-radius: 5px;
     margin-top: 1.5%;
+
 }
 .flex-layout {
    display: flex;
@@ -51,23 +50,92 @@
     font-size: 18px;
 }
 
+.small-character-info {
+    font-size: 15px;
+    margin-top: 8px;
+}
+
 .modal-class {
     position: absolute;
+}
+
+.card-time {
+    margin-top: -150px;
+}
+
+.status-button {
+    float: right;
+   color: white;
+   background-color: rgb(31, 133, 223);
+   font-weight: bold;
+   width: 20%;
+   padding: 1%;
+   text-align: -webkit-center;
+}
+
+.card-name-information {
+    padding-left: 2%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.name-info-first-half {
+    flex-basis: 75%;
+    font-size: 20px;
 
 }
-.status-button {
-    background-color: #008ECC;
-    color: white;
-    border-radius: 5px;
-    height: 40px;
-    margin-top: 5px;
-    overflow: auto;
-    font-size: 20px;
+
+.rating-info {
+    display: flex;
+    font-size: 23px;
 }
 
 .card-image {
     height: 150px;
     width: 300px;
+}
+
+.card-body-information {
+    padding: 2%;
+    box-shadow: 1px 2px 3px grey;
+}
+
+.cuisine-star {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2%;
+    width: 100%;
+    font-size: 15px;
+}
+
+.cuisine-info {
+    width: 60px;
+    flex-basis: 20%;
+    text-align: -webkit-center;
+    padding: 1%;
+    border: 1px solid black;
+}
+
+.average-cost-information {
+    flex-grow: 1;
+    padding: 1%;
+    text-align: -webkit-right;
+    font-size: 1.1em;
+}
+
+.button-offer {
+    margin-top: 120px;
+    width: 100%;
+    padding: 1%;
+    border: none;
+    border-radius: 0px;
+}
+
+.gold-star-image {
+    height: 15px;
+    width:15px;
+    margin-left: 3px;
+    margin-top: 10px;
 }
 
 .front-image {
@@ -132,12 +200,11 @@
 }
 
 .card-address {
-    font-size: 15px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 13px;
+    padding-left: 2%;
+  /*  font-family: Verdana, Geneva, Tahoma, sans-serif; */
+  font-family: Raleway;
 
-}
-.card-name {
-    font-size: 25px;
 }
 
 .card-open {

@@ -70,7 +70,7 @@ class HeaderObj extends React.Component {
     render() {
         return (
                 <div className="introduction-page-head">       
-                    <div className="empty-section">
+                    <div className="empty-section_">
                     </div>
                     <div className="introduction-head-image_" onClick={this.goHome.bind(this)}
                     title="Return to home page">

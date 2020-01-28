@@ -4,6 +4,7 @@ import './../css/Cards.css';
 import CardEnlarged from './CardEnlarged';
 import ReactDOM from 'react-dom';
 import CardDetail from './CardDetail';
+import star from './../image/star.png';
 
 
 class SubCards extends React.Component {
@@ -86,6 +87,7 @@ class SubCards extends React.Component {
         const findOpeningTime = this.findClosed(this.props.info.OpeningHours);
         console.log(findOpeningTime);
         return (
+        /*    
         <div className="cards">
             <div className="top-space">
                 <div className="rating-space">
@@ -150,6 +152,58 @@ class SubCards extends React.Component {
                     {' '}Available
             </button>
         </div>
+        */
+       <div className="cards">
+         
+           <div className="card-image">
+                <img src={this.props.info.Pictures.Front
+                    [Math.floor((Math.random() * 
+                    this.props.info.Pictures.Front.length))]} 
+                    className="front-image" 
+                    onClick={this.showCardPopup.bind(this)}/>
+           </div>
+           <div className="card-time">
+               <div className="status-button">
+                    { 
+                         findOpeningTime['Available'] === true ? 
+                        `${findOpeningTime['time']}:00`: "Closed"
+                    } 
+                </div>
+           </div>
+           <button type="button" className="btn btn-success button-offer"
+            onClick={this.showCardPopup.bind(this)}>
+                    40% OFF + 2 more
+            </button>
+           <div className="card-body-information">
+                <div className="card-name-information">
+                    <div className="name-info-first-half">
+                            {this.props.info.Name.Short} 
+                    </div>
+                    <div className="rating-info">
+                        {this.props.info.Rating.AverageRating.split('/')[0]}
+                        <img src={star} className="gold-star-image"></img> 
+                        <spam className="small-character-info"> {" "} / 5</spam>
+                    </div>
+                </div>
+               
+                <div className="card-address">
+                    {this.props.info.Address.Suburb}
+                </div>
+
+
+                <div className="cuisine-star">
+                    <div className="cuisine-info">
+                            {this.props.info.Cuisine}
+                    </div>
+                    <div className="average-cost-information" title="cost per person">
+                         ${this.props.info.CostPerPerson} / pp
+                    </div>
+                </div>
+             
+               
+           </div>
+
+       </div>
     
         );
     }
