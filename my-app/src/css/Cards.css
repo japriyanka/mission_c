@@ -144,8 +144,8 @@
 }
 
 .front-image:hover {
-    border: 1px solid white;
-
+    border: 3px solid white;
+    transition: all .20s ease-in-out;
 }
 
 .card-image:hover .card-go-button {
