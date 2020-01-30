@@ -150,12 +150,15 @@ class CardDetail extends React.Component {
                 </div>
                 <div className="child-start">
 
-                    <div className="bar-at-top" onClick={this.showSlidingWindow}>
-                        <div className="image-section" >
+                    <div className="bar-at-top" >
+                        <div className="image-section_p">
+                            
                             <img src={this.props.cardInfo.Pictures.Front
                                 [Math.floor((Math.random() * 
                                 this.props.cardInfo.Pictures.Front.length))]} 
-                                className="full-scale-image" />
+                                className="full-scale-image" 
+                                onClick={this.showSlidingWindow}
+                                title="Click to view more images"/>
                                 
                         </div>
                         
@@ -290,15 +293,24 @@ class CardDetail extends React.Component {
                     Mission C &copy; 2019
                 </div>
                 <Modal visible={this.state.slidingWindowShow} border="1px solid blue" 
-                    height="50%" width="40%" effect="fadeInDown" 
+                     height="300px" effect="fadeInDown" 
                     onClickAway={this.hideWindow.bind(this)}>
-                        <Carousel showThumbs={false} showNumbers={false} infiniteLoop={true}>
-                                {
-                                    this.props.cardInfo.Pictures.Front.map((image, index) => {
-                                        return(<img key={index} src={image} className="image-display_" />);
-                                    })
-                                }
-                            </Carousel> 
+                        <Carousel showThumbs={false} showNumbers={true} 
+                        infiniteLoop={true}>
+                            {
+                                this.props.cardInfo.Pictures.Front.map((image, index) => {
+                                    return(<img key={index} src={image} 
+                                        className="image-display_" />);
+                                })
+                            }
+                        </Carousel>
+                        <div className="card-name-info-p">
+                            {this.props.cardInfo.Name.Short} &nbsp;&nbsp;&nbsp;
+                            <span className="customer-rating-p">
+                                {this.props.cardInfo.Rating.AverageRating.split('/')[0]}
+                                <img src={star} className="star-image-p"></img>
+                            </span>
+                        </div>
                 </Modal>
 
             </div>
