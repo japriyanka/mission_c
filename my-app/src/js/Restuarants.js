@@ -132,20 +132,3 @@ class Restuarants extends React.Component {
 }
 
 export default Restuarants;
-
-
-/*
-<div className="categories_">
-                    <Dropdown className="dropdown-categories">
-                        <Dropdown.Toggle variant="success">
-                            Cuisine
-                        </Dropdown.Toggle>
-                        
-                        <Dropdown.Menu>
-                            <Dropdown.Item href="/Home">Indian</Dropdown.Item>
-                            <hr></hr>
-                            <Dropdown.Item href="/Home">Thai</Dropdown.Item><hr></hr>
-                            <Dropdown.Item href="/Home">Korean</Dropdown.Item>
-                        </Dropdown.Menu>
-                    </Dropdown>
-                </div>  */

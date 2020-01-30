@@ -1,23 +1,28 @@
 .parent-card {
-    height: 100%;
-    width:100%;
-    background-color: #f5f5f5;
+   height: 100%;
+   weight: 100%;
 }
+
 
 .bar-at-top {
     display: flex;
-    flex-wrap: wrap;
 }
 
+.tool-bar_t {
+    width: 100%;
+}
+
+.full-scale-image {
+    width: 100%;
+    height: 100%;
+}
 .child-start {
     width: 80%;
     margin-left: 10%;
-    overflow: hidden;
 }
 
 .show-type-info {
-    position: relative;
-    margin-top: 2%;
+    margin-top: 6%;
     margin-left: 2%;
     display:flex;
     flex-direction: column;
@@ -29,11 +34,11 @@
 }
 
 .image-section {
+    margin-top: 6%;
     width: 60%;
     height: 40%;
-    display: flex;
-    flex-direction: column;
     flex-basis: 60%;
+    z-index:-2;
 }
 
 .customer-rating {
@@ -269,14 +274,24 @@
     flex-wrap: wrap;
 }
 
+
+.image-section-t {
+    width: 100%;
+    height: 40%;
+    display: flex;
+}
+
 .bike-show {
     height: 25px;
     width: 30px;
+    padding: 2%;
 }
 
 .car-show {
     height: 25px;
     width: 37px;
+    padding: 2%;
+
 }
 
 .image-section {
@@ -290,13 +305,10 @@
 }
 
 .bike-image-show {
-    display: flex;
-    flex-basis: 40%;
+    margin-left: 2%;
 }
 .car-image-show {
-    display: flex;
-    flex-basis: 50%;
-    margin-left: 5%;
+    padding: 1%;
 }
 
 .description-show {

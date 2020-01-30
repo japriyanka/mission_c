@@ -1,5 +1,6 @@
 import React from 'react';
 import './../css/CardDetail.css';
+import Modal from 'react-awesome-modal';
 
 /* Carousel images */
 import star from './../image/star.png';
@@ -24,7 +25,29 @@ import HeaderObj from './HeaderObj';
  */
 class CardDetail extends React.Component {
 
-    cardDetailingMenu = ["Menu", "Info", "Recommendations", "Reviews"]
+    cardDetailingMenu = ["Menu", "Info", "Recommendations", "Reviews"];
+
+    constructor(props) {
+        super(props);
+        this.state = {
+            slidingWindowShow: false
+        };
+        this.showSlidingWindow = this.showSlidingWindow.bind(this);
+    }
+
+
+    showSlidingWindow() {
+        this.setState({
+            slidingWindowShow: true
+        });
+    }
+
+    hideWindow() {
+        this.setState({
+            slidingWindowShow: false
+        });
+    }
+
 
 
     showCost(cost) {
@@ -122,21 +145,20 @@ class CardDetail extends React.Component {
 
         return (
             <div className="parent-card">
-                <div className="tool-bar_">
+                <div className="tool-bar_t">
                     <HeaderObj />
                 </div>
                 <div className="child-start">
 
-                    <div className="bar-at-top">
-                        <div className="image-section">
-                            <Carousel showThumbs={false} showNumbers={false} infiniteLoop={true}>
-                                {
-                                    this.props.cardInfo.Pictures.Front.map((image, index) => {
-                                        return(<img key={index} src={image} className="image-display_" />);
-                                    })
-                                }
-                            </Carousel>
+                    <div className="bar-at-top" onClick={this.showSlidingWindow}>
+                        <div className="image-section" >
+                            <img src={this.props.cardInfo.Pictures.Front
+                                [Math.floor((Math.random() * 
+                                this.props.cardInfo.Pictures.Front.length))]} 
+                                className="full-scale-image" />
+                                
                         </div>
+                        
                         <div className="show-type-info">
                             <div className="card-info">
                                 <div className="card-name-info">
@@ -209,7 +231,7 @@ class CardDetail extends React.Component {
                                 </div>
                                 <div className="dot-show"></div>
                                 <div className="parking-available-info" title={parkingTitle}>
-                                    <div className="image-section" hidden={!carShow}>
+                                    <div className="image-section-t" hidden={!carShow}>
                                         <div className="car-image-show">
                                             <img src={car} className="car-show"></img>
                                         </div>
@@ -245,7 +267,6 @@ class CardDetail extends React.Component {
                         })}  
                     </div>
 
-                   
                     <div className="available-offer-show">
                         <AvailableOffer offerShow={this.props.cardInfo.Discount} />
                     </div>
@@ -262,11 +283,23 @@ class CardDetail extends React.Component {
                         <CardRating showInfo={this.props.cardInfo.RatingComments}/>
                     </div>
 
+                 
                     
                 </div>
                 <div className="footer-body">
                     Mission C &copy; 2019
                 </div>
+                <Modal visible={this.state.slidingWindowShow} border="1px solid blue" 
+                    height="50%" width="40%" effect="fadeInDown" 
+                    onClickAway={this.hideWindow.bind(this)}>
+                        <Carousel showThumbs={false} showNumbers={false} infiniteLoop={true}>
+                                {
+                                    this.props.cardInfo.Pictures.Front.map((image, index) => {
+                                        return(<img key={index} src={image} className="image-display_" />);
+                                    })
+                                }
+                            </Carousel> 
+                </Modal>
 
             </div>
         );
@@ -275,3 +308,19 @@ class CardDetail extends React.Component {
 }
 
 export default CardDetail;
+
+
+/**
+ * 
+ *   
+
+
+ * 
+ *    <Carousel showThumbs={false} showNumbers={false} infiniteLoop={true}>
+                                {
+                                    this.props.cardInfo.Pictures.Front.map((image, index) => {
+                                        return(<img key={index} src={image} className="image-display_" />);
+                                    })
+                                }
+                            </Carousel>
+ */
