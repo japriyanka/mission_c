@@ -32,6 +32,50 @@ class TopDeals extends React.Component {
         });        
     }
 
+    scrollLeftTop() {
+        const direction = 'left';
+        const step = 10;
+        const distance = 200;
+        let scrollAmount = 0;
+        const element = document.getElementById('three_restuarants_');
+        if(element !== null) {
+            var slideTimer = setInterval(function(){
+                if (direction == 'left'){
+                    element.scrollLeft -= step;
+                } else {
+                    element.scrollLeft += step;
+                }
+                scrollAmount += step;
+                if(scrollAmount >= distance){
+                    window.clearInterval(slideTimer);
+                }
+            }, 30);
+        }
+    }
+
+    scrollRightTop() {
+        const direction = 'right';
+        const step = 10;
+        const distance = 200;
+
+        let scrollAmount = 0;
+        const element = document.getElementById('three_restuarants_');
+        if(element !== null) {
+            var slideTimer = setInterval(function(){
+                if (direction == 'left'){
+                    element.scrollLeft -= step;
+                } else {
+                    element.scrollLeft += step;
+                }
+                scrollAmount += step;
+                if(scrollAmount >= distance){
+                    window.clearInterval(slideTimer);
+                }
+            }, 30);
+        }       
+    }
+
+
     handleClick() {
         /* Details passing from the  Top deals page to the Home page */
         ReactDOM.render(<Home dataPassing={this.state.top3D} />, document.getElementById('root'));
@@ -59,35 +103,33 @@ class TopDeals extends React.Component {
                 <div className="empty-topic">
 
                 </div>
-                
-                <div className="see-all" title="scroll left">
-                    <button type="button" className="see-all-but">
+                <div className="see-all-textT" onClick={this.handleClick}>
+                    SEE ALL
+                </div>
+                <div className="see-allT" title="scroll left">
+                    <button type="button" className="see-all-butT"
+                    onClick={this.scrollLeftTop.bind(this)}>
                         <i className="fa fa-caret-left"></i>
                     </button>
                 </div>
-                <div className="see-all-text">
-                       SEE ALL
-                </div>
-                <div className="see-all" title="scroll right">
-                    <button type="button" className="see-all-but">
+                
+                
+                <div className="see-allT" title="scroll right">
+                    <button type="button" className="see-all-butT"
+                    onClick={this.scrollRightTop.bind(this)}>
                         <i className="fa fa-caret-right"></i>
                     </button>
                 </div>
             </div>
-            <hr className="line-show"></hr>
 
-            <div className="three_restuarants_">
-                {this.state.top3D.map((top_3) => {
-                return (<Top3 key={top_3.id} top3={top_3} />)
+            <div className="three_restuarants12_" id="three_restuarants_">
+                {this.state.top3D.map((top_3, index) => {
+                return (<img src={top_3.image} key={index} className="image-top_"/>)
                 })}
             </div>
 
-            <div className="get-started">
-                <button className="but-started" title="grab more offers" 
-                onClick={this.handleClick}>
-                    Grab more offers...
-                </button>
-            </div>
+            
+            <hr className="line-show"></hr>
         </div>)
     }
 
@@ -107,3 +149,13 @@ ReactDOM.render(Home_1, document.getElementById('root'));
 
 
 export default TopDeals;
+
+
+/**
+ * <div className="get-started">
+                <button className="but-started" title="grab more offers" 
+                onClick={this.handleClick}>
+                    Grab more offers...
+                </button>
+            </div>
+ */
