@@ -22,6 +22,9 @@ import HomeDD from './HomeDD';
 import Restuarants from './Restuarants';
 import Groceries from './Groceries';
 import HeaderObj from './HeaderObj';
+import TopDeals from './TopDeals';
+import DealsCard from './DealsCard';
+import DealsInHome from './DealsInHome';
 
 
 class Home extends React.Component {
@@ -48,6 +51,10 @@ class Home extends React.Component {
                         <HomeDD />
                     </div>
                     <div className="column-second">
+                        <div className="top-deals-info">
+                            <DealsInHome dealsInfo={this.props.dataPassing} type="r" />
+
+                        </div>
                         <div className="restaurant">
                             <Restuarants dealsInfo={this.props.dataPassing} type="r" />
                         </div>

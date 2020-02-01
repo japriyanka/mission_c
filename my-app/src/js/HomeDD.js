@@ -10,6 +10,17 @@ class HomeDD extends React.Component {
         super(props);
         this.scrollDownToRestuarant.bind(this);
         this.scrollDownToGroceries.bind(this);
+        this.scrollDownToTop.bind(this);
+        this.hideOptionsDD = this.hideOptionsDD.bind(this);
+    }
+
+    hideOptionsDD() {
+        const inverseOptions = document.getElementById('dd-options-available');
+        if (inverseOptions.style.display === 'block') {
+            inverseOptions.style.display = 'none';
+        } else {
+            inverseOptions.style.display = 'block';
+        }
     }
 
     // functions for visiting the neighbour components
@@ -20,6 +31,11 @@ class HomeDD extends React.Component {
 
     scrollDownToGroceries() {
         const grocSpace = document.getElementById('groceries-cardspace');
+        grocSpace.scrollIntoView({behavior: "smooth"});
+    }
+
+    scrollDownToTop() {
+        const grocSpace = document.getElementById('cards-deals-home');
         grocSpace.scrollIntoView({behavior: "smooth"});
     }
 
@@ -40,15 +56,19 @@ class HomeDD extends React.Component {
                     </div>
                     <div className="login-button-box">
                         <button type="button" className="but-login">
-                            Top deals
+                            Edit your interests
                         </button>
                     </div>
                 </div>
-                <div className="dd-options-available">
+                <div className="bar-DD-heading-t" onClick={this.hideOptionsDD.bind(this)}>
+                    Categories
+                </div>
+           
+                <div className="dd-options-available" id="dd-options-available">
                     <div className="enclosing-options">
                         <button type="button" className="option" 
                         title="click here to scroll top" 
-                        onClick={this.scrollDownToRestuarant}>  All (10)  </button>
+                        onClick={this.scrollDownToTop}>  All (10)  </button>
                     </div>               
                     <div className="enclosing-options">
                         <button type="button" className="option" 

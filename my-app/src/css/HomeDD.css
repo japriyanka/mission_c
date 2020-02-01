@@ -1,44 +1,3 @@
-/*
-.dropdownBox {
-    width: 100%;
-    height: 50px;
-    display: flex;
-    background-color: rgb(221, 234, 243);
-}
-
-.dropdownBox1{
-    margin-left: 15%;
-    display: flex;
-    flex-direction: column;
-}
-
-.dropdownBox2 {
-    display: flex;
-    flex-direction: column;
-}
-.enclosing-options {
-    width: 100%;
-    text-align: -webkit-center;
-}
-
-.option {
-    color: white;
-    padding: 1%;
-    border: none;
-}
-
-.option:hover {
-    border-bottom: 2px solid white;
-
-}
-
-.dropdownBox3 {
-    display: flex;
-    flex-direction: column;
-}
-
-*/
-
 .home-dd-full {
     width: 15%;
     position: fixed;
@@ -79,25 +38,23 @@
     padding: 1%;
     margin-top: 2%;
     font-size: 1.0em;
-    color: rgb(0, 0, 0);
     word-wrap: break-word;
 }
 
 .login-button-box {
     width: 100%;
-    padding: 2%;
+    padding: 5%;
 }
 
 .but-login {
-    height: 40px;
-    width: 100%;
-    padding: 1%;
-    font-size: 1.1em;
-    color: white;
-    border-color: 1px solid #008CEE;
-    background-color: #00a8ad;
+    width: 70%;
+    margin-left: 10%;
+    text-align: -webkit-center;
+    background-color: white;
+    color:rgb(74, 140, 184);
     margin: none;
-    border-radius: 10px;
+    border: 1px solid blue;
+    border-radius: 5px;
 }
 
 .option:hover {
@@ -109,6 +66,7 @@
 .dd-options-available {
     padding: 1%;
     margin-top: 10%;
+    font-family: Raleway;
 }
 
 .enclosing-options {
@@ -118,11 +76,28 @@
 }
 
 .option {
-    height: 40px;
+    height: 50px;
     width: 90%;
-    font-size: 1.0em;
+    font-size: 1.2em;
     color: black;
-    text-align: -webkit-left;
+    text-align: -webkit-center;
     background-color: transparent;
     border: none;
+}
+
+.bar-DD-heading-t {
+    margin-top: 5%;
+    height: 50px;
+    font-family: Raleway;
+    padding: 3%;
+    font-weight: bold;
+    background-color: whitesmoke;
+    font-size: 1.4em;
+    text-align: -webkit-center;
+}
+
+.bar-DD-heading-t::after {
+    float: right;
+    content: ' \02C7';
+    font-size: 1.8em;
 }

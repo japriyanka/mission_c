@@ -41,4 +41,35 @@
 
 }
 
+.cards-deals-home {
+    width: 100%;
+    height: 100%; 
+}
+
+.top-deals-home {
+    display: flex;
+    height: 50px;
+}
+
+.top-deals-home-name {
+    flex-basis: 90%;
+    font-size: 2.7em;
+    font-family: Roboto;
+    padding: 1%;
+}
+
+
+
+.front-image-deals-home {
+   height: 300px;
+   margin-top: 2%;
+   padding: 1%;
+   background-position: top;
+   background-size: cover;
+   width: 98%;
+   border-radius: 10px;
+   display: none;
+
+
+}
 
