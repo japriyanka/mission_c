@@ -58,13 +58,13 @@ class AvailableCity extends React.Component {
     }
 
     render() {
-        const listNames = ['Canberra', 'Perth', 'Sydney', 'Canberra', 'Perth', 'Sydney'];
+        const listNames = this.props.listNames;
 
         return (
             <div className="available-city-full-body">
                 <div className="available-city-head">
                     <div className="available-city-names">
-                        Available Cities
+                        Available {this.props.name}
                     </div>
                    
                     <div className="see-all" title="scroll left">
@@ -73,9 +73,7 @@ class AvailableCity extends React.Component {
                             <i className="fa fa-caret-left"></i>
                         </button>
                     </div>
-                    <div className="see-all-text">
-                       SEE ALL
-                    </div>
+                   
                     <div className="see-all" title="scroll right">
                         <button type="button" className="see-all-but"
                         onClick={this.scrollRight.bind(this)}>
@@ -84,16 +82,15 @@ class AvailableCity extends React.Component {
                         </button>
                     </div>
                 </div>
-                <hr className="line-show"></hr>
                 <div className="available-body" id="available-body">
                     <div className="show-options-body" id="show-options-body_">
                         {listNames.map((cityName, index) => {
                             let image = '';
-                            if (cityName === 'Canberra') {
+                            if (cityName === 'Canberra' || cityName === 'Indian') {
                                 image = 'http://localhost/image/canberra.jpeg';
-                            } else if (cityName === 'Perth') {
+                            } else if (cityName === 'Perth' || cityName === 'Korean' ) {
                                 image = 'http://localhost/image/perth.jpeg';
-                            } else  if (cityName === 'Sydney') {
+                            } else  if (cityName === 'Sydney' || cityName === 'Thai' ) {
                                 image = 'http://localhost/image/sydney.jpeg';
                             }
                             var sectionStyle = {
@@ -125,3 +122,9 @@ class AvailableCity extends React.Component {
 }
 
 export default AvailableCity;
+
+/**
+ *  <div className="see-all-text">
+                       SEE ALL
+                    </div>
+ */

@@ -8,6 +8,8 @@ class Introduction extends React.Component {
 
 
     render() {
+        const listNames = ['Canberra', 'Perth', 'Sydney', 'Canberra', 'Perth', 'Sydney'];
+        const cuisineList = ['Thai', 'Indian', 'Korean', 'Thai', 'Indian', 'Korean'];
         return (
             <div className="introduction-page">
                 <HeaderObj />
@@ -16,7 +18,10 @@ class Introduction extends React.Component {
                         <Discover />
                     </div>
                     <div className="available-city-body">
-                        <AvailableCity />
+                        <AvailableCity name="Cities" listNames={listNames} />
+                    </div>
+                    <div className="available-city-body">
+                        <AvailableCity name="Cuisines" listNames={cuisineList} />
                     </div>
                     <div className="register-business">
                         <div className="register-business-head">

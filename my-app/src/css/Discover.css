@@ -50,11 +50,12 @@
 }
 
 .discover-entire-body-bottom-search {
-    width: 80%;
+    width: 83%;
     margin-left: 10%;
+    box-shadow: 1px 2px 1px 3px grey;;
     display: flex;
     flex-wrap: wrap;
-    background-color: rgb(212, 234, 250);
+    background-color: transparent;
     border-radius: 10px;
 
 }
@@ -111,10 +112,8 @@
 .search-box-dis {
     margin-top: 2%;
     margin-bottom: 2%;
-    margin-left: 1%;
-    margin-right: 0.5%;
     display: flex;
-    flex-basis: 45%;
+    flex-basis: 50%;
     height: 50px;
     text-align: -webkit-center;
     width: 50%;
