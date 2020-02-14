@@ -53,7 +53,6 @@ class Home extends React.Component {
                     <div className="column-second">
                         <div className="top-deals-info">
                             <DealsInHome dealsInfo={this.props.dataPassing} type="r" />
-
                         </div>
                         <div className="restaurant">
                             <Restuarants dealsInfo={this.props.dataPassing} type="r" />
