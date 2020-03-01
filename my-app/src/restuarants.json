@@ -32,6 +32,12 @@
        },
        "Discount": [{
                "Description": "Buy 2 for 15% Off!"
+       }, {   
+               "Description": "flat 90$ for pair of Nike shoes!!"
+
+       }, {
+               "Description": "flat 100$ for pair of Puma shoes!!"
+
        }],
        "Pictures": {
                "Front": ["http://localhost/image/Restuarants/Tajagra/front/1.jpg", "http://localhost/image/Restuarants/Tajagra/front/2.jpeg"],
@@ -103,6 +109,9 @@
        },
        "Discount": [{
                "Description": "Buy 2 for 15% Off!"
+       }, {
+               "Description": "flat 90$ for pair of Nike shoes. Buy now to get 2 for 3$. Come grab soonnnn!!!!!!"
+
        }],
        "Pictures": {
                "Front": ["http://localhost/image/Restuarants/Tajagra/front/1.jpg", "http://localhost/image/Restuarants/Tajagra/front/2.jpeg"],
@@ -136,5 +145,233 @@
          "RatingProvided": "2.2",
         "Comments": "Food arrived very late. Customer service was bad. Food was good"}
        ]
+}, {
+	"Id": "113",
+	"Priority": "0",
+        "Name": {
+                "Actual": "Taj agra",
+                "Short": "Taj Agra",
+                "Preferred": "Taj Agra"
+        },
+       "Address": {
+               "Number": "119",
+               "Street": "Brigalow Street",
+               "Suburb": "Dickson",
+               "State": "ACT",
+               "Country": "Australia",
+               "Postcode": "2602"
+       },
+       "Coordinates": {
+               "Latitude": "48.2",
+               "Longitude": "19.12"
+       },
+       "Description": {
+               "Short": "It is a good resturarant",
+               "Long": "It is the worlds biggest restuarant and is soo goood .."
+       },
+       "Currency": "AUD",
+       "CostPerPerson": "10",
+       "Cuisine":"Indian",
+       "Rating": {
+               "RatingCount": "10",
+               "AverageRating": "4.2 / 5",
+               "Result": "Excellent"
+       },
+       "Discount": [{
+               "Description": "Buy 2 for 15% Off!"
+       }, {
+               "Description": "flat 90$ for pair of Nike shoes!!"
+
+       }, {
+               "Description": "flat 100$ for pair of Puma shoes!!"
+
+       }],
+       "Pictures": {
+               "Front": ["http://localhost/image/Restuarants/Tajagra/front/1.jpg", "http://localhost/image/Restuarants/Tajagra/front/2.jpeg"],
+               "Menu": ["http://localhost/image/Restuarants/Tajagra/menu/1.jpg", "http://localhost/image/Restuarants/Tajagra/menu/2.jpg"],
+               "Inside": ["http://localhost/image/Restuarants/Tajagra/inside/1.jpg", "http://localhost/image/Restuarants/Tajagra/inside/2.jpeg"],
+               "MenuCard": "https://www.tajagra.com.au/assets/uploads/table%20menu.pdf" 
+       },
+       "OpeningHours": ["11-22", "11-22", "11-22", "11-22", "11-22", "11-00.50", "11-22"],
+       "Parking": {
+               "Car": {
+                 "Available": "Yes",
+                 "FreeForFirst": "2-hr",
+                 "ParkingCostPerHour": "4",
+                 "FreeParking": ["18-06", "18-06", "18-06", "18-06", "18-06", "18-06", "18-06"]
+                },
+               "Bike": {
+                 "Available": "Yes",
+                 "FreeForFirst": "4-hr",
+                 "ParkingCostPerHour": "2",
+                 "FreeParking": ["18-06", "18-06", "18-06", "18-06", "18-06", "18-06", "18-06"]
+                }
+       },
+       "RatingComments": [
+        {"Name": "Sarveshwaran",
+         "RatingProvided": "4.2",
+        "Comments": "Wow it was so delicious"},
+        {"Name": "Ja Priyanka",
+         "RatingProvided": "3.9",
+        "Comments": "Food was tasty. Ambience was also good. Customer service could have been betterr!!"},
+        {"Name": "Naren",
+         "RatingProvided": "2.2",
+        "Comments": "Food arrived very late. Customer service was bad. Food was good"},
+        {"Name": "Saranya",
+         "RatingProvided": "3.6",
+        "Comments": "food arrived very late. Please bring it on time next time.! food was ok"}
+        ]
+}, {
+	"Id": "114",
+	"Priority": "0",
+        "Name": {
+                "Actual": "Taj agra",
+                "Short": "Taj Agra",
+                "Preferred": "Taj Agra"
+        },
+       "Address": {
+               "Number": "119",
+               "Street": "Brigalow Street",
+               "Suburb": "Dickson",
+               "State": "ACT",
+               "Country": "Australia",
+               "Postcode": "2602"
+       },
+       "Coordinates": {
+               "Latitude": "48.2",
+               "Longitude": "19.12"
+       },
+       "Description": {
+               "Short": "It is a good resturarant",
+               "Long": "It is the worlds biggest restuarant and is soo goood .."
+       },
+       "Currency": "AUD",
+       "CostPerPerson": "10",
+       "Cuisine":"Indian",
+       "Rating": {
+               "RatingCount": "10",
+               "AverageRating": "4.2 / 5",
+               "Result": "Excellent"
+       },
+       "Discount": [{
+               "Description": "Buy 2 for 15% Off!"
+       }, {
+               "Description": "flat 90$ for pair of Nike shoes!!"
+
+       }, {
+               "Description": "flat 100$ for pair of Puma shoes!!"
+
+       }],
+       "Pictures": {
+               "Front": ["http://localhost/image/Restuarants/Tajagra/front/1.jpg", "http://localhost/image/Restuarants/Tajagra/front/2.jpeg"],
+               "Menu": ["http://localhost/image/Restuarants/Tajagra/menu/1.jpg", "http://localhost/image/Restuarants/Tajagra/menu/2.jpg"],
+               "Inside": ["http://localhost/image/Restuarants/Tajagra/inside/1.jpg", "http://localhost/image/Restuarants/Tajagra/inside/2.jpeg"],
+               "MenuCard": "https://www.tajagra.com.au/assets/uploads/table%20menu.pdf" 
+       },
+       "OpeningHours": ["11-22", "11-22", "11-22", "11-22", "11-22", "11-00.50", "11-22"],
+       "Parking": {
+               "Car": {
+                 "Available": "Yes",
+                 "FreeForFirst": "2-hr",
+                 "ParkingCostPerHour": "4",
+                 "FreeParking": ["18-06", "18-06", "18-06", "18-06", "18-06", "18-06", "18-06"]
+                },
+               "Bike": {
+                 "Available": "Yes",
+                 "FreeForFirst": "4-hr",
+                 "ParkingCostPerHour": "2",
+                 "FreeParking": ["18-06", "18-06", "18-06", "18-06", "18-06", "18-06", "18-06"]
+                }
+       },
+       "RatingComments": [
+        {"Name": "Sarveshwaran",
+         "RatingProvided": "4.2",
+        "Comments": "Wow it was so delicious"},
+        {"Name": "Ja Priyanka",
+         "RatingProvided": "3.9",
+        "Comments": "Food was tasty. Ambience was also good. Customer service could have been betterr!!"},
+        {"Name": "Naren",
+         "RatingProvided": "2.2",
+        "Comments": "Food arrived very late. Customer service was bad. Food was good"},
+        {"Name": "Saranya",
+         "RatingProvided": "3.6",
+        "Comments": "food arrived very late. Please bring it on time next time.! food was ok"}
+        ]
+}, {
+	"Id": "115",
+	"Priority": "0",
+        "Name": {
+                "Actual": "Taj agra",
+                "Short": "Taj Agra",
+                "Preferred": "Taj Agra"
+        },
+       "Address": {
+               "Number": "119",
+               "Street": "Brigalow Street",
+               "Suburb": "Dickson",
+               "State": "ACT",
+               "Country": "Australia",
+               "Postcode": "2602"
+       },
+       "Coordinates": {
+               "Latitude": "48.2",
+               "Longitude": "19.12"
+       },
+       "Description": {
+               "Short": "It is a good resturarant",
+               "Long": "It is the worlds biggest restuarant and is soo goood .."
+       },
+       "Currency": "AUD",
+       "CostPerPerson": "10",
+       "Cuisine":"Indian",
+       "Rating": {
+               "RatingCount": "10",
+               "AverageRating": "4.2 / 5",
+               "Result": "Excellent"
+       },
+       "Discount": [{
+               "Description": "Buy 2 for 15% Off!"
+       }, {
+               "Description": "flat 90$ for pair of Nike shoes!!"
+
+       }, {
+               "Description": "flat 100$ for pair of Puma shoes!!"
+
+       }],
+       "Pictures": {
+               "Front": ["http://localhost/image/Restuarants/Tajagra/front/1.jpg", "http://localhost/image/Restuarants/Tajagra/front/2.jpeg"],
+               "Menu": ["http://localhost/image/Restuarants/Tajagra/menu/1.jpg", "http://localhost/image/Restuarants/Tajagra/menu/2.jpg"],
+               "Inside": ["http://localhost/image/Restuarants/Tajagra/inside/1.jpg", "http://localhost/image/Restuarants/Tajagra/inside/2.jpeg"],
+               "MenuCard": "https://www.tajagra.com.au/assets/uploads/table%20menu.pdf" 
+       },
+       "OpeningHours": ["11-22", "11-22", "11-22", "11-22", "11-22", "11-00.50", "11-22"],
+       "Parking": {
+               "Car": {
+                 "Available": "Yes",
+                 "FreeForFirst": "2-hr",
+                 "ParkingCostPerHour": "4",
+                 "FreeParking": ["18-06", "18-06", "18-06", "18-06", "18-06", "18-06", "18-06"]
+                },
+               "Bike": {
+                 "Available": "Yes",
+                 "FreeForFirst": "4-hr",
+                 "ParkingCostPerHour": "2",
+                 "FreeParking": ["18-06", "18-06", "18-06", "18-06", "18-06", "18-06", "18-06"]
+                }
+       },
+       "RatingComments": [
+        {"Name": "Sarveshwaran",
+         "RatingProvided": "4.2",
+        "Comments": "Wow it was so delicious"},
+        {"Name": "Ja Priyanka",
+         "RatingProvided": "3.9",
+        "Comments": "Food was tasty. Ambience was also good. Customer service could have been betterr!!"},
+        {"Name": "Naren",
+         "RatingProvided": "2.2",
+        "Comments": "Food arrived very late. Customer service was bad. Food was good"},
+        {"Name": "Saranya",
+         "RatingProvided": "3.6",
+        "Comments": "food arrived very late. Please bring it on time next time.! food was ok"}
+        ]
 }
 ]

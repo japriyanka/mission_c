@@ -13,4 +13,19 @@
     "image": "http://localhost/image/image2.jpeg",
     "name": "Zomato",
     "type": "r"
+}, {
+    "id": 14,
+    "image": "http://localhost/image/image2.jpeg",
+    "name": "Zomato",
+    "type": "r"
+}, {
+    "id": 15,
+    "image": "http://localhost/image/image2.jpeg",
+    "name": "Zomato",
+    "type": "g"
+}, {
+    "id": 13,
+    "image": "http://localhost/image/image2.jpeg",
+    "name": "Zomato",
+    "type": "r"
 }]
