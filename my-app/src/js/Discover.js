@@ -1,7 +1,5 @@
 import React from 'react';
 import './../css/Discover.css';
-import flower from './../image/flower.jpg';
-import Dropdown from 'react-bootstrap/Dropdown';
 
 
 class Discover extends React.Component {
@@ -58,7 +56,7 @@ class Discover extends React.Component {
                        placeholder=" search by restaurant or grocery store name"></input>
                        <div className="know-more">
                    <button type="button" className="grab-button">
-                       Grab deals
+                       Grab Deals
                    </button>
                </div>
                    </div>

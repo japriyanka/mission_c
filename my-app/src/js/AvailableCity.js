@@ -93,23 +93,15 @@ class AvailableCity extends React.Component {
                             } else  if (cityName === 'Sydney' || cityName === 'Thai' ) {
                                 image = 'http://localhost/image/sydney.jpeg';
                             }
-                            var sectionStyle = {
-                                'height': '150px',
-                                'backgroundPosition': 'top',
-                                'backgroundSize': 'cover',
-                                'width': '20%',
-                                'margin':'1%',
-                                'textAlign': '-webkit-center',
-                                'padding': '4%',
-                                'fontWeight': 'bold',
-                                'fontSize': '35px',
-                                'borderRadius': '10px',
-                                'color': 'white',
-                                'backgroundImage': `url(${image})`,
-                            };
-                            return (<div style={sectionStyle} key={index} 
-                            title={cityName} onClick={this.changeBasedOnCity.bind(this)}>
-                                <i>{cityName}</i>
+                            return (
+                            <div className="image_class" key={index} title={cityName} 
+                            onClick={this.changeBasedOnCity.bind(this)}>
+                                <img src={image} className="div-class-city-name"></img>
+                                <h5 class="city_name">{cityName}</h5>
+                                <button type="button" className="btn btn-success stores">
+                                    <b>220+</b> stores
+                                </button>
+                                
                             </div>);
                         })}
 
