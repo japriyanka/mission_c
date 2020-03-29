@@ -193,7 +193,7 @@
     .discover-entire-body-bottom-search {
         width: 100%;
         margin-left: 0px;
-        box-shadow: 1px 2px 1px 3px grey;;
+        box-shadow: 1px 2px 1px 3px grey;
         display: block;
         flex-wrap: nowrap;
     }

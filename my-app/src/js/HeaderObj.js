@@ -26,8 +26,18 @@ class HeaderObj extends React.Component {
             barMenu.className = 'more-to-come';
         } else {
           barMenu.className = 'change';
+          document.getElementById("slideAcross").style.width = "250px";
         }
+
     }
+
+
+    closeNavigation() {
+        document.getElementById("slideAcross").style.width = "0px";
+        this.changeOnMenuBar();
+    }
+
+
 
     hideLoginSignup() {
         this.setState({
@@ -70,8 +80,7 @@ class HeaderObj extends React.Component {
     render() {
         return (
                 <div className="introduction-page-head">       
-                    <div className="empty-section_">
-                    </div>
+                    <div className="empty-section_"></div>
                     <div className="introduction-head-image_" onClick={this.goHome.bind(this)}
                     title="Return to home page">
                         <img alt="logo image" src={go} className="logo-image">
@@ -82,13 +91,16 @@ class HeaderObj extends React.Component {
                         Mission C
                         <span className="top">Offers for you!!!</span>
                     </div>
-                    <div className="introduction-search-box">
-                        <div className="searching-bar">
-                            <img alt="search image" src={search} className="search-img"></img>
-                            <input type="text" placeholder=" search here" 
-                            title="Search here" className="searching-text"></input>
+                    <div className="introduction-search-box"> 
+                        <div className="mobile-searchingbar">
+                        <input type="text" placeholder="search deals here..." 
+                            title="Search here" className="searching-text_"></input>
+                            <button type="button" className="fa fa-search search-but_">
+
+                            </button>
                         </div>
                     </div>
+
                     <div className="introduction-login">
                         <button type="button" className="login-btn-intro"
                         onClick={this.showLoginSignup.bind(this)}>
@@ -144,13 +156,38 @@ class HeaderObj extends React.Component {
                                 
                             </Modal>
                         </div>
+                    <div className="contactus">
+                        <button type="button" className="phone-contact">
+                            <i className="fa fa-phone"></i>&nbsp;
+                            Contact us
+                            <p>for business enquiries</p>
+                        </button>
+                    </div>
                     <div className="more-to-come" id="more-to-come" 
                     onClick={this.changeOnMenuBar.bind(this)}>
-                        More
                         <div className="bar1"></div>
                         <div className="bar2"></div>
-                        <div className="bar3"></div>
+                        <div className="bar3"></div> Menu
                     </div>
+                    <div className="slideAcross" id="slideAcross">
+                        <a href="javascript:void(0)" className="closebtn" 
+                        onClick={this.closeNavigation.bind(this)}>
+                            &times;
+                        </a>
+                        <div className="options_button_t">
+                            <i className="fa fa-home"></i>
+                            <button type="button">Home </button>
+                        </div>
+                        <div className="options_button_t">
+                            <i className="fa fa-user"></i>
+                            <button type="button">Login </button>
+                        </div>
+                        <div className="options_button_t">
+                            <i className="fa fa-envelope-square"></i>
+                            <button type="button"> Contact us </button>
+                        </div>
+                    </div>
+
                 </div>)
     }
 }

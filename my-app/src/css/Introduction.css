@@ -37,8 +37,6 @@
     background-color: rgb(74, 140, 184);
     display: flex;
     flex-wrap: wrap;
-
-
 }
 
 .introduction-head-image_ {
@@ -76,10 +74,39 @@
     margin-top: -10px;
     font-size: 15px;
 }
+
 .introduction-search-box {
     display: flex;
     flex-basis: 30%;
 }
+
+.mobile-searchingbar {
+    display: flex;
+    margin-top:15px;
+    flex-basis: 100%;
+    background: white;
+    border-radius: 5px;
+    height: 50px;
+
+}
+
+.searching-text_ {
+   border: none;
+   padding: 2%;
+   width: 100%;
+   flex-basis: 100%;
+   border-radius: 5px;
+}
+
+.search-but_ {
+    display: flex;
+    position: relative;
+    height: 50px;
+    background: rgb(236, 236, 236);
+    border: none;
+    border-radius: 5px;
+}
+
 
 .searching-bar {
     margin-top: 20px;
@@ -96,20 +123,34 @@
     width: 55px;
 }
 
-.searching-text {
-    border: transparent;
-    border-radius: 10px;
-    width: 100%;
-    background-color: white;
-}
 
 
 .introduction-login {
     display: flex;
     flex-basis: 12%;
     margin-left: 5%;
-
 }
+
+.contactus {
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+}
+
+.contactus p {
+    font-size: 12px;
+    padding-left: 30px;
+}
+
+.phone-contact {
+    font-size: 20px;
+    background: transparent;
+    color: white;
+    height: 40px;
+    width: 100%;
+    border: none;
+}
+ 
 
 .login-btn-intro {
     padding: 1%;
@@ -328,7 +369,257 @@
     flex-direction: column;
 }
 
-@media screen and (max-width: 1000px) {
+
+.more-to-come {
+    display: none;
+}
+
+
+
+.show-options_t {
+    display: none;
+}
+
+
+.slideAcross {
+    display: none;
+}
+
+
+@media screen and (max-width: 1200px) {
+    .introduction-search-box {
+        display: flex;
+        flex-basis: 70%;
+    }
+    
+    .searching-bar {
+        display: none;
+    }
+    
+    .mobile-searchingbar {
+        display: flex;
+        flex-basis: 80%;
+        align-items: center;
+        background: white;
+        border-radius: 5px;
+        margin-top: 0px;
+        height: 50px;
+
+    }
+
+    .searching-text_ {
+       border: none;
+       padding: 2%;
+       
+       width: 100%;
+       border-radius: 5px;
+    }
+
+    .search-but_ {
+        display: flex;
+        position: relative;
+        height: 50px;
+        background: rgb(236, 236, 236);
+        border: none;
+        border-radius: 5px;
+    }
+    
+    .introduction-page-head {
+        height: 80px;
+        display: flex;
+        align-items: center;
+    }
+    
+    .empty-section_ {
+        flex-direction: none;
+        flex-basis: 2%;
+    }
+
+    .logo-image {
+        margin-top: 0px;
+        margin-right: 20px;
+        height: 40px;
+        width: 40px;
+    }
+    
+    .introduction-head-name {
+        display:flex;
+        flex-direction: column;
+        margin-top:0px;
+        width: 100%;
+        margin-left: 0px;
+        color: white;
+        font-size: 25px;
+        font-weight: bold;
+        font-family:Raleway;
+    }
+
+    .more-to-come {
+        display: flex;
+    }
+    
+
+    .top {
+        margin-top: 0.5px;
+        font-weight: lighter;
+    }
+    
+    .introduction-login {
+        display: none;
+    }
+
+
+    .slideAcross {
+        height: 250px;
+        width: 0%; /* 0 width - change this with JavaScript */
+        position: absolute; /* Stay in place */
+        z-index: 100; /* Stay on top */
+        top: 0;
+        margin-top: 10px;
+        right: 0;
+        display: inline-block;
+        background-color: white; /* Black*/
+        overflow-x: hidden; /* Disable horizontal scroll */
+        padding-top: 60px; /* Place content 60px from the top */
+        transition: 500ms; /* 0.5 second transition effect to slide in the sidepanel */
+      }
+
+
+
+      .slideAcross button {
+        text-decoration: none;
+        font-size: 15px;
+        color: #818181;
+        display: block;
+        transition: 500ms;
+        word-wrap: break-word;
+        width: 100%;
+        border: none;
+        padding: 2%;
+        height: 40px;
+        background:transparent;
+      }
+
+      .options_button_t:hover {
+          background-color: #d4d4d4;
+          color: white;
+      }
+
+      .contactus {
+          display: none;
+      }
+
+
+
+      .slideAcross .closebtn {
+        position: absolute;
+        top: 0;
+        right: 0;
+        color: #818181;
+        margin-right: 10%;
+        font-size: 37px;
+        margin-right: 50px;
+      }
+
+
+      .options_button_t {
+          display: flex;
+      }
+
+      .options_button_t .fa {
+          width: 20px;
+          height: 40px;
+          display: flex;
+          align-items: center;
+          flex-basis: 40%;
+          font-size: 20px;
+          margin-top: 10px;
+          color: #818181;
+          flex-direction: column;
+      }
+
+
+      .options_button_t button {
+          display: flex;
+          flex-grow: 1;
+          margin-top: 5px;
+          text-align: -webkit-left;
+          flex-direction: column;
+      }
+
+}
+
+@media screen and (max-width: 800px) {
+
+    .introduction-search-box {
+        display: flex;
+        flex-basis: 70%;
+    }
+    
+    .searching-bar {
+        display: none;
+    }
+    
+    .mobile-searchingbar {
+        display: flex;
+        flex-basis: 80%;
+        margin-top: 0px;
+        height: 40px;
+        align-items: center;
+        background: white;
+        border-radius: 5px;
+    }
+
+    .contactus {
+        display: none;
+    }
+
+    .searching-text_ {
+       border: none;
+       padding: 2%;
+       width: 100%;
+       border-radius: 5px;
+    }
+
+    .search-but_ {
+        display: flex;
+        position: relative;
+        height: 40px;
+        background: rgb(236, 236, 236);
+        border: none;
+        border-radius: 5px;
+    }
+    
+    .introduction-page-head {
+        height: 80px;
+        display: flex;
+        align-items: center;
+    }
+    
+    .empty-section_ {
+        flex-direction: none;
+        flex-basis: 2%;
+    }
+
+    .more-to-come {
+        display: flex;
+    }
+    
+
+    .logo-image {
+        margin-top: 0px;
+        margin-right: 20px;
+        height: 40px;
+        width: 40px;
+    }
+    
+    .introduction-head-name, .top {
+        display:none
+    }
+    
+    .introduction-login {
+        display: none;
+    }
 
     .register-business-body {
         width: 100%;
@@ -345,7 +636,7 @@
     .register-business-head {
         width: 100%;
         padding: 4%;
-        font-size: 29px;
+        font-size: 25px;
         background-color: #f5f5f5;
         font-family: Roboto;
     }
@@ -368,5 +659,79 @@
         text-align: -webkit-center;
         text-align: -moz-center;
     }
+
+    .slideAcross {
+        height: 250px;
+        width: 0%; /* 0 width - change this with JavaScript */
+        position: absolute; /* Stay in place */
+        z-index: 100; /* Stay on top */
+        top: 0;
+        margin-top: 10px;
+        right: 0;
+        display: inline-block;
+        background-color: white; /* Black*/
+        overflow-x: hidden; /* Disable horizontal scroll */
+        padding-top: 60px; /* Place content 60px from the top */
+        transition: 500ms; /* 0.5 second transition effect to slide in the sidepanel */
+      }
+
+
+
+      .slideAcross button {
+        text-decoration: none;
+        font-size: 15px;
+        color: #818181;
+        display: block;
+        transition: 500ms;
+        word-wrap: break-word;
+        width: 100%;
+        border: none;
+        padding: 2%;
+        height: 40px;
+        background:transparent;
+      }
+
+      .options_button_t:hover {
+          background-color: #d4d4d4;
+          color: white;
+      }
+
+
+
+      .slideAcross .closebtn {
+        position: absolute;
+        top: 0;
+        right: 0;
+        color: #818181;
+        margin-right: 10%;
+        font-size: 37px;
+        margin-right: 50px;
+      }
+
+
+      .options_button_t {
+          display: flex;
+      }
+
+      .options_button_t .fa {
+          width: 20px;
+          height: 40px;
+          display: flex;
+          align-items: center;
+          flex-basis: 40%;
+          font-size: 20px;
+          margin-top: 10px;
+          color: #818181;
+          flex-direction: column;
+      }
+
+
+      .options_button_t button {
+          display: flex;
+          flex-grow: 1;
+          margin-top: 5px;
+          text-align: -webkit-left;
+          flex-direction: column;
+      }
     
 }
