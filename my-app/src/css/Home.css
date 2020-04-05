@@ -42,3 +42,14 @@
     display: flex;
     
 }
+
+
+@media screen and (max-width: 800px) {
+    .column-first {
+        flex-basis: 0%;
+        display: none;
+    }
+    .column-second {
+        flex-basis: 100%;
+    }
+}

@@ -31,6 +31,8 @@
     width:50px;
     background-position: top;
     background-size: cover;
+    object-fit: cover;
+
 }
 
 .name-in-name-box {
@@ -47,8 +49,7 @@
 }
 
 .but-login {
-    width: 70%;
-    margin-left: 10%;
+    width: 100%;
     text-align: -webkit-center;
     background-color: white;
     color:rgb(74, 140, 184);
@@ -100,4 +101,128 @@
     float: right;
     content: ' \02C7';
     font-size: 1.8em;
+}
+
+
+@media screen and (max-width: 1350px) {
+    .name-box {
+        padding: 3px;
+        margin-top: 15px;
+    }
+    
+    .image-name-box {
+        padding:2px;
+    }
+    
+    .image-src {
+        height:40px;
+        width:40px;
+    }
+    
+    .name-in-name-box {
+        flex-grow: 1;
+        flex-basis: 0%;
+        padding: 2px;
+        margin-top: 3px;
+      
+    }
+    
+    .login-button-box {
+        width: 100%;
+        padding: 4px;
+        margin-top: 20px;
+    }
+    
+    .but-login {
+        width: 100%;
+        margin-left: 4px;
+    }
+    
+    .dd-options-available {
+        padding: 1%;
+        margin-top: 10%;
+        text-align: -webkit-left;
+        font-family: Raleway;
+    }
+    
+    .enclosing-options {
+        width: 100%;
+        margin-left: 5%;
+    
+    }
+    
+    .option {
+        height: 50px;
+        width: 90%;
+        font-size: 1.2em;
+        color: black;
+        text-align: -webkit-center;
+        background-color: transparent;
+        border: none;
+    }
+    
+    .bar-DD-heading-t {
+        margin-top: 30px;
+        height: 40px;
+        font-family: Raleway;
+        padding: 5px;
+        font-weight: bold;
+        background-color: whitesmoke;
+        font-size: 1.2em;
+        text-align: -webkit-center;
+    }
+    
+    .bar-DD-heading-t::after {
+        float: right;
+        content: ' \02C7';
+        font-size: 1.8em;
+    }    
+}
+
+
+@media screen and (max-width: 1060px) {
+    .name-box {
+        display: block;
+        flex-wrap: nowrap;
+    }
+    
+    .image-name-box {
+        flex-basis: 0%;
+        height: 40px;
+        color: white;
+        padding:2px;
+        margin-top: 10px;
+    }
+
+    .name-in-name-box {
+        flex-basis: 0%;
+        padding: 2px;
+        margin-top: 5px;
+    }
+    
+    .login-button-box {
+        width: 100%;
+        padding: 1%;
+    }
+    
+    .but-login {
+        width: 100%;
+        text-align: -webkit-center;
+        background-color: white;
+        color:rgb(74, 140, 184);
+        margin: none;
+        border: 1px solid blue;
+        border-radius: 5px;
+    }
+
+    .image-src {
+        height: 40px;
+        width: 40px;
+    } 
+}
+
+@media screen and (max-width: 800px) {
+    .home-dd-full {
+       display: none;
+    }
 }

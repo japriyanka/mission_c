@@ -21,8 +21,6 @@
     flex-direction: column;
 }
 
-
-
 .view-all-but {
     display:flex;
     flex-grow: 1;
@@ -35,9 +33,9 @@
     width: 100%;
     font-size: 0.7em;
     padding: 1%;
-    color: black;
-    background-color: transparent;
-    border: 1px solid black;
+    color: white;
+    background-color: rgb(64, 167, 64);
+    border:  none;
     border-radius: 4px;
 
 }
@@ -47,10 +45,8 @@
 }
 
 .restuarant-cardspace {
-    display: flex;
-    flex-wrap: wrap;
-   
- 
+    width: 100%;
+    overflow-x: scroll;
 
 }
 
@@ -74,6 +70,7 @@
     margin-top: 150px;
     display: flex;
     height: 40px;
+    display: none;
 }
 
 .left {
@@ -92,12 +89,59 @@
 
 .center-cards {
     margin-top: 1%;
-    flex-basis: 94%;
-    width: 94%;
+    width: 100%;
+   
 }
 
 .right-indicator {
     margin-top: 3%;
     display: flex;
     flex-grow:1;
+}
+
+
+@media screen and (max-width: 1620px) {
+     
+    .resturant-name_ {
+        font-size: 2.0em;
+        flex-basis: 80%;
+    }
+        
+    .view-all-but {
+        margin-top: 10px;
+    }
+    
+    .view-all_ {
+        color: white;
+        background-color: rgb(64, 167, 64);
+        border:  none;
+    }
+        
+    .restuarant-cardspace {
+        width: 100%;
+        overflow-x: scroll;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .resturant-name_ {
+        font-size: 27px;
+        flex-basis: 80%;
+    }
+        
+    .view-all-but {
+        margin-top: 10px;
+    }
+    
+    .view-all_ {
+        color: white;
+        background-color: rgb(64, 167, 64);
+        border:  none;
+    }
+        
+    .restuarant-cardspace {
+        width:100%;
+        max-width: 100%;
+        overflow: scroll;
+    }
 }

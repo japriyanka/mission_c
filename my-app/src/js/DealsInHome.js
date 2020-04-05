@@ -41,8 +41,6 @@ class DealsInHome extends React.Component {
         clearTimeout(this.timer);
     }
     render() {
-        const leftButton = '<';
-        const rightButton = '>';
         return (
             <div className="cards-deals-home" id="cards-deals-home">
                 <div className="top-deals-home">

@@ -1,7 +1,5 @@
 import React from 'react';
 import './../css/Restuarants.css';
-import search from './../image/search.webp';
-import Dropdown from 'react-bootstrap/Dropdown';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Cards from './Cards';
 import ReactDOM from 'react-dom';
