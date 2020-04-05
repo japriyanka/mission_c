@@ -43,7 +43,7 @@ class Home extends React.Component {
         return (
             <div className="main-home" id="main-home">
                 <div className="tool-bar">
-                    <HeaderObj />
+                    <HeaderObj ip={this.props.ip} />
                 </div>
 
                 <div className="options-bar">
@@ -55,11 +55,11 @@ class Home extends React.Component {
                             <DealsInHome dealsInfo={this.props.dataPassing} type="r" />
                         </div>
                         <div className="restaurant">
-                            <Restuarants dealsInfo={this.props.dataPassing} type="r" />
+                            <Restuarants ip={this.props.ip} dealsInfo={this.props.dataPassing} type="r" />
                         </div>
                        
                         <div className="groceries">
-                            <Groceries />
+                            <Groceries ip={this.props.ip} />
                         </div>
                     </div>
                 </div>

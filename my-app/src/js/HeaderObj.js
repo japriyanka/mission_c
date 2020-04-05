@@ -74,7 +74,7 @@ class HeaderObj extends React.Component {
     }
 
     goHome() {
-        ReactDOM.render(<Introduction />, document.getElementById('root'));
+        ReactDOM.render(<Introduction ipaddress={this.props.ip} />, document.getElementById('root'));
     }
 
     render() {

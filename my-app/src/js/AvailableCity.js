@@ -11,7 +11,8 @@ class AvailableCity extends React.Component {
 
     }
     changeBasedOnCity(cityName) {
-        ReactDOM.render(<IntroductionCity name={cityName} />, document.getElementById('root'));
+        console.log(this.props);
+        ReactDOM.render(<IntroductionCity ip={this.props.ip} name={cityName} />, document.getElementById('root'));
     }
 
     scrollLeft() {
@@ -87,11 +88,11 @@ class AvailableCity extends React.Component {
                         {listNames.map((cityName, index) => {
                             let image = '';
                             if (cityName === 'Canberra' || cityName === 'Indian') {
-                                image = 'http://localhost/image/canberra.jpeg';
+                                image = 'http://'+this.props.ip+'/image/canberra.jpeg';
                             } else if (cityName === 'Perth' || cityName === 'Korean' ) {
-                                image = 'http://localhost/image/perth.jpeg';
+                                image = 'http://'+this.props.ip+'/image/perth.jpeg';
                             } else  if (cityName === 'Sydney' || cityName === 'Thai' ) {
-                                image = 'http://localhost/image/sydney.jpeg';
+                                image = 'http://'+this.props.ip+'/image/sydney.jpeg';
                             }
                             return (
                             <div className="image_class" key={index} title={cityName} 

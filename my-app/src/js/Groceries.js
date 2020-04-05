@@ -25,7 +25,7 @@ class Restuarants extends React.Component {
 
     componentDidMount() {
         this.component_mount = true;
-        fetch("http://localhost/restuarants.json")
+        fetch("http://"+this.props.ip+"/restuarants.json")
         .then ((response) => response.json())
         .then ((data) => { 
             console.log(data);

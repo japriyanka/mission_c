@@ -23,7 +23,7 @@ class TopDeals extends React.Component {
     }
 
     componentDidMount() {
-        fetch("http://localhost/details.json")
+        fetch("http://"+this.props.ip+"/details.json")
         .then ((response) => response.json())
         .then ((data) => { 
             this.setState({
@@ -78,34 +78,21 @@ class TopDeals extends React.Component {
 
     handleClick() {
         /* Details passing from the  Top deals page to the Home page */
-        ReactDOM.render(<Home dataPassing={this.state.top3D} />, document.getElementById('root'));
+        ReactDOM.render(<Home ip={this.props.ip} dataPassing={this.state.top3D} />, document.getElementById('root'));
     }
+
+
 
     render() {
         return  (
-        <div className="top-deals-whole-body">
+        <div id={this.props.id + "_id"} className="top-deals-whole-body">
+          
             <div className="top-deals-head">
                 <div className="topic"> 
                    {this.props.name}
                 </div>
-                
-                <div className="topic-option">
-                    <button className="city-text-topic">
-                        Restaurant
-                        <i className="fa fa-caret-down"></i>
-                    </button>
-
-                    <div className="show-type-option">
-                        <a href="#" >Restaurant</a>
-                        <a href="#">Groceries</a>
-                    </div>
-                </div>
-                <div className="empty-topic">
-
-                </div>
-                <div className="see-all-textT" onClick={this.handleClick}>
-                    SEE ALL
-                </div>
+                <div className="empty-topic"></div>
+              
                 <div className="see-allT" title="scroll left">
                     <button type="button" className="see-all-butT"
                     onClick={this.scrollLeftTop.bind(this)}>
@@ -120,6 +107,12 @@ class TopDeals extends React.Component {
                         <i className="fa fa-caret-right"></i>
                     </button>
                 </div>
+                <div className="text-all">
+                    <button className="btn btn-success see-all-textT" onClick={this.handleClick}>
+                        SEE ALL
+                    </button>
+                </div>
+              
             </div>
 
             <div className="three_restuarants12_" id="three_restuarants_">
@@ -129,7 +122,6 @@ class TopDeals extends React.Component {
             </div>
 
             
-            <hr className="line-show"></hr>
         </div>)
     }
 
