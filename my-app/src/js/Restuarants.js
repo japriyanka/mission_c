@@ -1,6 +1,5 @@
 import React from 'react';
 import './../css/Restuarants.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
 import Cards from './Cards';
 import ReactDOM from 'react-dom';
 import SectionalPageHome from './SectionalPageHome';
@@ -93,7 +92,7 @@ class Restuarants extends React.Component {
                    Restaurants
                 </div> 
                 <div className="view-all-but">
-                    <button type="button" className="btn btn-success view-all_"
+                    <button type="button" className="view-all_"
                     onClick={this.passToSectionalPage}
                     title="visit all">
                         View more
@@ -102,7 +101,7 @@ class Restuarants extends React.Component {
               
             </div>
 
-           <div className="restuarant-cardspace" id="restuarant-cardspace_t">
+           <div className="restuarant-cardspace" id="restuarant-cardspace">
                 <div className="left-indicator">
                     <button type="button" className="left"
                     title="scroll left" onClick={this.scrollLeftRestaurant}>

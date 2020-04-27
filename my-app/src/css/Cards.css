@@ -12,8 +12,7 @@
 .flex-layout {
    display: flex;
    overflow-x: scroll;
-   overflow:hidden;
-   height: 400px;
+   height: 330px;
 }
 
 .flex-layout_section {
@@ -97,7 +96,7 @@
 
 .card-body-information {
     padding: 2%;
-    box-shadow: 1px 2px 3px grey;
+    border: 1px solid rgb(214, 210, 210);
 }
 
 .cuisine-star {

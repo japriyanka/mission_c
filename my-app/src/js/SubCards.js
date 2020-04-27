@@ -87,72 +87,6 @@ class SubCards extends React.Component {
         const findOpeningTime = this.findClosed(this.props.info.OpeningHours);
         console.log(findOpeningTime);
         return (
-        /*    
-        <div className="cards">
-            <div className="top-space">
-                <div className="rating-space">
-                    {this.ratingChoose(this.props.info.Rating.AverageRating)}
-                </div>
-                <div className="cuisine-name">
-                    {this.props.info.Cuisine}
-                </div>
-            </div>
-
-            <div className="card-image">
-                <img src={this.props.info.Pictures.Front
-                    [Math.floor((Math.random() * 
-                    this.props.info.Pictures.Front.length))]} 
-                    className="front-image" onClick={this.showCardPopup.bind(this)}/>
-                    <div className="card-button">
-                        <div className="modal-class">
-                            <Modal visible={this.state.cardShow} border="1px solid blue" height="100%" width="800px"  
-                            effect="fadeInUp" onClickAway={this.hideCardPopup.bind(this)}>
-                                <div className="card-enlarged-full_">
-                                    <CardEnlarged cardInfo={this.props.info} />
-                                </div>
-                                <button type="button" className="btn btn-danger card-close-button"
-                                onClick={this.hideCardPopup.bind(this)}>
-                                    CLOSE
-                                </button>
-                            </Modal>
-                        </div>
-                        
-                    </div>
-            </div>
-            <div className="card-information">
-                <div className="card-first">
-                    <div className="card-name">
-                        {this.props.info.Name.Short}
-                    </div>
-                    <div className="card-address">  
-                            {this.props.info.Address.Street}<br></br>
-                            {this.props.info.Address.Suburb}
-                    </div>
-                </div>
-                <div className="card-open">
-                    
-                    <button type="button" className="status-button">
-                    { 
-                         findOpeningTime['Available'] === true ? 
-                        `${findOpeningTime['time']}:00`: "Closed"
-                    } 
-                    </button>
-                </div>
-                
-                <div className="card-description">
-                    <b>Description</b> <br></br>
-                        {this.props.info.Description.Short}
-                </div>
-                
-            </div>
-            <button type="button" className="btn btn-success"
-            onClick={this.showCardPopup.bind(this)}>
-                    {this.props.info.Discount.length} 
-                    {' '} Offer{this.props.info.Discount.length > 1 ? 's': ''} 
-                    {' '}Available
-            </button>
-        </div>
-        */
        <div className="cards">
          
            <div className="card-image">
@@ -189,7 +123,6 @@ class SubCards extends React.Component {
                 <div className="card-address">
                     {this.props.info.Address.Suburb}
                 </div>
-
 
                 <div className="cuisine-star">
                     <div className="cuisine-info">

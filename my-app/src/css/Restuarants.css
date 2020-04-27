@@ -16,7 +16,7 @@
     display:flex;
     flex-basis: 90%;
     color:black;
-    font-size: 2.7em;
+    font-size: 2.0em;
     font-family: Raleway;
     flex-direction: column;
 }
@@ -26,28 +26,22 @@
     flex-grow: 1;
     height: 40px;
     margin-top: 0.3%;
-    font-size: 20px;
+    font-size: 15px;
 }
 
 .view-all_ {
-    width: 100%;
-    font-size: 0.7em;
+    width: 100px;
     padding: 1%;
     color: white;
-    background-color: rgb(64, 167, 64);
+    background-color:rgb(74, 140, 184);;
     border:  none;
     border-radius: 4px;
 
 }
 
-.view-all_:hover {
-    font-weight: bold;
-}
 
 .restuarant-cardspace {
     width: 100%;
-    overflow-x: scroll;
-
 }
 
 .image-navigation-left {
@@ -103,7 +97,7 @@
 @media screen and (max-width: 1620px) {
      
     .resturant-name_ {
-        font-size: 2.0em;
+        font-size: 22px;
         flex-basis: 80%;
     }
         
@@ -113,35 +107,35 @@
     
     .view-all_ {
         color: white;
-        background-color: rgb(64, 167, 64);
         border:  none;
     }
         
     .restuarant-cardspace {
         width: 100%;
-        overflow-x: scroll;
     }
 }
 
 @media screen and (max-width: 800px) {
     .resturant-name_ {
-        font-size: 27px;
+        margin-top: 10px;
+        font-size: 24px;
         flex-basis: 80%;
     }
         
     .view-all-but {
+        height: 30px;
         margin-top: 10px;
+        font-size: 15px;
     }
+    
     
     .view-all_ {
         color: white;
-        background-color: rgb(64, 167, 64);
         border:  none;
     }
         
     .restuarant-cardspace {
         width:100%;
         max-width: 100%;
-        overflow: scroll;
     }
 }
