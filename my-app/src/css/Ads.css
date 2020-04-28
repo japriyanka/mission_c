@@ -1,16 +1,18 @@
-.ads-zone {
+.ads-zone_t {
     background-size: cover;
     background-position: center;
     padding: 2%;
 }
 
-.three-restuarants-ad {
+.three_restuarants-ad_t {
     padding: 1%;
 }
 
 .image-full-body {
-    width: 200px;
-    height: 200px;
+    width: 180px;
+    height: 180px;
+    margin-top:10px;
+
 }
 
 .image-top {
@@ -54,4 +56,37 @@
 }
 
 .visit-site-but:hover {
+}
+    
+.title_ad {
+    padding: 5px 2px;
+    width: 100%;
+    margin-top: 10px;
+}
+
+@media screen and (max-width: 800px) {
+    .three_restuarants-ad_t {
+        display: flex;
+        flex-wrap: wrap;
+        height: 200px;
+        overflow-y: scroll;
+    }
+    .ads-zone_t {
+        width: 95%;
+        margin-left: 2%;
+        box-shadow: 3px 3px 3px 3px grey;
+    }
+    
+    .title_ad {
+        padding: 5px 20px;
+        width: 100%;
+        margin-top: 10px;
+    }
+    .image-full-body {
+        padding: 10px 20px;
+        width: 200px;
+        height: 200px;
+        margin-top:10px;
+    }
+    
 }

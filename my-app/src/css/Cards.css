@@ -232,30 +232,30 @@
 }
 
 @media screen and (max-width: 800px) {
-    .cards {
+    .flex-layout_section .cards {
         width: 98%;
         padding: 1px 0px;
         margin: 10px 10px;
         border: 1px solid rgb(51, 50, 50);
     }
 
-    .card-image {
+    .flex-layout_section .card-image {
         height: 150px;
         width: 100%;
     }
 
-    .front-image {
+    .flex-layout_section .front-image {
         height: 200px;
         width: 100%;
         object-fit: cover;
     }
 
-    .button-offer {
+    .flex-layout_section .button-offer {
         margin-top: 160px;
         width: 100%;
     }
 
-    .card-body-information {
+    .flex-layout_section .card-body-information {
         padding: 1%;
     }  
 
@@ -263,7 +263,7 @@
         padding: 10px 10px;
     }
 
-    .rating-info {
+    .flex-layout_section .rating-info {
         flex-grow: 1;
         margin: 3px 15px;
         font-size: 23px;
@@ -272,7 +272,7 @@
 
     
 
-    .card-address {
+    .flex-layout_section .card-address {
         font-size: 17px;
         padding-left: 2%;
         /*  font-family: Verdana, Geneva, Tahoma, sans-serif; */
@@ -280,21 +280,21 @@
     
     }
     
-    .cuisine-info {
+    .flex-layout_section .cuisine-info {
         flex-basis: 15%;
         text-align: -webkit-center;
         padding: 10px;
         border: 1px solid black;
     }
     
-    .average-cost-information {
+    .flex-layout_section .average-cost-information {
         flex-grow: 1;
         padding: 1%;
         text-align: -webkit-right;
         font-size: 1.5em;
     }
 
-    .name-info-first-half {
+    .flex-layout_section .name-info-first-half {
         flex-basis: 75%;
         font-size: 22px;
         font-weight: bold;

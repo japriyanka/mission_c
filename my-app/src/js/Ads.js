@@ -21,7 +21,7 @@ class Ads extends React.Component {
         });
         */  
        this.setState({
-           top3D: ["Ad1", "Ad2", "Ad3"]
+           top3D: ["Ad1", "Ad2", "Ad3", "Ad4"]
         });      
     }
 
@@ -29,10 +29,13 @@ class Ads extends React.Component {
 
     render() {
         return  (
-        <div className="ads-zone">
-            <div className="three_restuarants-ad">
+        <div className="ads-zone_t">
+            <div className="title_ad">
+                Advertisements
+            </div>
+            <div className="three_restuarants-ad_t">
                 {this.state.top3D.map((top_3, index) => {
-                    return (<div className="image-full-body">
+                    return (<div key={index} className="image-full-body">
                         <div className="image-top">
                             {top_3}
                         </div>

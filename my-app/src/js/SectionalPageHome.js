@@ -138,6 +138,9 @@ class SectionalPageHome extends React.Component {
                                 <Cards cardInfo={this.state.restaurants} from="section" />
                             </div>
                         </div>
+                        <div className="ads-zone_insidehome">
+                            <Ads />
+                        </div>
                         <div className="third-tool-bar-sectional">
                             <OtherCategories />
                         </div>
