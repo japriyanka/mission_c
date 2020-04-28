@@ -2,13 +2,8 @@ import React from 'react';
 import ToolBar from './ToolBar';
 import SectionalPageHomeDD from './SectionalPageDD';
 import './../css/SectionalPageHome.css';
-import left from './../image/left.png';
-import DealsCard from './DealsCard';
-import Modal from 'react-awesome-modal';
-import right from './../image/right.png';
 import Cards from './Cards';
 import Ads from './Ads';
-import FilterByModal from './FilterByModal';
 import HeaderObj from './HeaderObj';
 import FilterBy from './FilterBy';
 import OtherCategories from './OtherCategories';
@@ -112,22 +107,13 @@ class SectionalPageHome extends React.Component {
                 <div className="tool-bar">
                     <HeaderObj />
                 </div>
-                <div className="second-tool-bar">
-                    <div className="first-half-second-tool-bar">
+                <div className="body_section">
+                    <div className="options-tool-bar-first">
+                        <FilterBy />
+                    </div>
+                    <div className="second-tool-bar">
                         <div className="options-tool-bar-sub">
                             <SectionalPageHomeDD type={this.props.type === 'r' ? 'r' : 'g'} />
-                        </div>
-                      
-                        <div className="top-deals-bar" id="top-deals-bar">
-                            <div className="deals-bar-title">
-                                Top 3 deals
-                            </div>
-                            <div className="deals-card-display">
-                                <DealsCard dealsInfo={this.props.dealsInfo} />
-                            </div>
-                        </div>
-                        <div className="options-tool-bar-sub" id="options-tool-bar-sub">
-                            <FilterBy />
                         </div>
                         <div className="top-deals-bar" id="sectional-view-id">
                             <div className="deals-bar-title">
@@ -152,18 +138,17 @@ class SectionalPageHome extends React.Component {
                                 <Cards cardInfo={this.state.restaurants} from="section" />
                             </div>
                         </div>
+                        <div className="third-tool-bar-sectional">
+                            <OtherCategories />
+                        </div>
                     </div>
                     <div className="ads-zone">
                         <Ads />
                     </div>
                 </div>
-                <div className="third-tool-bar-sectional">
-                    <OtherCategories />
-                </div>
                 <div className="footer-body">
                     Mission C &copy; 2019
                 </div>
-
             </div>
               
             );
@@ -171,88 +156,3 @@ class SectionalPageHome extends React.Component {
 }
 
 export default SectionalPageHome;
-
-
-/**
- *                             <DealsCard dealsInfo={this.props.dealsInfo} />
-
- * <div className="scrollable-bar" id="scrollable-bar">
-                    <span className="top-deals-name">
-                        Top {this.props.type === 'r' ? 'Restaurants' : 'Groceries'}
-                        {' '} Deals
-                    </span>
-                </div>
-                <div className="sectional-second-half">
-                
-                <div className="restaurant-section-name">
-                    <span className="section-name_r">
-                        {this.props.type === 'r' ? 'Restaurants' : 'Groceries'}
-                    </span>
-                    <button type="button" className="btn btn-success 
-                    add-button-section">
-                        + New 
-                    </button>
-                    <div className="empty-section">
-                        <div className="options-list" hidden={this.state.popularShow}>
-                            <div className="option-name">
-                                <div className="l_name">Popularity</div>
-                            </div>
-                            <button type="button" className="close-button"
-                            onClick={this.closeButtonPopular}>
-                                X
-                            </button>
-                        </div>
-                        <div className="options-list" hidden={this.state.lowToHighShow}>
-                            <div className="option-name" >
-                                <div className="l_name">Low -> High</div> 
-                            </div>
-                            <button type="button" className="close-button"
-                            onClick={this.closeButtonLow}>
-                                X
-                            </button>
-                        </div>
-                        <div className="options-list" hidden={this.state.highToLowShow}>
-                            <div className="option-name" >
-                                <div className="l_name">High -> Low</div>
-                            </div>
-                            <button type="button" className="close-button"
-                            onClick={this.closeButtonHigh}>
-                                X
-                            </button>
-                        </div>
-
-                    </div>
-                    <div className="filter-by-text">Filter by:</div>
-                    <input type="text" className="filter-by" placeholder="  choose option(s) " 
-                    onClick={this.showFilterBy}>
-                    </input>
-                    <span className="ads-zone-name">
-                       Latest Offers 
-                    </span>
-                    <button type="button" className="btn btn-success add-ads-section">
-                        + Post
-                    </button>
-                    
-                </div>
-                <div className="restaurant-ad-section" id="restaurant-ad-section">
-                    <div className="restaurant-block">
-                        <Cards cardInfo={this.state.restaurants} />
-                    </div>
-                    <div className="ad-section">
-                        <Ads  />
-                    </div>
-                </div>
-                <Modal name={this.state.filterShow} visible={this.state.filterShow} height="300px" width="500px"  
-                        effect="fadeInUp" onClickAway={this.hideFilterBy.bind(this)}>
-                    <FilterByModal />
-                    <button type="button" className="apply-filter-but"
-                    onClick={this.applyFilterBy}>
-                        Apply Filter
-                    </button>
-                    <button type="button" className="close-filter-but"
-                    onClick={this.hideFilterBy}>
-                        Clear & Close
-                    </button>
-                </Modal>
-                </div>
- */

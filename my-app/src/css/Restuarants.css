@@ -97,8 +97,9 @@
 @media screen and (max-width: 1620px) {
      
     .resturant-name_ {
-        font-size: 22px;
-        flex-basis: 80%;
+        margin-top: 10px;
+        font-size: 27px;
+        flex-basis: 90%;
     }
         
     .view-all-but {

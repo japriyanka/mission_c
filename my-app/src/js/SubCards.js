@@ -116,7 +116,7 @@ class SubCards extends React.Component {
                     <div className="rating-info">
                         {this.props.info.Rating.AverageRating.split('/')[0]}
                         <img src={star} className="gold-star-image"></img> 
-                        <spam className="small-character-info"> {" "} / 5</spam>
+                        <span className="small-character-info"> {" "} / 5</span>
                     </div>
                 </div>
                

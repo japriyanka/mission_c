@@ -1,13 +1,13 @@
 .filter-by-full-body {
-    position:fixed;
-    width: 13%;
+    margin-top: 50px;
+    width: 100%;
 }
 
 .filter-by-heading_ {
     width: 100%;
     font-size: 1.3em;
     font-weight: bold;
-    padding: 2%;
+    padding: 5px;
 }
 
 .filter-by-body {

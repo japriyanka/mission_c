@@ -1,35 +1,51 @@
 .top-heading-DD {
     position:fixed;
-    width: 13%;
+    width: 62.5%;
+    display: flex;
+    height: 60px;
+    padding: 10px 2px;
+    background-color: rgb(254, 254, 254);
 }
-
-.bar-DD-heading {
-    width: 100%;
-    font-size: 1.3em;
-    font-weight: bold;
-    padding: 2%;
-
-}
-
 
 .bar-DD {
-    width: 100%;
+    width: 30%;
 }
 
 .option-button_ {
-    width: 100%;
-    height: 50px;
     font-size: 1.2em;
     text-align: -webkit-left;
     border: none;
     font-family: Raleway;
     background-color: transparent;
-    color:black;
-
-
+    color: rgb(71, 70, 70);
 }
 
-.bar-DD:hover {
-    border-left: 5px solid rgb(74, 121, 125);
-    background-color: whitesmoke;
+@media screen and (max-width: 1100px) {
+    .top-heading-DD {
+        width: 100%;
+    }
+    
+    .bar-DD {
+        width: 30%;
+        text-align: -webkit-center;
+
+    }
+    
+    .option-button_ {
+        text-align: -webkit-center;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .top-heading-DD {
+        width: 100%;
+    }
+    
+    .bar-DD {
+        width: 50%;
+    }
+    
+    .option-button_ {
+        text-align: -webkit-center;
+    }
 }

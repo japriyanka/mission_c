@@ -140,6 +140,8 @@
 .front-image {
     height: 150px;
     width: 300px;
+    object-fit: cover;
+
 }
 
 .front-image:hover {
@@ -227,4 +229,76 @@
     margin-top: 5%;
     margin-left: 45%;
 
+}
+
+@media screen and (max-width: 800px) {
+    .cards {
+        width: 98%;
+        padding: 1px 0px;
+        margin: 10px 10px;
+        border: 1px solid rgb(51, 50, 50);
+    }
+
+    .card-image {
+        height: 150px;
+        width: 100%;
+    }
+
+    .front-image {
+        height: 200px;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .button-offer {
+        margin-top: 160px;
+        width: 100%;
+    }
+
+    .card-body-information {
+        padding: 1%;
+    }  
+
+    .cuisine-star {
+        padding: 10px 10px;
+    }
+
+    .rating-info {
+        flex-grow: 1;
+        margin: 3px 15px;
+        font-size: 23px;
+        text-align: -webkit-right;
+    }
+
+    
+
+    .card-address {
+        font-size: 17px;
+        padding-left: 2%;
+        /*  font-family: Verdana, Geneva, Tahoma, sans-serif; */
+        font-family: Raleway;
+    
+    }
+    
+    .cuisine-info {
+        flex-basis: 15%;
+        text-align: -webkit-center;
+        padding: 10px;
+        border: 1px solid black;
+    }
+    
+    .average-cost-information {
+        flex-grow: 1;
+        padding: 1%;
+        text-align: -webkit-right;
+        font-size: 1.5em;
+    }
+
+    .name-info-first-half {
+        flex-basis: 75%;
+        font-size: 22px;
+        font-weight: bold;
+        color: rgb(63, 63, 63);
+    
+    }
 }

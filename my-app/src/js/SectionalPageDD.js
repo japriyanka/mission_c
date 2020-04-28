@@ -27,18 +27,7 @@ class SectionalPageHomeDD extends React.Component {
 
     render() {
         return (
-            <div className="top-heading-DD">
-                <div className="bar-DD-heading">
-                    Options
-                </div>
-                <hr></hr>
-                
-                <div className="bar-DD">
-                    <button type="button" className="option-button_"
-                    onClick={this.goToTopDeals} >
-                        Top Deals
-                    </button>
-                </div>
+            <div className="top-heading-DD">            
                 <div className="bar-DD">
                     <button type="button" className="option-button_" 
                     onClick={this.goToAll}>
@@ -48,7 +37,7 @@ class SectionalPageHomeDD extends React.Component {
                 <div className="bar-DD">
                     <button type="button" className="option-button_"
                     onClick={this.goMoreCategories}>
-                        More Categories &#10148;
+                        More Categories
                     </button> 
                 </div>
               
