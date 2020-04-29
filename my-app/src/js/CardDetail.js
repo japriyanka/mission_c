@@ -197,7 +197,6 @@ class CardDetail extends React.Component {
                                 <button type="button" className="go-map-button">
                                     Directions 
                                 </button>
-                               
                             </div>
 
                             <hr  className="line-show"/>
@@ -215,7 +214,7 @@ class CardDetail extends React.Component {
                                 </div>
                                 <div className="parking-available-name">
                                     <div className="text-available-name">
-                                        Parking available
+                                        Parking(s)
                                     </div>
                                 </div>
                             </div>

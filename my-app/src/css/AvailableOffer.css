@@ -2,7 +2,7 @@
     margin-top: 2%;
     height: 100%;
     border: 1px solid white;
-    box-shadow: 10px 15px 8px #888888;
+    box-shadow: 10px 2px 8px 5px #888888;
     background-color: white;
 
 }
@@ -88,4 +88,65 @@
 .view-but-available:hover {
     color: white;
     background-color: #008CEE;
+}
+
+@media screen and (max-width: 1100px) {
+
+    .available-content-head {
+        display: flex;
+        font-size: 22px;
+        margin: 3px 20px;
+        padding-left: 0%;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    
+    .celeb-image {
+        margin: 5px;
+        height: 17px;
+        width:17px;
+    }
+    
+    .available-content-head-name {
+        margin-top: 3px;
+    }
+    
+    .map-go {
+        margin-top: 3px;
+        text-align:-webkit-center;
+    }
+
+    .available-offer-body {
+        margin-left: 0%; 
+        padding: 0%;
+        margin: 20px 0px;
+    
+    }
+    
+    .available-offer-body-num {
+        font-size: 22px;    
+    }
+    
+    .available-offer-body-desc {
+        flex-basis: 75%;
+        padding: 5px 10px;
+        color: #272d36;
+    }
+    
+    .available-offer-body-button {
+        display: flex;
+        flex-basis: 15%;
+        height: auto;
+        flex-direction: column;
+        text-align: -webkit-center;
+        padding:1%;
+    }
+    
+    .view-but-available {
+        color: #008CEE;
+        width: 100%;
+        border: 1px solid #008CEE;
+        background-color: white;
+        border-radius: 0px;
+        font-size: 15px;
+    }
 }

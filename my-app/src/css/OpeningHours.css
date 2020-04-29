@@ -2,7 +2,7 @@
     margin-top: 2%;
     height: 100%;
     border: 1px solid white;
-    box-shadow: 10px 15px 8px #888888;
+    box-shadow: 10px 2px 8px 5px #888888;
     background-color: white;
 }
 
@@ -20,7 +20,6 @@
     display: flex;
     flex-basis: 80%;
     flex-direction: column;
-    color: rgb(2, 48, 83);
 }
 
 .status-opening-hours {
@@ -41,6 +40,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    overflow-x: hidden;
     padding: 2%;
 }
 
@@ -67,4 +67,88 @@
 
 .show-time-div {
 
+}
+
+/* 
+* Mobile & Tablet size elements
+*/
+@media screen and (max-width: 1100px) {
+    
+    .opening-hour-main-content-head {
+        font-size: 22px;
+        padding-top: 0%;
+        padding-left: 0%;
+        padding-bottom: 0%;
+        margin: 3px 15px;
+        padding-top: 10px;
+    }
+
+    .span-opening-name {
+        flex-basis: 70%;
+    }
+    
+        
+    .status-opening-hours {
+        flex-grow: 0;
+        font-size: 12px;
+    }
+    
+    .but-opening-hours {
+        padding: 10px;
+        width: 100%;
+        text-align: -webkit-center;
+        color: black;
+        background-color: yellow;
+        border-radius: 5px;
+    }
+    .opening-hour-main-content-body-1 {
+        padding: 10px 5px;
+        flex-wrap: wrap;
+        width: 90%;
+        margin-bottom: 15px;
+    }
+
+    .opening-hour-main-content-body {
+        display: flex;
+        padding: 2%;
+        flex-basis: 20%;
+        flex-direction: column;
+    }
+    
+    .time-show-body {
+        padding: 2%;
+        width: 100%;
+
+        text-align: -webkit-center;
+    }
+    
+    .active {
+        background-color: rgb(226, 238, 246);
+        color: black;
+        height: 80%;
+    }
+    .show-body-span {
+        font-size: 15px;
+    }
+    
+    .show-time-div {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .opening-hour-main-content-body-1 {
+        padding: 10px 5px;
+        flex-wrap: nowrap;
+        width: 100%;
+        overflow-x: scroll;
+        margin-bottom: 15px;
+    }
+
+    .opening-hour-main-content-body {
+        display: flex;
+        padding: 2%;
+        flex-basis: 25%;
+        flex-direction: column;
+    }
 }
