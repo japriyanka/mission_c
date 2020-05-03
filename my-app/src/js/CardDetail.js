@@ -25,7 +25,7 @@ import HeaderObj from './HeaderObj';
  */
 class CardDetail extends React.Component {
 
-    cardDetailingMenu = ["Menu", "Info", "Recommendations", "Reviews"];
+    cardDetailingMenu = ["Deals", "Duration", "Ratings", "Reviews"];
 
     constructor(props) {
         super(props);
@@ -251,7 +251,7 @@ class CardDetail extends React.Component {
                                     + view more
                                 </button>
                             </div>
-                            <hr  className="line-show"/>
+                            <hr  className="line-show line-show-none"/>
 
                             <div className="offer-button-show">
                                 <button type="button" className="btn btn-success offer-button-symbol">
@@ -291,15 +291,15 @@ class CardDetail extends React.Component {
                 <div className="footer-body">
                     Mission C &copy; 2019
                 </div>
-                <Modal visible={this.state.slidingWindowShow} border="1px solid blue" 
-                     height="300px" effect="fadeInDown" 
+                <Modal className="modal-vis" visible={this.state.slidingWindowShow} border="1px solid blue" 
+                     effect="fadeInDown" height="300px" size="none" center
                     onClickAway={this.hideWindow.bind(this)}>
                         <Carousel showThumbs={false} showNumbers={true} 
                         infiniteLoop={true}>
                             {
                                 this.props.cardInfo.Pictures.Front.map((image, index) => {
                                     return(<img key={index} src={image} 
-                                        className="image-display_" />);
+                                        className="image-display_p" />);
                                 })
                             }
                         </Carousel>

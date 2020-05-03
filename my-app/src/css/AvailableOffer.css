@@ -123,7 +123,8 @@
     }
     
     .available-offer-body-num {
-        font-size: 22px;    
+        padding-top: 5px;
+        font-size: 17px;    
     }
     
     .available-offer-body-desc {

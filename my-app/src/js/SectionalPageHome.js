@@ -28,7 +28,7 @@ class SectionalPageHome extends React.Component {
     }
 
     componentDidMount() {
-        fetch("http://localhost/restuarants.json")
+        fetch("http://192.168.1.102/restuarants.json")
         .then ((response) => response.json())
         .then ((data) => { 
             console.log(data);

@@ -157,3 +157,130 @@
     height: 12px;
     width:12px;
 }
+
+@media screen and (max-width: 800px) {
+
+    .rating-heading {
+        display: flex;
+        flex-wrap: wrap;
+        font-size: 22px;
+        padding: 3px 5px;
+        padding-top: 5px;
+    }
+    
+    .name-rating-head {
+        display: flex;
+        flex-basis: 85%;
+    }
+    
+    .message-show-icon-show {
+        height:20px;
+        width: 20px;
+        opacity: 0.7;
+        margin-top: 7px;
+        padding: 1%;
+    }
+    
+    .image-embedded {
+        display: flex;
+        flex-basis: 4%;
+        padding-top: 1%;
+    }
+    
+    .show-length {
+        flex-basis: 0%;
+        font-size: 18px;
+        margin-top: 7px;
+        margin-left: 5px;
+    }
+
+    .swipe-buttons {
+        display: none;
+    }
+    
+    .left-button {
+        display: flex;
+        flex-basis: 20%;
+        flex-direction: column;
+        background-color: white;
+        color: #008CEE;
+        border: 1px solid #008CEE;
+        text-align: -webkit-center;
+        font-size: 15px;
+    }
+    
+    .empty-space {
+        display: flex;
+        flex-basis: 50%;
+        flex-direction: column;
+        
+    }
+    .right-button {
+        display: flex;
+        flex-basis: 20%;
+        flex-direction: column;
+        background-color: white;
+        color: #008CEE;
+        border: 1px solid #008CEE;
+        text-align: -webkit-center;
+        margin-left: 2%;
+        font-size: 15px;
+    }
+    
+    .view-all-show {
+        margin-left: 0%;
+        margin-top: 2%;
+        margin-bottom: 10px;
+        text-align: -webkit-center;
+        width: 100%;        
+    }
+    
+    .view-all-show-but {
+        font-size:20px;
+        color: #008CEE;
+        background-color: transparent;
+        border-radius: 5px;
+        border: transparent;
+        height: 40px;
+    }
+    
+    .view-all-show-but:hover {
+        color: white;
+        background-color: #008CEE;
+    }
+    
+    .image-rating-body {
+        display: flex;
+        flex-basis: 10%;
+        float: -webkit-right;
+        justify-content: center;
+    }
+    
+    .description-desc-body {
+        width: 100%;
+        font-size: 17px;
+    }
+    
+    .profile-image {
+        width: 60px;
+        height: 70px;
+        background-position: cover;
+        display: inline-flex;
+        border-radius: 70%;  
+    }
+    
+    .rating-system-show{
+        font-size:14px;
+    }
+    
+    .star-image-show {
+        height: 12px;
+        width:12px;
+    }
+
+    .description-body {
+        padding: 5px;
+    
+    }
+    
+}
