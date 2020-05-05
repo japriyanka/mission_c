@@ -269,6 +269,47 @@ class CardDetail extends React.Component {
                         })}  
                     </div>
 
+                    <div className="show-tab-mob-info">
+                        <div className="initial-name-info">
+                            <div className="topic-name">
+                                {this.props.cardInfo.Name.Short}
+                            </div>
+                            <div className="second-row-topic">
+                                {this.props.cardInfo.Cuisine} .  &nbsp; 
+                                <b>{this.showCost(this.props.cardInfo.CostPerPerson)}
+                                    {this.props.cardInfo.CostPerPerson} / pp
+                                </b> 
+                            </div>
+                            <div className="third-row-address">
+                                {this.props.cardInfo.Address.Number + ' '}
+                                {this.props.cardInfo.Address.Street} <br></br>
+                                {this.props.cardInfo.Address.Suburb} <br></br>
+                                {this.props.cardInfo.Address.State + ' '}  
+                                {this.props.cardInfo.Address.Postcode}
+                            </div>
+                            <button type="button" className="btn btn-primary but-topic">
+                                Directions
+                            </button>
+
+                        </div>
+                        <div className="mid-info"></div>
+                        <div className="points-info">
+                            <div className="star-rating">
+                                {this.props.cardInfo.Rating.AverageRating.split('/')[0]}
+                                <img src={star} className="star-image"></img>
+                            </div>
+                            <div className="closing-time">
+                                <div className="closing-duration-1">
+                                    Closes at
+                                </div>
+                                <div className="closing-duration-2">
+                                    10:30 PM
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>    
                     <div className="available-offer-show">
                         <AvailableOffer offerShow={this.props.cardInfo.Discount} />
                     </div>
