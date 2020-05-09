@@ -1,45 +1,31 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import './../css/Restuarants.css';
 import Cards from './Cards';
 import ReactDOM from 'react-dom';
 import SectionalPageHome from './SectionalPageHome';
+import {restaurantData} from './../api';
 
+const Restuarants = ({ip, city, dealsInfo, type, ads}) => {
 
-class Restuarants extends React.Component {
+    const [restData, setRestData] = useState([]);
 
-    component_mount = false;
-    constructor(props) {
-        super(props);
-        this.state = {
-            restuarants: []
-        };
-        this.passToSectionalPage = this.passToSectionalPage.bind(this);
-        this.scrollLeftRestaurant = this.scrollLeftRestaurant.bind(this);
-        this.scrollRightRestaurant = this.scrollRightRestaurant.bind(this);
-    }
-
-    componentDidMount() {
-        this.component_mount = true;
-        fetch("http://"+this.props.ip+"/restuarants.json")
-        .then ((response) => response.json())
-        .then ((data) => { 
-            console.log(data);
-            this.setState({
-                restuarants: data,
-            });
-        });        
-    }
-
-    passToSectionalPage() {
-        console.log('coming here');
-        if (this.component_mount) {
-          ReactDOM.render(<SectionalPageHome dealsInfo={this.props.dealsInfo} 
-            restuarantInfo={this.state.restuarants} type="r"  />, 
-            document.getElementById('root'));
+    useEffect(() => {
+        const restDataFunction = async () => {
+            setRestData(await restaurantData(ip, city));
         }
+        restDataFunction();
+    }, []);
+
+    const leftValue = '<';
+    const rightValue = '>';
+
+    function passToSectionalPage() {
+        ReactDOM.render(<SectionalPageHome ip={ip} name={city} listData={restData} type="r"  ads={ads} />, 
+        document.getElementById('root'));
+        
     }
 
-    scrollLeftRestaurant() {
+    function scrollLeftRestaurant() {
         const direction = 'left';
         const step = 10;
         const distance = 200;
@@ -60,7 +46,7 @@ class Restuarants extends React.Component {
         }
     }
 
-    scrollRightRestaurant() {
+    function scrollRightRestaurant() {
         const direction = 'right';
         const step = 10;
         const distance = 200;
@@ -82,46 +68,42 @@ class Restuarants extends React.Component {
         }       
     }
 
-    render() {
-        const leftValue = '<';
-        const rightValue = '>';
-        return (
-        <div className="restaurant-section_">
-            <div className="resturant-heading_">
-               <div className="resturant-name_">
-                   Restaurants
-                </div> 
-                <div className="view-all-but">
-                    <button type="button" className="view-all_"
-                    onClick={this.passToSectionalPage}
-                    title="visit all">
-                        View more
-                    </button>
-                </div>
-              
+    return (
+    <div className="restaurant-section_">
+        <div className="resturant-heading_">
+            <div className="resturant-name_">
+                Restaurants  ({city})
+            </div> 
+            <div className="view-all-but">
+                <button type="button" className="view-all_"
+                onClick={passToSectionalPage}
+                title="visit all">
+                    View more
+                </button>
             </div>
-
-           <div className="restuarant-cardspace" id="restuarant-cardspace">
-                <div className="left-indicator">
-                    <button type="button" className="left"
-                    title="scroll left" onClick={this.scrollLeftRestaurant}>
-                    {leftValue}
-                    </button>
-                </div>
-                <div className="center-cards">
-                    <Cards cardInfo={this.state.restuarants} from="home" />
-                </div>
-                <div className="left-indicator" >
-                    <button type="button" className="left"
-                    title="scroll right" onClick={this.scrollRightRestaurant}>
-                    {rightValue}
-                    </button>
-                </div>
-              
-           </div>
+            
         </div>
-        );
-    }
+
+        <div className="restuarant-cardspace" id="restuarant-cardspace">
+            <div className="left-indicator">
+                <button type="button" className="left"
+                title="scroll left" onClick={scrollLeftRestaurant}>
+                {leftValue}
+                </button>
+            </div>
+            <div className="center-cards">
+                <Cards cardInfo={restData} from="home" searchValue="" />
+            </div>
+            <div className="left-indicator" >
+                <button type="button" className="left"
+                title="scroll right" onClick={scrollRightRestaurant}>
+                {rightValue}
+                </button>
+            </div>
+            
+        </div>
+    </div>
+    );
 }
 
 export default Restuarants;

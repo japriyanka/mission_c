@@ -14,12 +14,12 @@ class Cards extends React.Component {
         } else if (this.props.from === 'section') {
             classNameForDiv = 'flex-layout_section';
         }
-
         return (
             <div className={classNameForDiv} id="center-cards">
-                {this.props.cardInfo.map((card) => {
-                    console.log(card);
-                    return <SubCards info={card} key={card.Id} />
+                {this.props.cardInfo.map((card, index) => {
+                    if (card.Name.Short.toLowerCase().includes(this.props.searchValue.toLowerCase())) {
+                        return <SubCards info={card} key={index} />
+                    }
                 })}
             </div>
         );

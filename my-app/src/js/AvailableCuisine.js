@@ -4,14 +4,13 @@ import ReactDOM from 'react-dom';
 import IntroductionCity from './IntroductionCity';
 
 
-const AvailableCity = ({option, listNames, name, ip}) =>  {
+const AvailableCuisine = ({value, listNames, name, ip}) =>  {
 
-    if (!option) {
-        option = '';
+    if (!value) {
+        value = '';
     }
     function changeBasedOnCity(cityName) {
-        ReactDOM.render(<IntroductionCity ip={ip} name={cityName} 
-            cityList={listNames} />,  document.getElementById('root'));
+        ReactDOM.render(<IntroductionCity ip={this.props.ip} name={cityName} />, document.getElementById('root'));
     }
 
     function scrollLeft() {
@@ -19,7 +18,7 @@ const AvailableCity = ({option, listNames, name, ip}) =>  {
         const step = 10;
         const distance = 200;
         let scrollAmount = 0;
-        const element = document.getElementById('show-options-body_');
+        const element = document.getElementById('show-options-body_cuisine');
         if(element !== null) {
             var slideTimer = setInterval(function(){
                 if (direction == 'left'){
@@ -31,7 +30,7 @@ const AvailableCity = ({option, listNames, name, ip}) =>  {
                 if(scrollAmount >= distance){
                     window.clearInterval(slideTimer);
                 }
-            }, 30);
+            }, 25);
         }
     }
 
@@ -41,7 +40,7 @@ const AvailableCity = ({option, listNames, name, ip}) =>  {
         const distance = 200;
 
         let scrollAmount = 0;
-        const element = document.getElementById('show-options-body_');
+        const element = document.getElementById('show-options-body_cuisine');
         if(element !== null) {
             var slideTimer = setInterval(function(){
                 if (direction == 'left'){
@@ -74,29 +73,28 @@ const AvailableCity = ({option, listNames, name, ip}) =>  {
                    
                     <div className="see-all" title="scroll right">
                         <button type="button" className="see-all-but"
-                        onClick={scrollRight }>
+                        onClick={scrollRight}>
                             <i className="fa fa-caret-right" 
                             ></i>
                         </button>
                     </div>
                 </div>
                 <div className="available-body" id="available-body">
-                    <div className="show-options-body" id="show-options-body_">
-                        {listNames.map((cityName, index) => {
-                            if (cityName.includes(option)) {
-                            let image = '';
-                            if (cityName === 'Canberra') {
+                    <div className="show-options-body" id="show-options-body_cuisine">
+                        {listNames.map((cuisineName, index) => {
+                            if (cuisineName.includes(value)) {
+                                let image = '';
+                            if (cuisineName === 'Indian') {
                                 image = 'http://'+ip+'/image/canberra.jpeg';
-                            } else if (cityName === 'Perth') {
+                            } else if (cuisineName === 'Korean' ) {
                                 image = 'http://'+ip+'/image/perth.jpeg';
-                            } else  if (cityName === 'Sydney') {
+                            } else  if (cuisineName === 'Thai' ) {
                                 image = 'http://'+ip+'/image/sydney.jpeg';
                             }
                             return (
-                            <div className="image_class" key={index} title={cityName} 
-                            onClick={changeBasedOnCity.bind(this, cityName)}>
+                            <div className="image_class" key={index} title={cuisineName}>
                                 <img src={image} className="div-class-city-name"></img>
-                                <h5 className="city_name">{cityName}</h5>
+                                <h5 class="city_name">{cuisineName}</h5>
                                 <button type="button" className="btn btn-success stores">
                                     <b>220+</b> stores
                                 </button>
@@ -112,4 +110,4 @@ const AvailableCity = ({option, listNames, name, ip}) =>  {
         );
 }
 
-export default AvailableCity;
+export default AvailableCuisine;

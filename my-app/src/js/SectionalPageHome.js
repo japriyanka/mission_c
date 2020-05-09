@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import ToolBar from './ToolBar';
 import SectionalPageHomeDD from './SectionalPageDD';
 import './../css/SectionalPageHome.css';
@@ -7,155 +7,85 @@ import Ads from './Ads';
 import HeaderObj from './HeaderObj';
 import FilterBy from './FilterBy';
 import OtherCategories from './OtherCategories';
+import SearchBar from 'material-ui-search-bar'
 
-class SectionalPageHome extends React.Component {
 
-    constructor(props) {
-        super(props);
-        this.state = {
-            restaurants: [],
-            filterShow: false,
-            popularShow: true,
-            lowToHighShow: true,
-            highToLowShow: true
-        };
-        this.showFilterBy = this.showFilterBy.bind(this);
-        this.hideFilterBy = this.hideFilterBy.bind(this);
-        this.closeButtonPopular = this.closeButtonPopular.bind(this);
-        this.closeButtonHigh = this.closeButtonHigh.bind(this);
-        this.closeButtonLow = this.closeButtonLow.bind(this);
-        this.applyFilterBy = this.applyFilterBy.bind(this);
+const SectionalPageHome = ({ip, type, listData, ads, name}) => {
+
+    const [search, setSearch] = useState('');
+
+    function handleSearchChange(val) {
+        setSearch(val);
     }
 
-    componentDidMount() {
-        fetch("http://192.168.1.102/restuarants.json")
-        .then ((response) => response.json())
-        .then ((data) => { 
-            console.log(data);
-            this.setState({
-                restaurants: data,
-            });
-        });        
+    function cancelSearch() {
+        setSearch('');
     }
-
-    showFilterBy() {
-        this.setState({
-            filterShow: true
-        });
-    }
-
-    applyFilterBy() {
-        this.setState({
-            filterShow: false,
-            popularShow:  document.getElementById('popular-id').className === 'options-filter' 
-            ? true : false,
-            lowToHighShow:  document.getElementById('low-to-high-id').className === 'options-filter'
-            ? true : false,
-            highToLowShow: document.getElementById('high-to-low-id').className === 'options-filter'
-            ? true : false
-        });
-    } 
-
-    hideFilterBy() {
-        this.setState({
-            filterShow: false,
-        });
-        this.closeButtonHigh();
-        this.closeButtonLow();
-        this.closeButtonPopular();
-    }
-
-    closeButtonPopular() {
-        this.setState({
-            popularShow: true
-        });
-        const popular = document.getElementById('popular-id');
-        if (popular) {
-            popular.className = 'options-filter';
-        }
-    }
-
-
-    closeButtonLow() {
-        const low = document.getElementById('low-to-high-id');
-        if (low) {
-            low.className = 'options-filter';
-        }
-        this.setState({
-            lowToHighShow: true
-        });
-    }
-
-    closeButtonHigh() {
-        const high = document.getElementById('high-to-low-id');
-        if (high) {
-            high.className = 'options-filter';
-        }
-        this.setState({
-            highToLowShow: true
-        });
-    }
-
-    functionHide() {
-        document.getElementById('options-tool-bar-sub').style.display = 'none';
-    }
-
-    render() { 
-
-        return (
-            <div className="main-sectional-page-home">
-                <div className="tool-bar">
-                    <HeaderObj />
+    return (
+        <div className="main-sectional-page-home">
+            <div className="tool-bar">
+                <HeaderObj ip={ip} />
+            </div>
+            <div className="body_section">
+                <div className="options-tool-bar-first">
+                    <FilterBy />
                 </div>
-                <div className="body_section">
-                    <div className="options-tool-bar-first">
-                        <FilterBy />
+                <div className="second-tool-bar">
+                    <div className="options-tool-bar-sub">
+                        <SectionalPageHomeDD type={type === 'r' ? 'r' : 'g'} />
                     </div>
-                    <div className="second-tool-bar">
-                        <div className="options-tool-bar-sub">
-                            <SectionalPageHomeDD type={this.props.type === 'r' ? 'r' : 'g'} />
-                        </div>
-                        <div className="top-deals-bar" id="sectional-view-id">
-                            <div className="deals-bar-title">
-                               Restaurants
+                    <div className="top-deals-bar" id="sectional-view-id">
+                        <div className="deals-bar-title">
+                            <div className="deals_bar_title_name">
+                                {type === 'r' ? 'Restaurants' : 'Groceries'} ({name})
                             </div>
-                            <div className="sort-by-options">
-                                <span className="font-span">
-                                    Sort by:
-                                </span>
-                                <div className="pop-but_">
-                                    Popularity
-                                </div>
-                                <div className="options-but_">
-                                    Price High to Low
+                            <div className="deals_bar_search_box">
+                                <SearchBar 
+                                    className="search_bar_section"
+                                    value={search}
+                                    onChange={(newValue) => handleSearchChange(newValue)}
+                                    onCancelSearch={cancelSearch}
+                                />
+                            </div>
+                        </div>
 
-                                </div>
-                                <div className="options-but_">
-                                    Price Low to High
-                                </div>
+                        <div className="sort-by-options">
+                            <span className="font-span">
+                                Sort by:
+                            </span>
+                            <div className="pop-but_">
+                                Popularity
                             </div>
-                            <div className="deals-card-display">
-                                <Cards cardInfo={this.state.restaurants} from="section" />
+                            <div className="options-but_">
+                                Price High to Low
+
+                            </div>
+                            <div className="options-but_">
+                                Price Low to High
                             </div>
                         </div>
-                        <div className="ads-zone_insidehome">
-                            <Ads />
-                        </div>
-                        <div className="third-tool-bar-sectional">
-                            <OtherCategories />
+                        <div className="deals-card-display">
+                            <Cards cardInfo={listData} searchValue={search} from="section" />
                         </div>
                     </div>
-                    <div className="ads-zone">
-                        <Ads />
+                    <div className="ads-zone_insidehome">
+                        <Ads adsList={ads} />
+                    </div>
+                    <div className="third-tool-bar-sectional">
+                        <OtherCategories />
                     </div>
                 </div>
-                <div className="footer-body">
-                    Mission C &copy; 2019
+                <div className="ads-zone">
+                    <Ads adsList={ads} />
                 </div>
             </div>
-              
+            <div className="footer-body">
+                Mission C &copy; 2019
+            </div>
+        </div>
+            
             );
-    }
+
 }
 
 export default SectionalPageHome;

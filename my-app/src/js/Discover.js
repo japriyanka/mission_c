@@ -1,71 +1,163 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import './../css/Discover.css';
+import {cityList, suburbsList, cuisineList} from './../api';
+import { FormControl } from '@material-ui/core';
+import TextField from '@material-ui/core/TextField';
+import Autocomplete from '@material-ui/lab/Autocomplete';
+import styles from './../css/Discover.css';
 
 
-class Discover extends React.Component {
-    render() {
-        return (
 
-            <div className="discover-entire-body">
-                <link rel="stylesheet" 
-                 href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-                </link>
-               <div className="discover-entire-body-head">
-                   <div className="discover-text">
-                       Discover best deals near your place
-                          <i> for Restaurants & Groceries</i>
-                   </div>
-                  
-               </div>
-                                          
+const Discover = ({handleCityChange, handleSuburbChange, handleCuisineChange}) => {
 
-               <div className="discover-entire-body-bottom">
-                   <div className="discover-entire-body-bottom-search">
-                       <div className="dropdown-box-cuisine">
-                            <button className="city-text">City / Town
-                            <i className="fa fa-caret-down"></i>
-                            </button>
+    const [fetchCity, setFetchCity] = useState([]);
+    const [fetchSuburb, setFetchSuburb] = useState([]);
+    const [fetchCuisine, setFetchCuisine] = useState([]);
 
-                            <div className="show-dropdown-city">
-                                <a href="#">Canberra</a>
-                                <a href="#">Sydney</a>
-                            </div>
-                       </div>
-                       <div className="dropdown-box-cuisine">
-                            <button className="city-text">Suburb
-                            <i className="fa fa-caret-down"></i>
-                            </button>
 
-                            <div className="show-dropdown-city">
-                                <a href="#">City</a>
-                                <a href="#">Braddon</a>
-                            </div>
-                       </div>
-                       <div className="dropdown-box-cuisine">
-                            <button className="city-text">Cuisine
-                            <i className="fa fa-caret-down"></i>
-                            </button>
+    let cityError = false;
+    let suburbError = false;
+    let cuisineError = false;
 
-                            <div className="show-dropdown-city">
-                                <a href="#">Thai</a>
-                                <a href="#">Indian</a>
-                            </div>
-                       </div>
-                       
-                       <input type="text" className="search-box-dis"
-                       placeholder=" search by restaurant or grocery store name"></input>
-                       <div className="know-more">
-                   <button type="button" className="grab-button">
-                       Grab Deals
-                   </button>
-               </div>
-                   </div>
-               </div>
-             
-               
+    useEffect(() => {
+        const fetchCityName = async () => {
+            setFetchCity(await cityList());
+        }
+        const fetchSuburbsList = async () => {
+            setFetchSuburb(await suburbsList());
+        }
+        const fetchCuisinesList = async () => {
+            setFetchCuisine(await cuisineList());
+        }
+        fetchCityName();
+        fetchSuburbsList();
+        fetchCuisinesList();
+    }, []);
+
+
+    return (
+        <div className="discover-entire-body">
+          
+            <div className="discover-entire-body-head">
+                <div className="discover-text">
+                    Discover best deals near your place
+                        <i> for Restaurants & Groceries</i>
+                </div>
             </div>
+                                    
+            <div className="discover-entire-body-bottom">
+                <div className="discover-entire-body-bottom-search">
+                    <div className="dropdown-box-cuisine">
+                        <FormControl >
+                                <Autocomplete
+                                    id="country-select-demo"
+                                    style={styles.widthOption}
+                                    options={fetchCity}
+                                    classes={{
+                                        option: styles.FormControl,
+                                    }}
+                                    autoHighlight
+                                    getOptionLabel={(option) => `${option}`}
+                                    onChange={(event, option) => handleCityChange(option)}
+                                    renderOption={(option) => (
+                                        <React.Fragment>
+                                            <span>{option}</span> 
+                                        </React.Fragment>
+                                    )}
+                                    renderInput={(params) => (
+                                        <TextField
+                                        {...params}
+                                        label="City"
+                                        variant="outlined"
+                                        inputProps={{
+                                            ...params.inputProps,
+                                            autoComplete: 'new-password', // disable autocomplete and autofill
+                                        }}
+                                        />
+                                    )}
+                                />
+                            </FormControl>
+                            <div className="error" hidden={!cityError}>
+                                &#9888; Enter City
+                            </div>
+                    </div>
+                    <div className="dropdown-box-cuisine">
+                        <FormControl >
+                                <Autocomplete
+                                    id="country-select-demo"
+                                    style={styles.widthOption}
+                                    options={fetchSuburb}
+                                    classes={{
+                                        option: styles.FormControl,
+                                    }}
+                                    autoHighlight
+                                    getOptionLabel={(option) => `${option}`}
+                                    onChange={(event, option) => handleSuburbChange(option)}
+                                    renderOption={(option) => (
+                                        <React.Fragment>
+                                            <span>{option}</span> 
+                                        </React.Fragment>
+                                    )}
+                                    renderInput={(params) => (
+                                        <TextField
+                                        {...params}
+                                        label="Suburb"
+                                        variant="outlined"
+                                        inputProps={{
+                                            ...params.inputProps,
+                                            autoComplete: 'new-password', // disable autocomplete and autofill
+                                        }}
+                                        />
+                                    )}
+                                />
+                            </FormControl>
+                    </div>
+                    <div className="dropdown-box-cuisine">
+                        <FormControl >
+                                <Autocomplete
+                                    id="country-select-demo"
+                                    style={styles.widthOption}
+                                    options={fetchCuisine}
+                                    classes={{
+                                        option: styles.FormControl,
+                                    }}
+                                    autoHighlight
+                                    getOptionLabel={(option) => `${option}`}
+                                    onChange={(event, option) => handleCuisineChange(option)}
+                                    renderOption={(option) => (
+                                        <React.Fragment>
+                                            <span>{option}</span> 
+                                        </React.Fragment>
+                                    )}
+                                    renderInput={(params) => (
+                                        <TextField
+                                        {...params}
+                                        label="Cuisine"
+                                        variant="outlined"
+                                        inputProps={{
+                                            ...params.inputProps,
+                                            autoComplete: 'new-password', // disable autocomplete and autofill
+                                        }}
+                                        />
+                                    )}
+                                />
+                            </FormControl>
+                    </div>
+                    </div>
+                    <div className="search_box_discover">
+                        <input type="text" className="search-box-dis"
+                        placeholder=" search by restaurant or grocery store name"></input>
+                        <div className="know-more">
+                            <button type="button" className="grab-button">
+                                Grab Deals
+                            </button>
+                        </div>
+                    </div>
+            </div>
+            
+            
+        </div>
         );
     }
-}
 
 export default Discover;

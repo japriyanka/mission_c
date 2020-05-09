@@ -24,16 +24,17 @@
 
 
 .column-first {
-    flex-basis: 20%;
+    flex-basis: 12%;
 }
 
 .column-second {
-    width: 60%;
+    width: 70%;
 }
 
 .column-second-data {
     width: 100%;
     margin-top: 90px;
+    padding: 1%;
 }
 
 .restaurant {
@@ -51,7 +52,7 @@
 .options_list_t {
     position: fixed;
     height: 90px;
-    width: 60%;
+    width: 78%;
     color: rgb(65, 65, 65);
     display: flex;
     z-index: 0;
@@ -65,8 +66,8 @@
 
 .last-option {
     flex-grow: 1;
+    align-items: flex-end;
     font-size: 15px;
-    text-align: -webkit-right;
 }
 
 .last-option_t {

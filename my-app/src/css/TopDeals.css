@@ -60,7 +60,7 @@
 }
 
 .empty-topic {
-    flex-basis: 35%;
+    flex-basis: 45%;
 }
 .topic-option:hover .show-type-option {
     display: block;
@@ -136,6 +136,12 @@
     .empty-topic {
         flex-basis: 30%;
     }   
+
+    .image-top_:hover {
+        transform: scale(0.99,0.98);
+        transition-duration: 30s ease-in-out;
+    }
+    
 }
 
 @media screen and (max-width: 1300px) {
@@ -150,26 +156,46 @@
         margin-left: 5%;
         object-fit: cover;
     }
+
+    .image-top_:hover {
+        transform: scale(0.99,0.98);
+        transition-duration: 30s ease-in-out;
+    }
+    
     
 }
 
 @media screen and (max-width: 1240px) {
     .empty-topic {
         flex-basis: 25%;
-    }   
+    }
+    .image-top_:hover {
+        transform: scale(0.99,0.98);
+        transition-duration: 30s ease-in-out;
+    }
+       
 }
 
 
 @media screen and (max-width: 855px) {
     .empty-topic {
-        flex-basis: 20%;
+        flex-basis: 40%;
     }   
+    .image-top_:hover {
+        transform: scale(0.99,0.98);
+        transition-duration: 30s ease-in-out;
+    }
 }
 
 @media screen and (max-width: 750px) {
     .empty-topic {
-        flex-basis: 15%;
-    }   
+        flex-basis: 30%;
+    }  
+    .image-top_:hover {
+        transform: scale(0.99,0.98);
+        transition-duration: 30s ease-in-out;
+    }
+     
 }
 
 
@@ -185,9 +211,14 @@
         margin-left: 0%;
         object-fit: cover;
     }
+    .image-top_:hover {
+        transform: scale(0.99,0.98);
+        transition-duration: 30s ease-in-out;
+    }
+    
 
     .empty-topic {
-        flex-basis: 10%;
+        flex-basis: 30%;
     }
 
     
@@ -197,12 +228,8 @@
 
 @media screen and (max-width: 600px) {
     .empty-topic {
-        flex-basis: 0%;
+        flex-basis: 40%;
     }
-    .see-all-butT  {
-        border: none;
-        display: none;
-    }   
 
     .topic {
         font-size: 22px;
@@ -258,11 +285,11 @@
 
 @media screen and (max-width: 500px) {
     .empty-topic {
-           flex-basis: 0%;
+           flex-basis: 15%;
     }
     .see-all-butT  {
-        border: none;
-        display: none;
+        border: 1px solid black;
+        display: flex;
     }   
 
     .topic {
@@ -273,10 +300,10 @@
     }
     
     .see-all-butT {
-        margin-top: 10px;
+        margin-top: 15px;
         font-size: 15px;
-        height: 30px;
-        width: 30px;
+        height: 25px;
+        width: 25px;
     }
 
     .text-all {
