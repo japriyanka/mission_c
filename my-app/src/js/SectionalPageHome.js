@@ -65,7 +65,7 @@ const SectionalPageHome = ({ip, type, listData, ads, name}) => {
                             </div>
                         </div>
                         <div className="deals-card-display">
-                            <Cards cardInfo={listData} searchValue={search} from="section" />
+                            <Cards ip={ip} cardInfo={listData} searchValue={search} from="section" />
                         </div>
                     </div>
                     <div className="ads-zone_insidehome">

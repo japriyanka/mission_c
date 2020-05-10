@@ -96,7 +96,7 @@ const Groceries = ({ip, dealsInfo, city, type, ads}) =>  {
                 </button>
             </div>
             <div className="center-cards">
-                <Cards cardInfo={grocData} from="home" searchValue="" />
+                <Cards ip={ip} cardInfo={grocData} from="home" searchValue="" />
             </div>
             <div className="left-indicator" >
                 <button type="button" className="left"

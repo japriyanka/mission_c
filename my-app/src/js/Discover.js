@@ -5,15 +5,17 @@ import { FormControl } from '@material-ui/core';
 import TextField from '@material-ui/core/TextField';
 import Autocomplete from '@material-ui/lab/Autocomplete';
 import styles from './../css/Discover.css';
+import ReactDOM from 'react-dom';
+import IntroductionCity from './IntroductionCity';
 
 
 
-const Discover = ({handleCityChange, handleSuburbChange, handleCuisineChange}) => {
+const Discover = ({ip, handleCityChange, handleSuburbChange, handleCuisineChange}) => {
 
     const [fetchCity, setFetchCity] = useState([]);
     const [fetchSuburb, setFetchSuburb] = useState([]);
     const [fetchCuisine, setFetchCuisine] = useState([]);
-
+    const [cityName, setCityName] = useState('Canberra');
 
     let cityError = false;
     let suburbError = false;
@@ -34,7 +36,16 @@ const Discover = ({handleCityChange, handleSuburbChange, handleCuisineChange}) =
         fetchCuisinesList();
     }, []);
 
+    function changeBasedOnCity(cityName) {
+        ReactDOM.render(<IntroductionCity ip={ip} name={cityName} 
+            cityList={fetchCity} />,  document.getElementById('root'));
+    }
 
+    function handleCityChangeT(val) {
+        setCityName(val);
+        handleCityChange(val);
+    }
+    
     return (
         <div className="discover-entire-body">
           
@@ -58,7 +69,7 @@ const Discover = ({handleCityChange, handleSuburbChange, handleCuisineChange}) =
                                     }}
                                     autoHighlight
                                     getOptionLabel={(option) => `${option}`}
-                                    onChange={(event, option) => handleCityChange(option)}
+                                    onChange={(event, option) => handleCityChangeT(option)}
                                     renderOption={(option) => (
                                         <React.Fragment>
                                             <span>{option}</span> 
@@ -148,7 +159,8 @@ const Discover = ({handleCityChange, handleSuburbChange, handleCuisineChange}) =
                         <input type="text" className="search-box-dis"
                         placeholder=" search by restaurant or grocery store name"></input>
                         <div className="know-more">
-                            <button type="button" className="grab-button">
+                            <button type="button" className="grab-button"
+                            onClick={changeBasedOnCity.bind(this, cityName)}>
                                 Grab Deals
                             </button>
                         </div>

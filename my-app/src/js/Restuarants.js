@@ -92,7 +92,7 @@ const Restuarants = ({ip, city, dealsInfo, type, ads}) => {
                 </button>
             </div>
             <div className="center-cards">
-                <Cards cardInfo={restData} from="home" searchValue="" />
+                <Cards ip={ip} cardInfo={restData} from="home" searchValue="" />
             </div>
             <div className="left-indicator" >
                 <button type="button" className="left"
